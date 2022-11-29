@@ -54,7 +54,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
+    <link rel="next" title="Content with notebooks" href="notebooks.html" />
+    <link rel="prev" title="Markdown Files" href="markdown.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -120,6 +121,13 @@ const thebe_selector_output = ".output, .cell_output"
    Markdown Files
   </a>
  </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   <strong>
+    PAGE RANK
+   </strong>
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks.html">
    Content with notebooks
@@ -128,13 +136,6 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="markdown-notebooks.html">
    Notebooks with MyST Markdown
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   <strong>
-    PAGE RANK
-   </strong>
   </a>
  </li>
 </ul>
@@ -625,7 +626,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data] Downloading package punkt to /root/nltk_data...
-[nltk_data]   Unzipping tokenizers/punkt.zip.
+[nltk_data]   Package punkt is already up-to-date!
 </pre></div>
 </div>
 </div>
@@ -654,7 +655,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data] Downloading package stopwords to /root/nltk_data...
-[nltk_data]   Unzipping corpora/stopwords.zip.
+[nltk_data]   Package stopwords is already up-to-date!
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
@@ -702,45 +703,45 @@ title="Print to PDF"
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING:gensim.models.base_any2vec:consider setting layer size to a multiple of 4 for greater performance
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[array([1.291137 , 1.6090412, 1.4982203, 1.4584981, 1.4584831, 1.5438247,
-       1.527399 , 1.6090412, 1.5464363, 1.611666 , 1.5058726, 1.5842378,
-       1.4560636, 1.6279811, 1.5857837, 1.644878 , 1.659618 , 1.6515808,
-       1.5598232], dtype=float32), array([1.6180147, 1.6711766, 1.5326055, 1.6603986, 1.7531947, 1.7447712,
-       1.674756 , 1.6748261, 1.6556566, 1.6321386, 1.8207701, 1.7331959,
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[array([1.3265822, 1.5762022, 1.4473989, 1.4350989, 1.4377996, 1.5296435,
+       1.5124238, 1.5762022, 1.5259908, 1.6094296, 1.493612 , 1.569515 ,
+       1.4420986, 1.6046875, 1.5387267, 1.6014115, 1.6434077, 1.6782516,
+       1.6901255], dtype=float32), array([1.601873 , 1.6620048, 1.5554672, 1.666301 , 1.7275954, 1.6943997,
+       1.6632955, 1.6631788, 1.6285841, 1.6992214, 1.8119755, 1.7623448,
        0.       , 0.       , 0.       , 0.       , 0.       , 0.       ,
-       0.       ], dtype=float32), array([1.6711766, 1.4179486, 1.6748261, 1.4947625, 1.6966417, 1.5842378,
-       1.5438247, 1.4931183, 1.4733332, 1.5070255, 1.6279811, 0.       ,
+       0.       ], dtype=float32), array([1.6620048, 1.4508978, 1.6631788, 1.4702283, 1.6780796, 1.569515 ,
+       1.5296435, 1.4945712, 1.4587268, 1.4862357, 1.6046875, 0.       ,
        0.       , 0.       , 0.       , 0.       , 0.       , 0.       ,
-       0.       ], dtype=float32), array([1.4051285, 1.4849342, 1.4392434, 1.5464363, 1.5687526, 1.5376323,
-       1.425593 , 1.5219322, 1.500608 , 1.3907297, 1.3743335, 1.6090412,
-       1.5532215, 0.       , 0.       , 0.       , 0.       , 0.       ,
-       0.       ], dtype=float32), array([1.6150935, 1.4575876, 1.3729345, 1.4241292, 1.4056753, 1.5464363,
-       1.500608 , 1.5438247, 1.4849342, 0.       , 0.       , 0.       ,
+       0.       ], dtype=float32), array([1.3396415, 1.4712099, 1.4762491, 1.5259908, 1.5351   , 1.5164268,
+       1.3826594, 1.5029331, 1.4838438, 1.3868046, 1.3660712, 1.5762022,
+       1.5312203, 0.       , 0.       , 0.       , 0.       , 0.       ,
+       0.       ], dtype=float32), array([1.5980533, 1.4613204, 1.3672438, 1.4161602, 1.3714013, 1.5259908,
+       1.4838438, 1.5296435, 1.4712099, 0.       , 0.       , 0.       ,
        0.       , 0.       , 0.       , 0.       , 0.       , 0.       ,
-       0.       ], dtype=float32), array([1.3642735, 1.5464363, 1.5687526, 1.5376323, 1.4276261, 1.5219322,
-       1.4427766, 1.5532215, 0.       , 0.       , 0.       , 0.       ,
+       0.       ], dtype=float32), array([1.3551991, 1.5259908, 1.5351   , 1.5164268, 1.4022042, 1.5029331,
+       1.3992608, 1.5312203, 0.       , 0.       , 0.       , 0.       ,
        0.       , 0.       , 0.       , 0.       , 0.       , 0.       ,
-       0.       ], dtype=float32), array([1.6180147, 1.5058726, 1.5438247, 1.3277146, 1.3932273, 1.500608 ,
-       1.2844048, 1.5219322, 0.       , 0.       , 0.       , 0.       ,
+       0.       ], dtype=float32), array([1.601873 , 1.493612 , 1.5296435, 1.2889563, 1.3576643, 1.4838438,
+       1.2959843, 1.5029331, 0.       , 0.       , 0.       , 0.       ,
        0.       , 0.       , 0.       , 0.       , 0.       , 0.       ,
-       0.       ], dtype=float32), array([1.4221069, 1.6150935, 1.477844 , 1.6180147, 1.572409 , 1.5015035,
-       1.527399 , 1.4451603, 1.5219322, 0.       , 0.       , 0.       ,
+       0.       ], dtype=float32), array([1.4279425, 1.5980533, 1.4430071, 1.601873 , 1.5446585, 1.5099205,
+       1.5124238, 1.463914 , 1.5029331, 0.       , 0.       , 0.       ,
        0.       , 0.       , 0.       , 0.       , 0.       , 0.       ,
-       0.       ], dtype=float32), array([1.5993557, 1.4823147, 1.4165695, 1.4195875, 1.4550412, 0.       ,
-       0.       , 0.       , 0.       , 0.       , 0.       , 0.       ,
-       0.       , 0.       , 0.       , 0.       , 0.       , 0.       ,
-       0.       ], dtype=float32), array([1.5127221, 1.5150464, 1.611666 , 1.495647 , 1.5223142, 1.4819392,
+       0.       ], dtype=float32), array([1.618756 , 1.4640785, 1.4334211, 1.4623777, 1.4800802, 0.       ,
        0.       , 0.       , 0.       , 0.       , 0.       , 0.       ,
        0.       , 0.       , 0.       , 0.       , 0.       , 0.       ,
-       0.       ], dtype=float32), array([1.6711766, 1.5362688, 1.611666 , 1.5922062, 1.5987675, 1.65647  ,
-       1.6225432, 1.6944649, 1.5993557, 0.       , 0.       , 0.       ,
-       0.       , 0.       , 0.       , 0.       , 0.       , 0.       ,
-       0.       ], dtype=float32), array([1.611666 , 1.3005764, 1.3444276, 1.3161469, 1.4550412, 0.       ,
+       0.       ], dtype=float32), array([1.4672376, 1.4681741, 1.6094296, 1.5153998, 1.5469851, 1.4909186,
        0.       , 0.       , 0.       , 0.       , 0.       , 0.       ,
        0.       , 0.       , 0.       , 0.       , 0.       , 0.       ,
-       0.       ], dtype=float32), array([1.5051159, 1.6659708, 1.8207701, 1.7331959, 1.6966417, 1.7113737,
-       1.7690327, 1.7441076, 1.7261286, 1.7528772, 1.8719106, 1.89034  ,
-       1.7744669, 0.       , 0.       , 0.       , 0.       , 0.       ,
+       0.       ], dtype=float32), array([1.6620048, 1.5875857, 1.6094296, 1.6157668, 1.5972569, 1.6724706,
+       1.6269128, 1.6439027, 1.618756 , 0.       , 0.       , 0.       ,
+       0.       , 0.       , 0.       , 0.       , 0.       , 0.       ,
+       0.       ], dtype=float32), array([1.6094296, 1.3395069, 1.3711871, 1.3466289, 1.4800802, 0.       ,
+       0.       , 0.       , 0.       , 0.       , 0.       , 0.       ,
+       0.       , 0.       , 0.       , 0.       , 0.       , 0.       ,
+       0.       ], dtype=float32), array([1.5280238, 1.6441346, 1.8119755, 1.7623448, 1.6780796, 1.7451781,
+       1.7258453, 1.7402241, 1.7589929, 1.7664498, 1.9300671, 1.8038652,
+       1.8243626, 0.       , 0.       , 0.       , 0.       , 0.       ,
        0.       ], dtype=float32)]
 </pre></div>
 </div>
@@ -768,44 +769,44 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1.         0.77834737 0.73987979 0.80730706 0.66621411 0.62786299
-  0.62487787 0.6673938  0.48228511 0.53463703 0.66696936 0.47964817
-  0.80808735]
- [0.77834737 1.         0.95245415 0.95581675 0.85631168 0.80744845
-  0.80554706 0.85673964 0.63128787 0.69814396 0.85673392 0.62990159
-  0.95778048]
- [0.73987979 0.95245415 1.         0.90657461 0.90110779 0.85455692
-  0.85534918 0.90051067 0.68520463 0.75066626 0.90254211 0.68581444
-  0.90841174]
- [0.80730706 0.95581675 0.90657461 1.         0.83139515 0.78430611
-  0.78187406 0.83273154 0.61804926 0.6815868  0.83242172 0.61638492
-  0.99778169]
- [0.66621411 0.85631168 0.90110779 0.83139515 1.         0.93950903
-  0.94047141 0.9965899  0.73132873 0.80726546 0.99933296 0.73043537
-  0.81186521]
- [0.62786299 0.80744845 0.85455692 0.78430611 0.93950903 1.
-  0.99627709 0.94147724 0.78402227 0.86459088 0.94265872 0.78037441
-  0.76696157]
- [0.62487787 0.80554706 0.85534918 0.78187406 0.94047141 0.99627709
-  1.         0.93744117 0.79787248 0.875422   0.94213754 0.79662001
-  0.76310569]
- [0.6673938  0.85673964 0.90051067 0.83273154 0.9965899  0.94147724
-  0.93744117 1.         0.75201756 0.82160002 0.99766564 0.74890608
-  0.81371742]
- [0.48228511 0.63128787 0.68520463 0.61804926 0.73132873 0.78402227
-  0.79787248 0.75201756 1.         0.91612732 0.73640144 0.99867934
-  0.59615439]
- [0.53463703 0.69814396 0.75066626 0.6815868  0.80726546 0.86459088
-  0.875422   0.82160002 0.91612732 1.         0.81115454 0.91398281
-  0.65748835]
- [0.66696936 0.85673392 0.90254211 0.83242172 0.99933296 0.94265872
-  0.94213754 0.99766564 0.73640144 0.81115454 1.         0.73552752
-  0.81360054]
- [0.47964817 0.62990159 0.68581444 0.61638492 0.73043537 0.78037441
-  0.79662001 0.74890608 0.99867934 0.91398281 0.73552752 1.
-  0.59396225]
- [0.80808735 0.95778048 0.90841174 0.99778169 0.81186521 0.76696157
-  0.76310569 0.81371742 0.59615439 0.65748835 0.81360054 0.59396225
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1.         0.77495629 0.73654854 0.8035242  0.66227007 0.62333947
+  0.62099475 0.66304058 0.47944903 0.53138494 0.66292244 0.47795781
+  0.80370831]
+ [0.77495629 1.         0.95088285 0.95565474 0.85055143 0.80332303
+  0.80108184 0.85156804 0.63067919 0.69465309 0.85149717 0.62967211
+  0.95616299]
+ [0.73654854 0.95088285 1.         0.90738189 0.90261132 0.85670215
+  0.85754114 0.9022584  0.68764633 0.75235468 0.90403682 0.68801945
+  0.91064274]
+ [0.8035242  0.95565474 0.90738189 1.         0.82998192 0.78372049
+  0.78051484 0.83201736 0.61809021 0.68255287 0.83168006 0.61667788
+  0.99789661]
+ [0.66227007 0.85055143 0.90261132 0.82998192 1.         0.93981516
+  0.94066656 0.99728602 0.73200512 0.80680567 0.99930471 0.73116171
+  0.81122786]
+ [0.62333947 0.80332303 0.85670215 0.78372049 0.93981516 1.
+  0.99640244 0.94224316 0.78531778 0.86615568 0.94203168 0.78274322
+  0.76434737]
+ [0.62099475 0.80108184 0.85754114 0.78051484 0.94066656 0.99640244
+  1.         0.93829781 0.79449785 0.87171119 0.94104362 0.79387665
+  0.76081145]
+ [0.66304058 0.85156804 0.9022584  0.83201736 0.99728602 0.94224316
+  0.93829781 1.         0.74893808 0.82012153 0.99875748 0.74680668
+  0.8127771 ]
+ [0.47944903 0.63067919 0.68764633 0.61809021 0.73200512 0.78531778
+  0.79449785 0.74893808 1.         0.91370267 0.73967421 0.99930704
+  0.59515142]
+ [0.53138494 0.69465309 0.75235468 0.68255287 0.80680567 0.86615568
+  0.87171119 0.82012153 0.91370267 1.         0.81478292 0.91236126
+  0.65843898]
+ [0.66292244 0.85149717 0.90403682 0.83168006 0.99930471 0.94203168
+  0.94104362 0.99875748 0.73967421 0.81478292 1.         0.73867232
+  0.81301022]
+ [0.47795781 0.62967211 0.68801945 0.61667788 0.73116171 0.78274322
+  0.79387665 0.74680668 0.99930704 0.91236126 0.73867232 1.
+  0.59360313]
+ [0.80370831 0.95616299 0.91064274 0.99789661 0.81122786 0.76434737
+  0.76081145 0.8127771  0.59515142 0.65843898 0.81301022 0.59360313
   1.        ]]
 </pre></div>
 </div>
@@ -827,7 +828,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{0: 0.06650348570532873, 1: 0.07819171825013234, 2: 0.07976755574256121, 3: 0.0773364807779811, 4: 0.08078690605292382, 5: 0.08004461829496985, 6: 0.08021366131394764, 7: 0.08113066492872804, 8: 0.07171099262003265, 9: 0.07541251680484236, 10: 0.08094414252324891, 11: 0.07159234346409904, 12: 0.07636491352120438}
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{0: 0.06629443278237776, 1: 0.07803964033997067, 2: 0.07992080600269327, 3: 0.07736390758473354, 4: 0.08080635872030444, 5: 0.08008935503419277, 6: 0.08016090017478705, 7: 0.08112154989171733, 8: 0.07173978344607977, 9: 0.07542846129667259, 10: 0.08101632140637402, 11: 0.07165571471498103, 12: 0.07636276860511569}
 </pre></div>
 </div>
 </div>
@@ -842,7 +843,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Initially, astronomers expected DART to be a success if it shortened the trajectory by 10 minutes.&#39;: 0.08113066492872804, &#39;“This mission shows that NASA is trying to be ready for whatever the universe throws at us.&#39;: 0.08094414252324891, &#39;Astronomers used ground-based telescopes to measure how Dimorphos’ orbit changed after impact.&#39;: 0.08078690605292382, &#39;The DART spacecraft changed the moonlet asteroid’s orbit by 32 minutes.&#39;: 0.08021366131394764}
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Initially, astronomers expected DART to be a success if it shortened the trajectory by 10 minutes.&#39;: 0.08112154989171733, &#39;“This mission shows that NASA is trying to be ready for whatever the universe throws at us.&#39;: 0.08101632140637402, &#39;Astronomers used ground-based telescopes to measure how Dimorphos’ orbit changed after impact.&#39;: 0.08080635872030444, &#39;The DART spacecraft changed the moonlet asteroid’s orbit by 32 minutes.&#39;: 0.08016090017478705}
 </pre></div>
 </div>
 </div>
@@ -884,156 +885,7 @@ Initially, astronomers expected DART to be a success if it shortened the traject
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cloning into &#39;twint&#39;...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>remote: Enumerating objects: 47, done.
-remote: Counting objects:   2% (1/47)
-remote: Counting objects:   4% (2/47)
-remote: Counting objects:   6% (3/47)
-remote: Counting objects:   8% (4/47)
-remote: Counting objects:  10% (5/47)
-remote: Counting objects:  12% (6/47)
-remote: Counting objects:  14% (7/47)
-remote: Counting objects:  17% (8/47)
-remote: Counting objects:  19% (9/47)
-remote: Counting objects:  21% (10/47)
-remote: Counting objects:  23% (11/47)
-remote: Counting objects:  25% (12/47)
-remote: Counting objects:  27% (13/47)
-remote: Counting objects:  29% (14/47)
-remote: Counting objects:  31% (15/47)
-remote: Counting objects:  34% (16/47)
-remote: Counting objects:  36% (17/47)
-remote: Counting objects:  38% (18/47)
-remote: Counting objects:  40% (19/47)
-remote: Counting objects:  42% (20/47)
-remote: Counting objects:  44% (21/47)
-remote: Counting objects:  46% (22/47)
-remote: Counting objects:  48% (23/47)
-remote: Counting objects:  51% (24/47)
-remote: Counting objects:  53% (25/47)
-remote: Counting objects:  55% (26/47)
-remote: Counting objects:  57% (27/47)
-remote: Counting objects:  59% (28/47)
-remote: Counting objects:  61% (29/47)
-remote: Counting objects:  63% (30/47)
-remote: Counting objects:  65% (31/47)
-remote: Counting objects:  68% (32/47)
-remote: Counting objects:  70% (33/47)
-remote: Counting objects:  72% (34/47)
-remote: Counting objects:  74% (35/47)
-remote: Counting objects:  76% (36/47)
-remote: Counting objects:  78% (37/47)
-remote: Counting objects:  80% (38/47)
-remote: Counting objects:  82% (39/47)
-remote: Counting objects:  85% (40/47)
-remote: Counting objects:  87% (41/47)
-remote: Counting objects:  89% (42/47)
-remote: Counting objects:  91% (43/47)
-remote: Counting objects:  93% (44/47)
-remote: Counting objects:  95% (45/47)
-remote: Counting objects:  97% (46/47)
-remote: Counting objects: 100% (47/47)
-remote: Counting objects: 100% (47/47), done.
-remote: Compressing objects:   2% (1/44)
-remote: Compressing objects:   4% (2/44)
-remote: Compressing objects:   6% (3/44)
-remote: Compressing objects:   9% (4/44)
-remote: Compressing objects:  11% (5/44)
-remote: Compressing objects:  13% (6/44)
-remote: Compressing objects:  15% (7/44)
-remote: Compressing objects:  18% (8/44)
-remote: Compressing objects:  20% (9/44)
-remote: Compressing objects:  22% (10/44)
-remote: Compressing objects:  25% (11/44)
-remote: Compressing objects:  27% (12/44)
-remote: Compressing objects:  29% (13/44)
-remote: Compressing objects:  31% (14/44)
-remote: Compressing objects:  34% (15/44)
-remote: Compressing objects:  36% (16/44)
-remote: Compressing objects:  38% (17/44)
-remote: Compressing objects:  40% (18/44)
-remote: Compressing objects:  43% (19/44)
-remote: Compressing objects:  45% (20/44)
-remote: Compressing objects:  47% (21/44)
-remote: Compressing objects:  50% (22/44)
-remote: Compressing objects:  52% (23/44)
-remote: Compressing objects:  54% (24/44)
-remote: Compressing objects:  56% (25/44)
-remote: Compressing objects:  59% (26/44)
-remote: Compressing objects:  61% (27/44)
-remote: Compressing objects:  63% (28/44)
-remote: Compressing objects:  65% (29/44)
-remote: Compressing objects:  68% (30/44)
-remote: Compressing objects:  70% (31/44)
-remote: Compressing objects:  72% (32/44)
-remote: Compressing objects:  75% (33/44)
-remote: Compressing objects:  77% (34/44)
-remote: Compressing objects:  79% (35/44)
-remote: Compressing objects:  81% (36/44)
-remote: Compressing objects:  84% (37/44)
-remote: Compressing objects:  86% (38/44)
-remote: Compressing objects:  88% (39/44)
-remote: Compressing objects:  90% (40/44)
-remote: Compressing objects:  93% (41/44)
-remote: Compressing objects:  95% (42/44)
-remote: Compressing objects:  97% (43/44)
-remote: Compressing objects: 100% (44/44)
-remote: Compressing objects: 100% (44/44), done.
-remote: Total 47 (delta 3), reused 14 (delta 0), pack-reused 0
-Unpacking objects:   2% (1/47)   
-Unpacking objects:   4% (2/47)   
-Unpacking objects:   6% (3/47)   
-Unpacking objects:   8% (4/47)   
-Unpacking objects:  10% (5/47)   
-Unpacking objects:  12% (6/47)   
-Unpacking objects:  14% (7/47)   
-Unpacking objects:  17% (8/47)   
-Unpacking objects:  19% (9/47)   
-Unpacking objects:  21% (10/47)   
-Unpacking objects:  23% (11/47)   
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Unpacking objects:  25% (12/47)   
-Unpacking objects:  27% (13/47)   
-Unpacking objects:  29% (14/47)   
-Unpacking objects:  31% (15/47)   
-Unpacking objects:  34% (16/47)   
-Unpacking objects:  36% (17/47)   
-Unpacking objects:  38% (18/47)   
-Unpacking objects:  40% (19/47)   
-Unpacking objects:  42% (20/47)   
-Unpacking objects:  44% (21/47)   
-Unpacking objects:  46% (22/47)   
-Unpacking objects:  48% (23/47)   
-Unpacking objects:  51% (24/47)   
-Unpacking objects:  53% (25/47)   
-Unpacking objects:  55% (26/47)   
-Unpacking objects:  57% (27/47)   
-Unpacking objects:  59% (28/47)   
-Unpacking objects:  61% (29/47)   
-Unpacking objects:  63% (30/47)   
-Unpacking objects:  65% (31/47)   
-Unpacking objects:  68% (32/47)   
-Unpacking objects:  70% (33/47)   
-Unpacking objects:  72% (34/47)   
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Unpacking objects:  74% (35/47)   
-Unpacking objects:  76% (36/47)   
-Unpacking objects:  78% (37/47)   
-Unpacking objects:  80% (38/47)   
-Unpacking objects:  82% (39/47)   
-Unpacking objects:  85% (40/47)   
-Unpacking objects:  87% (41/47)   
-Unpacking objects:  89% (42/47)   
-Unpacking objects:  91% (43/47)   
-Unpacking objects:  93% (44/47)   
-Unpacking objects:  95% (45/47)   
-Unpacking objects:  97% (46/47)   
-Unpacking objects: 100% (47/47)   
-Unpacking objects: 100% (47/47), done.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>fatal: destination path &#39;twint&#39; already exists and is not an empty directory.
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/content/drive/MyDrive/webmining/twint
@@ -1045,248 +897,61 @@ Processing /content/drive/MyDrive/webmining/twint
 <span class=" -Color -Color-Yellow">   pip 21.3 will remove support for this functionality. You can find discussion regarding this at https://github.com/pypa/pip/issues/7555.</span>
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: aiohttp in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 1)) (3.8.3)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting aiodns
-  Downloading aiodns-3.0.0-py3-none-any.whl (5.0 kB)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: aiohttp in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 1)) (3.7.0)
+Requirement already satisfied: aiodns in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 2)) (3.0.0)
 Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 3)) (4.6.3)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting cchardet
-  Downloading cchardet-2.1.7-cp37-cp37m-manylinux2010_x86_64.whl (263 kB)
-?25l
-     |█▎                              | 10 kB 23.7 MB/s eta 0:00:01
-     |██▌                             | 20 kB 22.2 MB/s eta 0:00:01
-     |███▊                            | 30 kB 27.7 MB/s eta 0:00:01
-     |█████                           | 40 kB 14.0 MB/s eta 0:00:01
-     |██████▏                         | 51 kB 12.4 MB/s eta 0:00:01
-     |███████▌                        | 61 kB 14.1 MB/s eta 0:00:01
-     |████████▊                       | 71 kB 13.5 MB/s eta 0:00:01
-     |██████████                      | 81 kB 13.7 MB/s eta 0:00:01
-     |███████████▏                    | 92 kB 14.9 MB/s eta 0:00:01
-     |████████████▍                   | 102 kB 12.9 MB/s eta 0:00:01
-     |█████████████▊                  | 112 kB 12.9 MB/s eta 0:00:01
-     |███████████████                 | 122 kB 12.9 MB/s eta 0:00:01
-     |████████████████▏               | 133 kB 12.9 MB/s eta 0:00:01
-     |█████████████████▍              | 143 kB 12.9 MB/s eta 0:00:01
-     |██████████████████▋             | 153 kB 12.9 MB/s eta 0:00:01
-     |███████████████████▉            | 163 kB 12.9 MB/s eta 0:00:01
-     |█████████████████████▏          | 174 kB 12.9 MB/s eta 0:00:01
-     |██████████████████████▍         | 184 kB 12.9 MB/s eta 0:00:01
-     |███████████████████████▋        | 194 kB 12.9 MB/s eta 0:00:01
-     |████████████████████████▉       | 204 kB 12.9 MB/s eta 0:00:01
-     |██████████████████████████      | 215 kB 12.9 MB/s eta 0:00:01
-     |███████████████████████████▍    | 225 kB 12.9 MB/s eta 0:00:01
-     |████████████████████████████▋   | 235 kB 12.9 MB/s eta 0:00:01
-     |█████████████████████████████▉  | 245 kB 12.9 MB/s eta 0:00:01
-     |███████████████████████████████ | 256 kB 12.9 MB/s eta 0:00:01
-     |████████████████████████████████| 263 kB 12.9 MB/s 
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>?25hCollecting dataclasses
-  Downloading dataclasses-0.6-py3-none-any.whl (14 kB)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting elasticsearch
-  Downloading elasticsearch-8.5.2-py3-none-any.whl (385 kB)
-?25l
-     |▉                               | 10 kB 26.4 MB/s eta 0:00:01
-     |█▊                              | 20 kB 20.6 MB/s eta 0:00:01
-     |██▌                             | 30 kB 25.2 MB/s eta 0:00:01
-     |███▍                            | 40 kB 29.7 MB/s eta 0:00:01
-     |████▎                           | 51 kB 33.8 MB/s eta 0:00:01
-     |█████                           | 61 kB 38.4 MB/s eta 0:00:01
-     |██████                          | 71 kB 41.4 MB/s eta 0:00:01
-     |██████▉                         | 81 kB 43.0 MB/s eta 0:00:01
-     |███████▋                        | 92 kB 43.2 MB/s eta 0:00:01
-     |████████▌                       | 102 kB 43.5 MB/s eta 0:00:01
-     |█████████▍                      | 112 kB 43.5 MB/s eta 0:00:01
-     |██████████▏                     | 122 kB 43.5 MB/s eta 0:00:01
-     |███████████                     | 133 kB 43.5 MB/s eta 0:00:01
-     |████████████                    | 143 kB 43.5 MB/s eta 0:00:01
-     |████████████▊                   | 153 kB 43.5 MB/s eta 0:00:01
-     |█████████████▋                  | 163 kB 43.5 MB/s eta 0:00:01
-     |██████████████▌                 | 174 kB 43.5 MB/s eta 0:00:01
-     |███████████████▎                | 184 kB 43.5 MB/s eta 0:00:01
-     |████████████████▏               | 194 kB 43.5 MB/s eta 0:00:01
-     |█████████████████               | 204 kB 43.5 MB/s eta 0:00:01
-     |█████████████████▉              | 215 kB 43.5 MB/s eta 0:00:01
-     |██████████████████▊             | 225 kB 43.5 MB/s eta 0:00:01
-     |███████████████████▋            | 235 kB 43.5 MB/s eta 0:00:01
-     |████████████████████▍           | 245 kB 43.5 MB/s eta 0:00:01
-     |█████████████████████▎          | 256 kB 43.5 MB/s eta 0:00:01
-     |██████████████████████          | 266 kB 43.5 MB/s eta 0:00:01
-     |███████████████████████         | 276 kB 43.5 MB/s eta 0:00:01
-     |███████████████████████▉        | 286 kB 43.5 MB/s eta 0:00:01
-     |████████████████████████▋       | 296 kB 43.5 MB/s eta 0:00:01
-     |█████████████████████████▌      | 307 kB 43.5 MB/s eta 0:00:01
-     |██████████████████████████▍     | 317 kB 43.5 MB/s eta 0:00:01
-     |███████████████████████████▏    | 327 kB 43.5 MB/s eta 0:00:01
-     |████████████████████████████    | 337 kB 43.5 MB/s eta 0:00:01
-     |█████████████████████████████   | 348 kB 43.5 MB/s eta 0:00:01
-     |█████████████████████████████▊  | 358 kB 43.5 MB/s eta 0:00:01
-     |██████████████████████████████▋ | 368 kB 43.5 MB/s eta 0:00:01
-     |███████████████████████████████▌| 378 kB 43.5 MB/s eta 0:00:01
-     |████████████████████████████████| 385 kB 43.5 MB/s 
-?25hRequirement already satisfied: pysocks in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 7)) (1.7.1)
+Requirement already satisfied: cchardet in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 4)) (2.1.7)
+Requirement already satisfied: dataclasses in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 5)) (0.6)
+Requirement already satisfied: elasticsearch in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 6)) (8.5.2)
+Requirement already satisfied: pysocks in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 7)) (1.7.1)
 Requirement already satisfied: pandas&gt;=0.23.0 in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 8)) (1.3.5)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting aiohttp_socks&lt;=0.4.1
-  Downloading aiohttp_socks-0.4.1-py3-none-any.whl (17 kB)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting schedule
-  Downloading schedule-1.1.0-py2.py3-none-any.whl (10 kB)
+Requirement already satisfied: aiohttp_socks&lt;=0.4.1 in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 9)) (0.4.1)
+Requirement already satisfied: schedule in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 10)) (1.1.0)
 Requirement already satisfied: geopy in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 11)) (1.17.0)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting fake-useragent
-  Downloading fake_useragent-1.1.0-py3-none-any.whl (50 kB)
-?25l
-     |██████▌                         | 10 kB 17.4 MB/s eta 0:00:01
-     |█████████████                   | 20 kB 20.2 MB/s eta 0:00:01
-     |███████████████████▌            | 30 kB 25.8 MB/s eta 0:00:01
-     |██████████████████████████      | 40 kB 30.3 MB/s eta 0:00:01
-     |████████████████████████████████| 50 kB 4.7 MB/s 
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>?25hCollecting googletransx
-  Downloading googletransx-2.4.2.tar.gz (13 kB)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.7/dist-packages (from pandas&gt;=0.23.0-&gt;-r requirements.txt (line 8)) (1.21.6)
-Requirement already satisfied: pytz&gt;=2017.3 in /usr/local/lib/python3.7/dist-packages (from pandas&gt;=0.23.0-&gt;-r requirements.txt (line 8)) (2022.6)
+Requirement already satisfied: fake-useragent in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 12)) (1.1.0)
+Requirement already satisfied: googletransx in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 13)) (2.4.2)
+Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.7/dist-packages (from pandas&gt;=0.23.0-&gt;-r requirements.txt (line 8)) (1.21.6)
 Requirement already satisfied: python-dateutil&gt;=2.7.3 in /usr/local/lib/python3.7/dist-packages (from pandas&gt;=0.23.0-&gt;-r requirements.txt (line 8)) (2.8.2)
+Requirement already satisfied: pytz&gt;=2017.3 in /usr/local/lib/python3.7/dist-packages (from pandas&gt;=0.23.0-&gt;-r requirements.txt (line 8)) (2022.6)
 Requirement already satisfied: attrs&gt;=19.2.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp_socks&lt;=0.4.1-&gt;-r requirements.txt (line 9)) (21.4.0)
-Requirement already satisfied: aiosignal&gt;=1.1.2 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (1.3.1)
-Requirement already satisfied: asynctest==0.13.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (0.13.0)
-Requirement already satisfied: multidict&lt;7.0,&gt;=4.5 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (6.0.2)
-Requirement already satisfied: async-timeout&lt;5.0,&gt;=4.0.0a3 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (4.0.2)
+Requirement already satisfied: async-timeout&lt;4.0,&gt;=3.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (3.0.1)
 Requirement already satisfied: yarl&lt;2.0,&gt;=1.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (1.8.1)
-Requirement already satisfied: typing-extensions&gt;=3.7.4 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (4.1.1)
-Requirement already satisfied: charset-normalizer&lt;3.0,&gt;=2.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (2.1.1)
-Requirement already satisfied: frozenlist&gt;=1.1.1 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (1.3.3)
+Requirement already satisfied: chardet&lt;4.0,&gt;=2.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (3.0.4)
+Requirement already satisfied: multidict&lt;7.0,&gt;=4.5 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (6.0.2)
 Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.7/dist-packages (from python-dateutil&gt;=2.7.3-&gt;pandas&gt;=0.23.0-&gt;-r requirements.txt (line 8)) (1.15.0)
+Requirement already satisfied: typing-extensions&gt;=3.7.4 in /usr/local/lib/python3.7/dist-packages (from yarl&lt;2.0,&gt;=1.0-&gt;aiohttp-&gt;-r requirements.txt (line 1)) (4.1.1)
 Requirement already satisfied: idna&gt;=2.0 in /usr/local/lib/python3.7/dist-packages (from yarl&lt;2.0,&gt;=1.0-&gt;aiohttp-&gt;-r requirements.txt (line 1)) (2.10)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting pycares&gt;=4.0.0
-  Downloading pycares-4.2.2-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (288 kB)
-?25l
-     |█▏                              | 10 kB 31.6 MB/s eta 0:00:01
-     |██▎                             | 20 kB 36.5 MB/s eta 0:00:01
-     |███▍                            | 30 kB 45.3 MB/s eta 0:00:01
-     |████▌                           | 40 kB 52.5 MB/s eta 0:00:01
-     |█████▊                          | 51 kB 50.3 MB/s eta 0:00:01
-     |██████▉                         | 61 kB 49.4 MB/s eta 0:00:01
-     |████████                        | 71 kB 47.9 MB/s eta 0:00:01
-     |█████████                       | 81 kB 49.4 MB/s eta 0:00:01
-     |██████████▏                     | 92 kB 51.7 MB/s eta 0:00:01
-     |███████████▍                    | 102 kB 49.1 MB/s eta 0:00:01
-     |████████████▌                   | 112 kB 49.1 MB/s eta 0:00:01
-     |█████████████▋                  | 122 kB 49.1 MB/s eta 0:00:01
-     |██████████████▊                 | 133 kB 49.1 MB/s eta 0:00:01
-     |███████████████▉                | 143 kB 49.1 MB/s eta 0:00:01
-     |█████████████████               | 153 kB 49.1 MB/s eta 0:00:01
-     |██████████████████▏             | 163 kB 49.1 MB/s eta 0:00:01
-     |███████████████████▎            | 174 kB 49.1 MB/s eta 0:00:01
-     |████████████████████▍           | 184 kB 49.1 MB/s eta 0:00:01
-     |█████████████████████▋          | 194 kB 49.1 MB/s eta 0:00:01
-     |██████████████████████▊         | 204 kB 49.1 MB/s eta 0:00:01
-     |███████████████████████▉        | 215 kB 49.1 MB/s eta 0:00:01
-     |█████████████████████████       | 225 kB 49.1 MB/s eta 0:00:01
-     |██████████████████████████      | 235 kB 49.1 MB/s eta 0:00:01
-     |███████████████████████████▎    | 245 kB 49.1 MB/s eta 0:00:01
-     |████████████████████████████▍   | 256 kB 49.1 MB/s eta 0:00:01
-     |█████████████████████████████▌  | 266 kB 49.1 MB/s eta 0:00:01
-     |██████████████████████████████▋ | 276 kB 49.1 MB/s eta 0:00:01
-     |███████████████████████████████▊| 286 kB 49.1 MB/s eta 0:00:01
-     |████████████████████████████████| 288 kB 49.1 MB/s 
-?25hRequirement already satisfied: cffi&gt;=1.5.0 in /usr/local/lib/python3.7/dist-packages (from pycares&gt;=4.0.0-&gt;aiodns-&gt;-r requirements.txt (line 2)) (1.15.1)
+Requirement already satisfied: pycares&gt;=4.0.0 in /usr/local/lib/python3.7/dist-packages (from aiodns-&gt;-r requirements.txt (line 2)) (4.2.2)
+Requirement already satisfied: cffi&gt;=1.5.0 in /usr/local/lib/python3.7/dist-packages (from pycares&gt;=4.0.0-&gt;aiodns-&gt;-r requirements.txt (line 2)) (1.15.1)
 Requirement already satisfied: pycparser in /usr/local/lib/python3.7/dist-packages (from cffi&gt;=1.5.0-&gt;pycares&gt;=4.0.0-&gt;aiodns-&gt;-r requirements.txt (line 2)) (2.21)
+Requirement already satisfied: elastic-transport&lt;9,&gt;=8 in /usr/local/lib/python3.7/dist-packages (from elasticsearch-&gt;-r requirements.txt (line 6)) (8.4.0)
+Requirement already satisfied: certifi in /usr/local/lib/python3.7/dist-packages (from elastic-transport&lt;9,&gt;=8-&gt;elasticsearch-&gt;-r requirements.txt (line 6)) (2022.9.24)
+Requirement already satisfied: urllib3&lt;2,&gt;=1.26.2 in /usr/local/lib/python3.7/dist-packages (from elastic-transport&lt;9,&gt;=8-&gt;elasticsearch-&gt;-r requirements.txt (line 6)) (1.26.13)
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting elastic-transport&lt;9,&gt;=8
-  Downloading elastic_transport-8.4.0-py3-none-any.whl (59 kB)
-?25l
-     |█████▌                          | 10 kB 28.3 MB/s eta 0:00:01
-     |███████████                     | 20 kB 36.9 MB/s eta 0:00:01
-     |████████████████▌               | 30 kB 46.8 MB/s eta 0:00:01
-     |██████████████████████          | 40 kB 54.2 MB/s eta 0:00:01
-     |███████████████████████████▌    | 51 kB 59.2 MB/s eta 0:00:01
-     |████████████████████████████████| 59 kB 4.9 MB/s 
-?25hRequirement already satisfied: certifi in /usr/local/lib/python3.7/dist-packages (from elastic-transport&lt;9,&gt;=8-&gt;elasticsearch-&gt;-r requirements.txt (line 6)) (2022.9.24)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting urllib3&lt;2,&gt;=1.26.2
-  Downloading urllib3-1.26.13-py2.py3-none-any.whl (140 kB)
-?25l
-     |██▎                             | 10 kB 28.1 MB/s eta 0:00:01
-     |████▋                           | 20 kB 37.4 MB/s eta 0:00:01
-     |███████                         | 30 kB 46.2 MB/s eta 0:00:01
-     |█████████▎                      | 40 kB 53.2 MB/s eta 0:00:01
-     |███████████▋                    | 51 kB 58.5 MB/s eta 0:00:01
-     |██████████████                  | 61 kB 64.6 MB/s eta 0:00:01
-     |████████████████▎               | 71 kB 68.4 MB/s eta 0:00:01
-     |██████████████████▋             | 81 kB 71.3 MB/s eta 0:00:01
-     |█████████████████████           | 92 kB 74.3 MB/s eta 0:00:01
-     |███████████████████████▎        | 102 kB 75.6 MB/s eta 0:00:01
-     |█████████████████████████▋      | 112 kB 75.6 MB/s eta 0:00:01
-     |████████████████████████████    | 122 kB 75.6 MB/s eta 0:00:01
-     |██████████████████████████████▎ | 133 kB 75.6 MB/s eta 0:00:01
-     |████████████████████████████████| 140 kB 75.6 MB/s 
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>?25hRequirement already satisfied: geographiclib&lt;2,&gt;=1.49 in /usr/local/lib/python3.7/dist-packages (from geopy-&gt;-r requirements.txt (line 11)) (1.52)
-Requirement already satisfied: importlib-metadata~=4.0 in /usr/local/lib/python3.7/dist-packages (from fake-useragent-&gt;-r requirements.txt (line 12)) (4.13.0)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: geographiclib&lt;2,&gt;=1.49 in /usr/local/lib/python3.7/dist-packages (from geopy-&gt;-r requirements.txt (line 11)) (1.52)
 Requirement already satisfied: importlib-resources&gt;=5.0 in /usr/local/lib/python3.7/dist-packages (from fake-useragent-&gt;-r requirements.txt (line 12)) (5.10.0)
+Requirement already satisfied: importlib-metadata~=4.0 in /usr/local/lib/python3.7/dist-packages (from fake-useragent-&gt;-r requirements.txt (line 12)) (4.13.0)
 Requirement already satisfied: zipp&gt;=0.5 in /usr/local/lib/python3.7/dist-packages (from importlib-metadata~=4.0-&gt;fake-useragent-&gt;-r requirements.txt (line 12)) (3.10.0)
-Requirement already satisfied: requests in /usr/local/lib/python3.7/dist-packages (from googletransx-&gt;-r requirements.txt (line 13)) (2.23.0)
-Requirement already satisfied: chardet&lt;4,&gt;=3.0.2 in /usr/local/lib/python3.7/dist-packages (from requests-&gt;googletransx-&gt;-r requirements.txt (line 13)) (3.0.4)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting requests
-  Downloading requests-2.28.1-py3-none-any.whl (62 kB)
-?25l
-     |█████▏                          | 10 kB 34.1 MB/s eta 0:00:01
-     |██████████▍                     | 20 kB 42.5 MB/s eta 0:00:01
-     |███████████████▋                | 30 kB 52.9 MB/s eta 0:00:01
-     |████████████████████▉           | 40 kB 58.2 MB/s eta 0:00:01
-     |██████████████████████████      | 51 kB 61.6 MB/s eta 0:00:01
-     |███████████████████████████████▎| 61 kB 65.0 MB/s eta 0:00:01
-     |████████████████████████████████| 62 kB 1.2 MB/s 
-?25hBuilding wheels for collected packages: twint, googletransx
+Requirement already satisfied: requests in /usr/local/lib/python3.7/dist-packages (from googletransx-&gt;-r requirements.txt (line 13)) (2.28.1)
+Requirement already satisfied: charset-normalizer&lt;3,&gt;=2 in /usr/local/lib/python3.7/dist-packages (from requests-&gt;googletransx-&gt;-r requirements.txt (line 13)) (2.1.1)
+Building wheels for collected packages: twint
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Building wheel for twint (setup.py) ... ?25l?25hdone
-  Created wheel for twint: filename=twint-2.1.21-py3-none-any.whl size=38870 sha256=c2d09a1e05645881fc463ee864a114cd289ab9530d6e7d09ec3962acbc4b577f
-  Stored in directory: /tmp/pip-ephem-wheel-cache-a3olrewx/wheels/e9/ec/3e/afce1504e717ffb071a1da041aaedb611b6a1f08030c1c5af3
+  Created wheel for twint: filename=twint-2.1.21-py3-none-any.whl size=38870 sha256=ad4084978cbeee5c6206965bf5fc7a91beaff5de24e76bcd6964fc9dd675ace5
+  Stored in directory: /tmp/pip-ephem-wheel-cache-uxr05afy/wheels/e9/ec/3e/afce1504e717ffb071a1da041aaedb611b6a1f08030c1c5af3
+Successfully built twint
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Building wheel for googletransx (setup.py) ... ?25l?25hdone
-  Created wheel for googletransx: filename=googletransx-2.4.2-py3-none-any.whl size=15968 sha256=fb94ae86c9a39f456cba80df80e8a4802db5479ff693fd598026e441a1a5f76d
-  Stored in directory: /root/.cache/pip/wheels/66/d5/b1/31104b338f7fd45aa8f7d22587765db06773b13df48a89735f
-Successfully built twint googletransx
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: twint
+  Attempting uninstall: twint
+    Found existing installation: twint 2.1.21
+    Uninstalling twint-2.1.21:
+      Successfully uninstalled twint-2.1.21
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: urllib3, requests, pycares, elastic-transport, schedule, googletransx, fake-useragent, elasticsearch, dataclasses, cchardet, aiohttp-socks, aiodns, twint
-  Attempting uninstall: urllib3
-    Found existing installation: urllib3 1.24.3
-    Uninstalling urllib3-1.24.3:
-      Successfully uninstalled urllib3-1.24.3
-  Attempting uninstall: requests
-    Found existing installation: requests 2.23.0
-    Uninstalling requests-2.23.0:
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>      Successfully uninstalled requests-2.23.0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Red">ERROR: pip&#39;s dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.</span>
-<span class=" -Color -Color-Red">google-colab 1.0.0 requires tornado~=6.0.4, but you have tornado 6.2 which is incompatible.</span>
-Successfully installed aiodns-3.0.0 aiohttp-socks-0.4.1 cchardet-2.1.7 dataclasses-0.6 elastic-transport-8.4.0 elasticsearch-8.5.2 fake-useragent-1.1.0 googletransx-2.4.2 pycares-4.2.2 requests-2.28.1 schedule-1.1.0 twint-2.1.21 urllib3-1.26.13
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Successfully installed twint-2.1.21
 </pre></div>
 </div>
 </div>
@@ -1312,168 +977,14 @@ Requirement already satisfied: nest-asyncio in /usr/local/lib/python3.7/dist-pac
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting aiohttp==3.7.0
-  Downloading aiohttp-3.7.0-cp37-cp37m-manylinux2014_x86_64.whl (1.3 MB)
-?25l
-     |▎                               | 10 kB 20.5 MB/s eta 0:00:01
-     |▌                               | 20 kB 24.9 MB/s eta 0:00:01
-     |▊                               | 30 kB 31.7 MB/s eta 0:00:01
-     |█                               | 40 kB 15.5 MB/s eta 0:00:01
-     |█▎                              | 51 kB 11.5 MB/s eta 0:00:01
-     |█▌                              | 61 kB 13.0 MB/s eta 0:00:01
-     |█▊                              | 71 kB 13.1 MB/s eta 0:00:01
-     |██                              | 81 kB 14.4 MB/s eta 0:00:01
-     |██▏                             | 92 kB 15.9 MB/s eta 0:00:01
-     |██▌                             | 102 kB 12.6 MB/s eta 0:00:01
-     |██▊                             | 112 kB 12.6 MB/s eta 0:00:01
-     |███                             | 122 kB 12.6 MB/s eta 0:00:01
-     |███▏                            | 133 kB 12.6 MB/s eta 0:00:01
-     |███▌                            | 143 kB 12.6 MB/s eta 0:00:01
-     |███▊                            | 153 kB 12.6 MB/s eta 0:00:01
-     |████                            | 163 kB 12.6 MB/s eta 0:00:01
-     |████▏                           | 174 kB 12.6 MB/s eta 0:00:01
-     |████▍                           | 184 kB 12.6 MB/s eta 0:00:01
-     |████▊                           | 194 kB 12.6 MB/s eta 0:00:01
-     |█████                           | 204 kB 12.6 MB/s eta 0:00:01
-     |█████▏                          | 215 kB 12.6 MB/s eta 0:00:01
-     |█████▍                          | 225 kB 12.6 MB/s eta 0:00:01
-     |█████▋                          | 235 kB 12.6 MB/s eta 0:00:01
-     |██████                          | 245 kB 12.6 MB/s eta 0:00:01
-     |██████▏                         | 256 kB 12.6 MB/s eta 0:00:01
-     |██████▍                         | 266 kB 12.6 MB/s eta 0:00:01
-     |██████▋                         | 276 kB 12.6 MB/s eta 0:00:01
-     |███████                         | 286 kB 12.6 MB/s eta 0:00:01
-     |███████▏                        | 296 kB 12.6 MB/s eta 0:00:01
-     |███████▍                        | 307 kB 12.6 MB/s eta 0:00:01
-     |███████▋                        | 317 kB 12.6 MB/s eta 0:00:01
-     |███████▉                        | 327 kB 12.6 MB/s eta 0:00:01
-     |████████▏                       | 337 kB 12.6 MB/s eta 0:00:01
-     |████████▍                       | 348 kB 12.6 MB/s eta 0:00:01
-     |████████▋                       | 358 kB 12.6 MB/s eta 0:00:01
-     |████████▉                       | 368 kB 12.6 MB/s eta 0:00:01
-     |█████████                       | 378 kB 12.6 MB/s eta 0:00:01
-     |█████████▍                      | 389 kB 12.6 MB/s eta 0:00:01
-     |█████████▋                      | 399 kB 12.6 MB/s eta 0:00:01
-     |█████████▉                      | 409 kB 12.6 MB/s eta 0:00:01
-     |██████████                      | 419 kB 12.6 MB/s eta 0:00:01
-     |██████████▍                     | 430 kB 12.6 MB/s eta 0:00:01
-     |██████████▋                     | 440 kB 12.6 MB/s eta 0:00:01
-     |██████████▉                     | 450 kB 12.6 MB/s eta 0:00:01
-     |███████████                     | 460 kB 12.6 MB/s eta 0:00:01
-     |███████████▎                    | 471 kB 12.6 MB/s eta 0:00:01
-     |███████████▋                    | 481 kB 12.6 MB/s eta 0:00:01
-     |███████████▉                    | 491 kB 12.6 MB/s eta 0:00:01
-     |████████████                    | 501 kB 12.6 MB/s eta 0:00:01
-     |████████████▎                   | 512 kB 12.6 MB/s eta 0:00:01
-     |████████████▌                   | 522 kB 12.6 MB/s eta 0:00:01
-     |████████████▉                   | 532 kB 12.6 MB/s eta 0:00:01
-     |█████████████                   | 542 kB 12.6 MB/s eta 0:00:01
-     |█████████████▎                  | 552 kB 12.6 MB/s eta 0:00:01
-     |█████████████▌                  | 563 kB 12.6 MB/s eta 0:00:01
-     |█████████████▉                  | 573 kB 12.6 MB/s eta 0:00:01
-     |██████████████                  | 583 kB 12.6 MB/s eta 0:00:01
-     |██████████████▎                 | 593 kB 12.6 MB/s eta 0:00:01
-     |██████████████▌                 | 604 kB 12.6 MB/s eta 0:00:01
-     |██████████████▊                 | 614 kB 12.6 MB/s eta 0:00:01
-     |███████████████                 | 624 kB 12.6 MB/s eta 0:00:01
-     |███████████████▎                | 634 kB 12.6 MB/s eta 0:00:01
-     |███████████████▌                | 645 kB 12.6 MB/s eta 0:00:01
-     |███████████████▊                | 655 kB 12.6 MB/s eta 0:00:01
-     |████████████████                | 665 kB 12.6 MB/s eta 0:00:01
-     |████████████████▎               | 675 kB 12.6 MB/s eta 0:00:01
-     |████████████████▌               | 686 kB 12.6 MB/s eta 0:00:01
-     |████████████████▊               | 696 kB 12.6 MB/s eta 0:00:01
-     |█████████████████               | 706 kB 12.6 MB/s eta 0:00:01
-     |█████████████████▎              | 716 kB 12.6 MB/s eta 0:00:01
-     |█████████████████▌              | 727 kB 12.6 MB/s eta 0:00:01
-     |█████████████████▊              | 737 kB 12.6 MB/s eta 0:00:01
-     |██████████████████              | 747 kB 12.6 MB/s eta 0:00:01
-     |██████████████████▏             | 757 kB 12.6 MB/s eta 0:00:01
-     |██████████████████▌             | 768 kB 12.6 MB/s eta 0:00:01
-     |██████████████████▊             | 778 kB 12.6 MB/s eta 0:00:01
-     |███████████████████             | 788 kB 12.6 MB/s eta 0:00:01
-     |███████████████████▏            | 798 kB 12.6 MB/s eta 0:00:01
-     |███████████████████▍            | 808 kB 12.6 MB/s eta 0:00:01
-     |███████████████████▊            | 819 kB 12.6 MB/s eta 0:00:01
-     |████████████████████            | 829 kB 12.6 MB/s eta 0:00:01
-     |████████████████████▏           | 839 kB 12.6 MB/s eta 0:00:01
-     |████████████████████▍           | 849 kB 12.6 MB/s eta 0:00:01
-     |████████████████████▊           | 860 kB 12.6 MB/s eta 0:00:01
-     |█████████████████████           | 870 kB 12.6 MB/s eta 0:00:01
-     |█████████████████████▏          | 880 kB 12.6 MB/s eta 0:00:01
-     |█████████████████████▍          | 890 kB 12.6 MB/s eta 0:00:01
-     |█████████████████████▋          | 901 kB 12.6 MB/s eta 0:00:01
-     |██████████████████████          | 911 kB 12.6 MB/s eta 0:00:01
-     |██████████████████████▏         | 921 kB 12.6 MB/s eta 0:00:01
-     |██████████████████████▍         | 931 kB 12.6 MB/s eta 0:00:01
-     |██████████████████████▋         | 942 kB 12.6 MB/s eta 0:00:01
-     |██████████████████████▉         | 952 kB 12.6 MB/s eta 0:00:01
-     |███████████████████████▏        | 962 kB 12.6 MB/s eta 0:00:01
-     |███████████████████████▍        | 972 kB 12.6 MB/s eta 0:00:01
-     |███████████████████████▋        | 983 kB 12.6 MB/s eta 0:00:01
-     |███████████████████████▉        | 993 kB 12.6 MB/s eta 0:00:01
-     |████████████████████████▏       | 1.0 MB 12.6 MB/s eta 0:00:01
-     |████████████████████████▍       | 1.0 MB 12.6 MB/s eta 0:00:01
-     |████████████████████████▋       | 1.0 MB 12.6 MB/s eta 0:00:01
-     |████████████████████████▉       | 1.0 MB 12.6 MB/s eta 0:00:01
-     |█████████████████████████       | 1.0 MB 12.6 MB/s eta 0:00:01
-     |█████████████████████████▍      | 1.1 MB 12.6 MB/s eta 0:00:01
-     |█████████████████████████▋      | 1.1 MB 12.6 MB/s eta 0:00:01
-     |█████████████████████████▉      | 1.1 MB 12.6 MB/s eta 0:00:01
-     |██████████████████████████      | 1.1 MB 12.6 MB/s eta 0:00:01
-     |██████████████████████████▎     | 1.1 MB 12.6 MB/s eta 0:00:01
-     |██████████████████████████▋     | 1.1 MB 12.6 MB/s eta 0:00:01
-     |██████████████████████████▉     | 1.1 MB 12.6 MB/s eta 0:00:01
-     |███████████████████████████     | 1.1 MB 12.6 MB/s eta 0:00:01
-     |███████████████████████████▎    | 1.1 MB 12.6 MB/s eta 0:00:01
-     |███████████████████████████▋    | 1.1 MB 12.6 MB/s eta 0:00:01
-     |███████████████████████████▉    | 1.2 MB 12.6 MB/s eta 0:00:01
-     |████████████████████████████    | 1.2 MB 12.6 MB/s eta 0:00:01
-     |████████████████████████████▎   | 1.2 MB 12.6 MB/s eta 0:00:01
-     |████████████████████████████▌   | 1.2 MB 12.6 MB/s eta 0:00:01
-     |████████████████████████████▉   | 1.2 MB 12.6 MB/s eta 0:00:01
-     |█████████████████████████████   | 1.2 MB 12.6 MB/s eta 0:00:01
-     |█████████████████████████████▎  | 1.2 MB 12.6 MB/s eta 0:00:01
-     |█████████████████████████████▌  | 1.2 MB 12.6 MB/s eta 0:00:01
-     |█████████████████████████████▊  | 1.2 MB 12.6 MB/s eta 0:00:01
-     |██████████████████████████████  | 1.2 MB 12.6 MB/s eta 0:00:01
-     |██████████████████████████████▎ | 1.3 MB 12.6 MB/s eta 0:00:01
-     |██████████████████████████████▌ | 1.3 MB 12.6 MB/s eta 0:00:01
-     |██████████████████████████████▊ | 1.3 MB 12.6 MB/s eta 0:00:01
-     |███████████████████████████████ | 1.3 MB 12.6 MB/s eta 0:00:01
-     |███████████████████████████████▎| 1.3 MB 12.6 MB/s eta 0:00:01
-     |███████████████████████████████▌| 1.3 MB 12.6 MB/s eta 0:00:01
-     |███████████████████████████████▊| 1.3 MB 12.6 MB/s eta 0:00:01
-     |████████████████████████████████| 1.3 MB 12.6 MB/s eta 0:00:01
-     |████████████████████████████████| 1.3 MB 12.6 MB/s 
-?25hRequirement already satisfied: attrs&gt;=17.3.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp==3.7.0) (21.4.0)
-Requirement already satisfied: multidict&lt;7.0,&gt;=4.5 in /usr/local/lib/python3.7/dist-packages (from aiohttp==3.7.0) (6.0.2)
+Requirement already satisfied: aiohttp==3.7.0 in /usr/local/lib/python3.7/dist-packages (3.7.0)
+Requirement already satisfied: attrs&gt;=17.3.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp==3.7.0) (21.4.0)
 Requirement already satisfied: chardet&lt;4.0,&gt;=2.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp==3.7.0) (3.0.4)
 Requirement already satisfied: yarl&lt;2.0,&gt;=1.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp==3.7.0) (1.8.1)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting async-timeout&lt;4.0,&gt;=3.0
-  Downloading async_timeout-3.0.1-py3-none-any.whl (8.2 kB)
+Requirement already satisfied: async-timeout&lt;4.0,&gt;=3.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp==3.7.0) (3.0.1)
+Requirement already satisfied: multidict&lt;7.0,&gt;=4.5 in /usr/local/lib/python3.7/dist-packages (from aiohttp==3.7.0) (6.0.2)
 Requirement already satisfied: typing-extensions&gt;=3.7.4 in /usr/local/lib/python3.7/dist-packages (from yarl&lt;2.0,&gt;=1.0-&gt;aiohttp==3.7.0) (4.1.1)
 Requirement already satisfied: idna&gt;=2.0 in /usr/local/lib/python3.7/dist-packages (from yarl&lt;2.0,&gt;=1.0-&gt;aiohttp==3.7.0) (2.10)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: async-timeout, aiohttp
-  Attempting uninstall: async-timeout
-    Found existing installation: async-timeout 4.0.2
-    Uninstalling async-timeout-4.0.2:
-      Successfully uninstalled async-timeout-4.0.2
-  Attempting uninstall: aiohttp
-    Found existing installation: aiohttp 3.8.3
-    Uninstalling aiohttp-3.8.3:
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>      Successfully uninstalled aiohttp-3.8.3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Successfully installed aiohttp-3.7.0 async-timeout-3.0.1
 </pre></div>
 </div>
 </div>
@@ -1492,7 +1003,8 @@ Requirement already satisfied: idna&gt;=2.0 in /usr/local/lib/python3.7/dist-pac
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1597561015796789249 2022-11-29 12:00:02 +0000 &lt;UMMcampus&gt; Pita Hitam UMM di 40 Hari Tragedi Kanjuruhan dan Hari Pahlawan |  https://t.co/QNi4OoZDRY | #UMMCampus  https://t.co/YDDmHZywIC
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1597568858256445441 2022-11-29 12:31:11 +0000 &lt;braling2_mas&gt; @MafiaWasit Masih suasana berduka tragedi kanjuruhan
+1597561015796789249 2022-11-29 12:00:02 +0000 &lt;UMMcampus&gt; Pita Hitam UMM di 40 Hari Tragedi Kanjuruhan dan Hari Pahlawan |  https://t.co/QNi4OoZDRY | #UMMCampus  https://t.co/YDDmHZywIC
 1597559474650112000 2022-11-29 11:53:54 +0000 &lt;Bimessi&gt; @Indostransfer Memang urusan sama si ANU ini ribet,,padahal tersangka dari kelompok si Anu belum jelas,,gmn jadinya kl si Anu jd tersangka utama tragedi kanjuruhan kemarin,,,bisa2 gk akan ada bola lagi di indonesia dengan dalih keamanan
 1597553984348516353 2022-11-29 11:32:05 +0000 &lt;beritajatimcom&gt; Aremania Menggugat Sebut Kejati Ingin Polisi Tambah Tersangka Baru Tragedi Kanjuruhan.  Malang ( https://t.co/ksziGGp1k3) – Ketua Tim Advokasi Bantuan Hukum Aremania Menggugat, Djoko Tritjahjana…  https://t.co/Z8JphdHFAY #Olahraga #Aremania #AremaniaMenggugat via @beritajatimcom
 1597550958300762112 2022-11-29 11:20:04 +0000 &lt;seniman_bola&gt; Mencoba untuk tidak peduli &amp;amp; bodo amat dg liga lokal sampai ada perkembangan yg signifikan dr  pengusutan tragedi kanjuruhan.
@@ -1511,10 +1023,10 @@ Requirement already satisfied: idna&gt;=2.0 in /usr/local/lib/python3.7/dist-pac
 1597517492125323265 2022-11-29 09:07:05 +0000 &lt;Konfrontasi_co&gt; Panglima TNI Masih Terus Monitoring Kasus Tragedi Kanjuruhan  https://t.co/k3lmFCmyQw
 1597515444205780992 2022-11-29 08:58:56 +0000 &lt;hariankompas&gt; Hasil otopsi korban Tragedi Kanjuruhan yang dilakukan pada 5 November lalu sudah keluar. Hasil otopsi tersebut diserahkan langsung oleh tim dokter forensik ke penyidik Kepolisian Daerah Jawa Timur. #Nusantara #AdadiKompas  https://t.co/zql4DgVNLk
 1597514133288599557 2022-11-29 08:53:44 +0000 &lt;AuisGrand&gt; Hasil otopsi korban Tragedi Kanjuruhan yang dilakukan pada 5 November lalu sudah keluar. Hasil otopsi tersebut diserahkan langsung oleh tim dokter forensik ke penyidik Kepolisian Daerah Jawa Timur. #Nusantara #AdadiKompas  https://t.co/6SrV2CemGg
-1597512921763893248 2022-11-29 08:48:55 +0000 &lt;sotengs&gt; Thread tolol 😂😂😂 beresin tragedi kanjuruhan aja ga berani kok 💩💩💩
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1597511375957688321 2022-11-29 08:42:47 +0000 &lt;YojiIis&gt; @Indostransfer Apakah akhirnya tragedi kanjuruhan tidak membuahkan apa apa 😢
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1597512921763893248 2022-11-29 08:48:55 +0000 &lt;sotengs&gt; Thread tolol 😂😂😂 beresin tragedi kanjuruhan aja ga berani kok 💩💩💩
+1597511375957688321 2022-11-29 08:42:47 +0000 &lt;YojiIis&gt; @Indostransfer Apakah akhirnya tragedi kanjuruhan tidak membuahkan apa apa 😢
 1597510942224678914 2022-11-29 08:41:03 +0000 &lt;merdekadotcom&gt; Berkas Perkara Tragedi Kanjuruhan Diteliti Jaksa Kejati Jatim  https://t.co/FMUtHW8Agx
 1597509698181541888 2022-11-29 08:36:06 +0000 &lt;VIVAbola&gt; Kejati Jatim Beri Petunjuk Polisi, Harus Ada Tersangka Baru di Tragedi Kanjuruhan  https://t.co/qx2XO9uqje
 1597508811853635584 2022-11-29 08:32:35 +0000 &lt;rsaupwr&gt; Polri dan PSSI Gelar Rapat Koordinasi Pengamanan Liga 1 Pasca- Tragedi Kanjuruhan  https://t.co/YxdGO61HmY
@@ -1533,10 +1045,10 @@ Requirement already satisfied: idna&gt;=2.0 in /usr/local/lib/python3.7/dist-pac
 1597494109119614977 2022-11-29 07:34:10 +0000 &lt;lewispoolilies&gt; Polri dan PSSI Gelar Rapat Koordinasi Pengamanan Liga 1 Pasca- Tragedi Kanjuruhan  https://t.co/rhXK3crd3H
 1597494074793414657 2022-11-29 07:34:02 +0000 &lt;notbadfather&gt; Si tambeng @iriawan84 ketum @PSSI udah kaga pernah ngebahas tragedi kanjuruhan lg ya.kalo emng lu lu orang gk mao di salahin ya minimal lu rangkul kek keluarga korban yg udah keilangan anak, saudara, terutama anak2 yg keilangan orangtua nya. Ini mah malah lepas tangan gitu aj
 1597488402332471299 2022-11-29 07:11:29 +0000 &lt;HendriAlfianch1&gt; AHY: Tragedi Kanjuruhan insiden yang memilukan, juga memalukan. #DemokratHarapanRakyat AHY Pimpin Perubahan  https://t.co/MtGqFncQeD
-1597488157431418880 2022-11-29 07:10:31 +0000 &lt;Sukma1996Rah&gt; Masih suasana duka tragedi kanjuruhan Anies munafik, NasDem bobrok  #HTIDukungAnies #AniesDidukungKHILAFAH #AniesNasdemOut  #TenggelamkanAniesBaswedan #TenggelamkanPartaiNasdem #AniesMelacurKAHMI #AniesDidukungKoruptor #AniesPendukungKhilafah #AniesPendukungOrmasRadikal  https://t.co/QEnJUvbLBp
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1597488034697465863 2022-11-29 07:10:02 +0000 &lt;HendriAlfianch1&gt; 40 Hari pasca tragedi Kanjuruhan, AHY ajak masyarakat kawal investigasi hingga tuntas #DemokratHarapanRakyat AHY Pimpin Perubahan  https://t.co/zWmQHDY6zP
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1597488157431418880 2022-11-29 07:10:31 +0000 &lt;Sukma1996Rah&gt; Masih suasana duka tragedi kanjuruhan Anies munafik, NasDem bobrok  #HTIDukungAnies #AniesDidukungKHILAFAH #AniesNasdemOut  #TenggelamkanAniesBaswedan #TenggelamkanPartaiNasdem #AniesMelacurKAHMI #AniesDidukungKoruptor #AniesPendukungKhilafah #AniesPendukungOrmasRadikal  https://t.co/QEnJUvbLBp
+1597488034697465863 2022-11-29 07:10:02 +0000 &lt;HendriAlfianch1&gt; 40 Hari pasca tragedi Kanjuruhan, AHY ajak masyarakat kawal investigasi hingga tuntas #DemokratHarapanRakyat AHY Pimpin Perubahan  https://t.co/zWmQHDY6zP
 1597486769158529024 2022-11-29 07:05:00 +0000 &lt;inewsdotid&gt; Korban Tragedi Kanjuruhan Ajukan Gugatan Restitusi Rp20 Miliar Pekan Ini  https://t.co/RdEVPYDDTF
 1597486156199104517 2022-11-29 07:02:34 +0000 &lt;VIVAcoid&gt; Kejati Minta Tersangka Baru, Pasal Kelalaian Dalam Tragedi Kanjuruhan  https://t.co/JoC0x24AmQ  https://t.co/BV4WGueW8W
 1597485512683446273 2022-11-29 07:00:00 +0000 &lt;BismahBalqis&gt; Dengan berbagai kerumitan di dunia persepakbolaan Indonesia, salah satu contohnya tragedi Kanjuruhan, memang dibutuhkan sosok seperti menteri Erick Thohir yang bisa mengelola dengan berani, terukur dan terarah. ET Reformasi PSSI  #TalentPool
@@ -1555,10 +1067,10 @@ Requirement already satisfied: idna&gt;=2.0 in /usr/local/lib/python3.7/dist-pac
 1597456095685251075 2022-11-29 05:03:07 +0000 &lt;wongfehunk&gt; @kaesangp Alhmdllah tragedi kanjuruhan bentar lagi lupa
 1597448865279774721 2022-11-29 04:34:23 +0000 &lt;mpitsky&gt; 60 hari tragedi kanjuruhan dan masih belum juga diusut tuntas? muke lu tebel @PSSI #UsutTuntasTragediKanjuruhan
 1597447195892256769 2022-11-29 04:27:45 +0000 &lt;zahraquinsha&gt; @premanbighit @hmmrandomguy @filmzoir Iya pedes banget mereka. Pas tragedi kanjuruhan kan juga ada yg gimana gitu komennya.
-1597447188971331585 2022-11-29 04:27:43 +0000 &lt;RayaMalang&gt; Terus Bergerak #UsutTuntas @AremaIDN @AremafcOfficial @AremaFC  #tragedikanjuruhan giliran Kidul Pasar @infomalang @info_malang  https://t.co/Og2knUlptb
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1597446283819913217 2022-11-29 04:24:07 +0000 &lt;IdeNews_id&gt; Setelah terhenti selama dua bulan karena Tragedi Kanjuruhan pada awal bulan Oktober lalu, akhirnya PT Liga Indonesia Baru (PT LIB) akan kembali melanjutkan BRI Liga 1 Musim 2022/2023 namun dengan Format Baru. @pt_lib @BANKBRI_ID @mappirewa @aepsaefulfajar   https://t.co/nBEWdwaUhj
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1597447188971331585 2022-11-29 04:27:43 +0000 &lt;RayaMalang&gt; Terus Bergerak #UsutTuntas @AremaIDN @AremafcOfficial @AremaFC  #tragedikanjuruhan giliran Kidul Pasar @infomalang @info_malang  https://t.co/Og2knUlptb
+1597446283819913217 2022-11-29 04:24:07 +0000 &lt;IdeNews_id&gt; Setelah terhenti selama dua bulan karena Tragedi Kanjuruhan pada awal bulan Oktober lalu, akhirnya PT Liga Indonesia Baru (PT LIB) akan kembali melanjutkan BRI Liga 1 Musim 2022/2023 namun dengan Format Baru. @pt_lib @BANKBRI_ID @mappirewa @aepsaefulfajar   https://t.co/nBEWdwaUhj
 1597442488284823552 2022-11-29 04:09:02 +0000 &lt;jpnncom&gt; Soal Tragedi Kanjuruhan, Jenderal Andika: Harus Dilaporkan Setiap Hari ke Saya #PanglimaTNI  https://t.co/nNHrFZCS2J
 1597438841371373568 2022-11-29 03:54:33 +0000 &lt;HendriAlfianch1&gt; Demokrat salurkan bantuan kepada keluarga korban Tragedi Kanjuruhan Malang. #DemokratHarapanRakyat AHY Pimpin Perubahan   https://t.co/ZcyvOufOFs
 1597436112527847424 2022-11-29 03:43:42 +0000 &lt;SeputariNews&gt; Aremania turun ke jalan menggelar aksi Solidaritas Malang Black Sunday menuntut kasus hukum tragedi kanjuruhan. JSP   #RCTI #SeputariNews #Aremania #Kanjuruhan #Solidaritas  https://t.co/AcpO7S4bnV
@@ -1573,7 +1085,6 @@ Requirement already satisfied: idna&gt;=2.0 in /usr/local/lib/python3.7/dist-pac
 1597410550719606784 2022-11-29 02:02:08 +0000 &lt;PRFMnews&gt; Kata PT LIB Soal Pertandingan Persib vs Persija yang Tertunda Karena Tragedi Kanjuruhan  https://t.co/OuoZlsl9kt
 1597410150100656128 2022-11-29 02:00:32 +0000 &lt;AqsaDipta&gt; @MafiaWasit Klo saya sih gak masalah liga lanjut, TAPI perjelas dulu kasus tragedi Kanjuruhan sudah sampai mana? Sudah siap untuk ke persidangan ATAU hanya sampai pengumuman nama tersangka saja???? Itu yg harus diperjelas.
 1597409801889161217 2022-11-29 01:59:09 +0000 &lt;samacksamakk&gt; This photo and poster is so deep... #UsutTuntas #tragedikanjuruhan  https://t.co/NGmFwpOyc6
-1597408349934714880 2022-11-29 01:53:23 +0000 &lt;MafiaWasit&gt; Dan H+5 dari batas ultimatum Presidium-Presideuman terkait #TragediKanjuruhan  https://t.co/dqLZhs5rbs
 </pre></div>
 </div>
 </div>
@@ -1586,17 +1097,17 @@ Requirement already satisfied: idna&gt;=2.0 in /usr/local/lib/python3.7/dist-pac
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     Pita Hitam UMM di 40 Hari Tragedi Kanjuruhan d...
-1     @Indostransfer Memang urusan sama si ANU ini r...
-2     Aremania Menggugat Sebut Kejati Ingin Polisi T...
-3     Mencoba untuk tidak peduli &amp;amp; bodo amat dg ...
-4     Ini bukti kalau owner club, exco, atau apa lah...
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     @MafiaWasit Masih suasana berduka tragedi kanj...
+1     Pita Hitam UMM di 40 Hari Tragedi Kanjuruhan d...
+2     @Indostransfer Memang urusan sama si ANU ini r...
+3     Aremania Menggugat Sebut Kejati Ingin Polisi T...
+4     Mencoba untuk tidak peduli &amp;amp; bodo amat dg ...
                             ...                        
-71    @Yusufs_abiie @garagarabola_ Lah? Dari tadi gw...
-72    Kata PT LIB Soal Pertandingan Persib vs Persij...
-73    @MafiaWasit Klo saya sih gak masalah liga lanj...
-74    This photo and poster is so deep... #UsutTunta...
-75    Dan H+5 dari batas ultimatum Presidium-Preside...
+71    Update Proses Hukum Tragedi Kanjuruhan: Nasib ...
+72    @Yusufs_abiie @garagarabola_ Lah? Dari tadi gw...
+73    Kata PT LIB Soal Pertandingan Persib vs Persij...
+74    @MafiaWasit Klo saya sih gak masalah liga lanj...
+75    This photo and poster is so deep... #UsutTunta...
 Name: tweet, Length: 76, dtype: object
 </pre></div>
 </div>
@@ -1624,9 +1135,9 @@ Name: tweet, Length: 76, dtype: object
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
 Requirement already satisfied: pandas in /usr/local/lib/python3.7/dist-packages (1.3.5)
-Requirement already satisfied: pytz&gt;=2017.3 in /usr/local/lib/python3.7/dist-packages (from pandas) (2022.6)
 Requirement already satisfied: python-dateutil&gt;=2.7.3 in /usr/local/lib/python3.7/dist-packages (from pandas) (2.8.2)
 Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.7/dist-packages (from pandas) (1.21.6)
+Requirement already satisfied: pytz&gt;=2017.3 in /usr/local/lib/python3.7/dist-packages (from pandas) (2022.6)
 Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.7/dist-packages (from python-dateutil&gt;=2.7.3-&gt;pandas) (1.15.0)
 </pre></div>
 </div>
@@ -1659,7 +1170,7 @@ Requirement already satisfied: numpy in /usr/local/lib/python3.7/dist-packages (
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-89752443-435f-4338-ad1f-5c920bf4a5cd">
+  <div id="df-9e47f204-97d3-420d-9d34-1556ed31e797">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1687,27 +1198,27 @@ Requirement already satisfied: numpy in /usr/local/lib/python3.7/dist-packages (
     <tr>
       <th>0</th>
       <td>0</td>
-      <td>Pita Hitam UMM di 40 Hari Tragedi Kanjuruhan d...</td>
+      <td>@MafiaWasit Masih suasana berduka tragedi kanj...</td>
     </tr>
     <tr>
       <th>1</th>
       <td>1</td>
-      <td>@Indostransfer Memang urusan sama si ANU ini r...</td>
+      <td>Pita Hitam UMM di 40 Hari Tragedi Kanjuruhan d...</td>
     </tr>
     <tr>
       <th>2</th>
       <td>2</td>
-      <td>Aremania Menggugat Sebut Kejati Ingin Polisi T...</td>
+      <td>@Indostransfer Memang urusan sama si ANU ini r...</td>
     </tr>
     <tr>
       <th>3</th>
       <td>3</td>
-      <td>Mencoba untuk tidak peduli &amp;amp; bodo amat dg ...</td>
+      <td>Aremania Menggugat Sebut Kejati Ingin Polisi T...</td>
     </tr>
     <tr>
       <th>4</th>
       <td>4</td>
-      <td>Ini bukti kalau owner club, exco, atau apa lah...</td>
+      <td>Mencoba untuk tidak peduli &amp;amp; bodo amat dg ...</td>
     </tr>
     <tr>
       <th>...</th>
@@ -1717,33 +1228,33 @@ Requirement already satisfied: numpy in /usr/local/lib/python3.7/dist-packages (
     <tr>
       <th>71</th>
       <td>71</td>
-      <td>@Yusufs_abiie @garagarabola_ Lah? Dari tadi gw...</td>
+      <td>Update Proses Hukum Tragedi Kanjuruhan: Nasib ...</td>
     </tr>
     <tr>
       <th>72</th>
       <td>72</td>
-      <td>Kata PT LIB Soal Pertandingan Persib vs Persij...</td>
+      <td>@Yusufs_abiie @garagarabola_ Lah? Dari tadi gw...</td>
     </tr>
     <tr>
       <th>73</th>
       <td>73</td>
-      <td>@MafiaWasit Klo saya sih gak masalah liga lanj...</td>
+      <td>Kata PT LIB Soal Pertandingan Persib vs Persij...</td>
     </tr>
     <tr>
       <th>74</th>
       <td>74</td>
-      <td>This photo and poster is so deep... #UsutTunta...</td>
+      <td>@MafiaWasit Klo saya sih gak masalah liga lanj...</td>
     </tr>
     <tr>
       <th>75</th>
       <td>75</td>
-      <td>Dan H+5 dari batas ultimatum Presidium-Preside...</td>
+      <td>This photo and poster is so deep... #UsutTunta...</td>
     </tr>
   </tbody>
 </table>
 <p>76 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-89752443-435f-4338-ad1f-5c920bf4a5cd')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-9e47f204-97d3-420d-9d34-1556ed31e797')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1794,12 +1305,12 @@ Requirement already satisfied: numpy in /usr/local/lib/python3.7/dist-packages (
 
       <script>
         const buttonEl =
-          document.querySelector('#df-89752443-435f-4338-ad1f-5c920bf4a5cd button.colab-df-convert');
+          document.querySelector('#df-9e47f204-97d3-420d-9d34-1556ed31e797 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-89752443-435f-4338-ad1f-5c920bf4a5cd');
+          const element = document.querySelector('#df-9e47f204-97d3-420d-9d34-1556ed31e797');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1829,38 +1340,7 @@ Requirement already satisfied: numpy in /usr/local/lib/python3.7/dist-packages (
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting sastrawi
-  Downloading Sastrawi-1.0.1-py2.py3-none-any.whl (209 kB)
-?25l
-     |█▋                              | 10 kB 25.8 MB/s eta 0:00:01
-     |███▏                            | 20 kB 24.5 MB/s eta 0:00:01
-     |████▊                           | 30 kB 29.7 MB/s eta 0:00:01
-     |██████▎                         | 40 kB 16.4 MB/s eta 0:00:01
-     |███████▉                        | 51 kB 12.7 MB/s eta 0:00:01
-     |█████████▍                      | 61 kB 14.6 MB/s eta 0:00:01
-     |███████████                     | 71 kB 14.4 MB/s eta 0:00:01
-     |████████████▌                   | 81 kB 14.5 MB/s eta 0:00:01
-     |██████████████                  | 92 kB 15.7 MB/s eta 0:00:01
-     |███████████████▋                | 102 kB 12.9 MB/s eta 0:00:01
-     |█████████████████▏              | 112 kB 12.9 MB/s eta 0:00:01
-     |██████████████████▊             | 122 kB 12.9 MB/s eta 0:00:01
-     |████████████████████▎           | 133 kB 12.9 MB/s eta 0:00:01
-     |█████████████████████▉          | 143 kB 12.9 MB/s eta 0:00:01
-     |███████████████████████▍        | 153 kB 12.9 MB/s eta 0:00:01
-     |█████████████████████████       | 163 kB 12.9 MB/s eta 0:00:01
-     |██████████████████████████▋     | 174 kB 12.9 MB/s eta 0:00:01
-     |████████████████████████████▏   | 184 kB 12.9 MB/s eta 0:00:01
-     |█████████████████████████████▊  | 194 kB 12.9 MB/s eta 0:00:01
-     |███████████████████████████████▎| 204 kB 12.9 MB/s eta 0:00:01
-     |████████████████████████████████| 209 kB 12.9 MB/s 
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>?25hInstalling collected packages: sastrawi
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Successfully installed sastrawi-1.0.1
+Requirement already satisfied: sastrawi in /usr/local/lib/python3.7/dist-packages (1.0.1)
 </pre></div>
 </div>
 </div>
@@ -1874,212 +1354,71 @@ Requirement already satisfied: numpy in /usr/local/lib/python3.7/dist-packages (
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting swifter
-  Downloading swifter-1.3.4.tar.gz (830 kB)
-?25l
-     |▍                               | 10 kB 23.8 MB/s eta 0:00:01
-     |▉                               | 20 kB 7.8 MB/s eta 0:00:01
-     |█▏                              | 30 kB 10.6 MB/s eta 0:00:01
-     |█▋                              | 40 kB 8.4 MB/s eta 0:00:01
-     |██                              | 51 kB 8.3 MB/s eta 0:00:01
-     |██▍                             | 61 kB 9.7 MB/s eta 0:00:01
-     |██▊                             | 71 kB 9.7 MB/s eta 0:00:01
-     |███▏                            | 81 kB 10.8 MB/s eta 0:00:01
-     |███▌                            | 92 kB 11.0 MB/s eta 0:00:01
-     |████                            | 102 kB 11.1 MB/s eta 0:00:01
-     |████▍                           | 112 kB 11.1 MB/s eta 0:00:01
-     |████▊                           | 122 kB 11.1 MB/s eta 0:00:01
-     |█████▏                          | 133 kB 11.1 MB/s eta 0:00:01
-     |█████▌                          | 143 kB 11.1 MB/s eta 0:00:01
-     |██████                          | 153 kB 11.1 MB/s eta 0:00:01
-     |██████▎                         | 163 kB 11.1 MB/s eta 0:00:01
-     |██████▊                         | 174 kB 11.1 MB/s eta 0:00:01
-     |███████                         | 184 kB 11.1 MB/s eta 0:00:01
-     |███████▌                        | 194 kB 11.1 MB/s eta 0:00:01
-     |███████▉                        | 204 kB 11.1 MB/s eta 0:00:01
-     |████████▎                       | 215 kB 11.1 MB/s eta 0:00:01
-     |████████▊                       | 225 kB 11.1 MB/s eta 0:00:01
-     |█████████                       | 235 kB 11.1 MB/s eta 0:00:01
-     |█████████▌                      | 245 kB 11.1 MB/s eta 0:00:01
-     |█████████▉                      | 256 kB 11.1 MB/s eta 0:00:01
-     |██████████▎                     | 266 kB 11.1 MB/s eta 0:00:01
-     |██████████▋                     | 276 kB 11.1 MB/s eta 0:00:01
-     |███████████                     | 286 kB 11.1 MB/s eta 0:00:01
-     |███████████▍                    | 296 kB 11.1 MB/s eta 0:00:01
-     |███████████▉                    | 307 kB 11.1 MB/s eta 0:00:01
-     |████████████▎                   | 317 kB 11.1 MB/s eta 0:00:01
-     |████████████▋                   | 327 kB 11.1 MB/s eta 0:00:01
-     |█████████████                   | 337 kB 11.1 MB/s eta 0:00:01
-     |█████████████▍                  | 348 kB 11.1 MB/s eta 0:00:01
-     |█████████████▉                  | 358 kB 11.1 MB/s eta 0:00:01
-     |██████████████▏                 | 368 kB 11.1 MB/s eta 0:00:01
-     |██████████████▋                 | 378 kB 11.1 MB/s eta 0:00:01
-     |███████████████                 | 389 kB 11.1 MB/s eta 0:00:01
-     |███████████████▍                | 399 kB 11.1 MB/s eta 0:00:01
-     |███████████████▊                | 409 kB 11.1 MB/s eta 0:00:01
-     |████████████████▏               | 419 kB 11.1 MB/s eta 0:00:01
-     |████████████████▋               | 430 kB 11.1 MB/s eta 0:00:01
-     |█████████████████               | 440 kB 11.1 MB/s eta 0:00:01
-     |█████████████████▍              | 450 kB 11.1 MB/s eta 0:00:01
-     |█████████████████▊              | 460 kB 11.1 MB/s eta 0:00:01
-     |██████████████████▏             | 471 kB 11.1 MB/s eta 0:00:01
-     |██████████████████▌             | 481 kB 11.1 MB/s eta 0:00:01
-     |███████████████████             | 491 kB 11.1 MB/s eta 0:00:01
-     |███████████████████▎            | 501 kB 11.1 MB/s eta 0:00:01
-     |███████████████████▊            | 512 kB 11.1 MB/s eta 0:00:01
-     |████████████████████▏           | 522 kB 11.1 MB/s eta 0:00:01
-     |████████████████████▌           | 532 kB 11.1 MB/s eta 0:00:01
-     |█████████████████████           | 542 kB 11.1 MB/s eta 0:00:01
-     |█████████████████████▎          | 552 kB 11.1 MB/s eta 0:00:01
-     |█████████████████████▊          | 563 kB 11.1 MB/s eta 0:00:01
-     |██████████████████████          | 573 kB 11.1 MB/s eta 0:00:01
-     |██████████████████████▌         | 583 kB 11.1 MB/s eta 0:00:01
-     |██████████████████████▉         | 593 kB 11.1 MB/s eta 0:00:01
-     |███████████████████████▎        | 604 kB 11.1 MB/s eta 0:00:01
-     |███████████████████████▋        | 614 kB 11.1 MB/s eta 0:00:01
-     |████████████████████████        | 624 kB 11.1 MB/s eta 0:00:01
-     |████████████████████████▌       | 634 kB 11.1 MB/s eta 0:00:01
-     |████████████████████████▉       | 645 kB 11.1 MB/s eta 0:00:01
-     |█████████████████████████▎      | 655 kB 11.1 MB/s eta 0:00:01
-     |█████████████████████████▋      | 665 kB 11.1 MB/s eta 0:00:01
-     |██████████████████████████      | 675 kB 11.1 MB/s eta 0:00:01
-     |██████████████████████████▍     | 686 kB 11.1 MB/s eta 0:00:01
-     |██████████████████████████▉     | 696 kB 11.1 MB/s eta 0:00:01
-     |███████████████████████████▏    | 706 kB 11.1 MB/s eta 0:00:01
-     |███████████████████████████▋    | 716 kB 11.1 MB/s eta 0:00:01
-     |████████████████████████████    | 727 kB 11.1 MB/s eta 0:00:01
-     |████████████████████████████▍   | 737 kB 11.1 MB/s eta 0:00:01
-     |████████████████████████████▉   | 747 kB 11.1 MB/s eta 0:00:01
-     |█████████████████████████████▏  | 757 kB 11.1 MB/s eta 0:00:01
-     |█████████████████████████████▋  | 768 kB 11.1 MB/s eta 0:00:01
-     |██████████████████████████████  | 778 kB 11.1 MB/s eta 0:00:01
-     |██████████████████████████████▍ | 788 kB 11.1 MB/s eta 0:00:01
-     |██████████████████████████████▊ | 798 kB 11.1 MB/s eta 0:00:01
-     |███████████████████████████████▏| 808 kB 11.1 MB/s eta 0:00:01
-     |███████████████████████████████▌| 819 kB 11.1 MB/s eta 0:00:01
-     |████████████████████████████████| 829 kB 11.1 MB/s eta 0:00:01
-     |████████████████████████████████| 830 kB 11.1 MB/s 
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>?25hRequirement already satisfied: pandas&gt;=1.0.0 in /usr/local/lib/python3.7/dist-packages (from swifter) (1.3.5)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting psutil&gt;=5.6.6
-  Downloading psutil-5.9.4-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (280 kB)
-?25l
-     |█▏                              | 10 kB 25.1 MB/s eta 0:00:01
-     |██▍                             | 20 kB 29.5 MB/s eta 0:00:01
-     |███▌                            | 30 kB 34.9 MB/s eta 0:00:01
-     |████▊                           | 40 kB 37.4 MB/s eta 0:00:01
-     |█████▉                          | 51 kB 38.5 MB/s eta 0:00:01
-     |███████                         | 61 kB 41.2 MB/s eta 0:00:01
-     |████████▏                       | 71 kB 41.3 MB/s eta 0:00:01
-     |█████████▍                      | 81 kB 27.9 MB/s eta 0:00:01
-     |██████████▌                     | 92 kB 29.4 MB/s eta 0:00:01
-     |███████████▊                    | 102 kB 30.9 MB/s eta 0:00:01
-     |████████████▉                   | 112 kB 30.9 MB/s eta 0:00:01
-     |██████████████                  | 122 kB 30.9 MB/s eta 0:00:01
-     |███████████████▏                | 133 kB 30.9 MB/s eta 0:00:01
-     |████████████████▍               | 143 kB 30.9 MB/s eta 0:00:01
-     |█████████████████▌              | 153 kB 30.9 MB/s eta 0:00:01
-     |██████████████████▊             | 163 kB 30.9 MB/s eta 0:00:01
-     |███████████████████▉            | 174 kB 30.9 MB/s eta 0:00:01
-     |█████████████████████           | 184 kB 30.9 MB/s eta 0:00:01
-     |██████████████████████▏         | 194 kB 30.9 MB/s eta 0:00:01
-     |███████████████████████▍        | 204 kB 30.9 MB/s eta 0:00:01
-     |████████████████████████▋       | 215 kB 30.9 MB/s eta 0:00:01
-     |█████████████████████████▊      | 225 kB 30.9 MB/s eta 0:00:01
-     |███████████████████████████     | 235 kB 30.9 MB/s eta 0:00:01
-     |████████████████████████████    | 245 kB 30.9 MB/s eta 0:00:01
-     |█████████████████████████████▎  | 256 kB 30.9 MB/s eta 0:00:01
-     |██████████████████████████████▍ | 266 kB 30.9 MB/s eta 0:00:01
-     |███████████████████████████████▋| 276 kB 30.9 MB/s eta 0:00:01
-     |████████████████████████████████| 280 kB 30.9 MB/s 
-?25hRequirement already satisfied: dask[dataframe]&gt;=2.10.0 in /usr/local/lib/python3.7/dist-packages (from swifter) (2022.2.0)
-Requirement already satisfied: tqdm&gt;=4.33.0 in /usr/local/lib/python3.7/dist-packages (from swifter) (4.64.1)
-Requirement already satisfied: ipywidgets&gt;=7.0.0 in /usr/local/lib/python3.7/dist-packages (from swifter) (7.7.1)
-Requirement already satisfied: cloudpickle&gt;=0.2.2 in /usr/local/lib/python3.7/dist-packages (from swifter) (1.5.0)
+Requirement already satisfied: swifter in /usr/local/lib/python3.7/dist-packages (1.3.4)
 Requirement already satisfied: parso&gt;0.4.0 in /usr/local/lib/python3.7/dist-packages (from swifter) (0.8.3)
+Requirement already satisfied: psutil&gt;=5.6.6 in /usr/local/lib/python3.7/dist-packages (from swifter) (5.9.4)
+Requirement already satisfied: ipywidgets&gt;=7.0.0 in /usr/local/lib/python3.7/dist-packages (from swifter) (7.7.1)
+Requirement already satisfied: pandas&gt;=1.0.0 in /usr/local/lib/python3.7/dist-packages (from swifter) (1.3.5)
 Requirement already satisfied: bleach&gt;=3.1.1 in /usr/local/lib/python3.7/dist-packages (from swifter) (5.0.1)
-Requirement already satisfied: six&gt;=1.9.0 in /usr/local/lib/python3.7/dist-packages (from bleach&gt;=3.1.1-&gt;swifter) (1.15.0)
+Requirement already satisfied: tqdm&gt;=4.33.0 in /usr/local/lib/python3.7/dist-packages (from swifter) (4.64.1)
+Requirement already satisfied: dask[dataframe]&gt;=2.10.0 in /usr/local/lib/python3.7/dist-packages (from swifter) (2022.2.0)
+Requirement already satisfied: cloudpickle&gt;=0.2.2 in /usr/local/lib/python3.7/dist-packages (from swifter) (1.5.0)
 Requirement already satisfied: webencodings in /usr/local/lib/python3.7/dist-packages (from bleach&gt;=3.1.1-&gt;swifter) (0.5.1)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: partd&gt;=0.3.10 in /usr/local/lib/python3.7/dist-packages (from dask[dataframe]&gt;=2.10.0-&gt;swifter) (1.3.0)
+Requirement already satisfied: six&gt;=1.9.0 in /usr/local/lib/python3.7/dist-packages (from bleach&gt;=3.1.1-&gt;swifter) (1.15.0)
+Requirement already satisfied: fsspec&gt;=0.6.0 in /usr/local/lib/python3.7/dist-packages (from dask[dataframe]&gt;=2.10.0-&gt;swifter) (2022.11.0)
+Requirement already satisfied: packaging&gt;=20.0 in /usr/local/lib/python3.7/dist-packages (from dask[dataframe]&gt;=2.10.0-&gt;swifter) (21.3)
 Requirement already satisfied: pyyaml&gt;=5.3.1 in /usr/local/lib/python3.7/dist-packages (from dask[dataframe]&gt;=2.10.0-&gt;swifter) (6.0)
 Requirement already satisfied: toolz&gt;=0.8.2 in /usr/local/lib/python3.7/dist-packages (from dask[dataframe]&gt;=2.10.0-&gt;swifter) (0.12.0)
-Requirement already satisfied: packaging&gt;=20.0 in /usr/local/lib/python3.7/dist-packages (from dask[dataframe]&gt;=2.10.0-&gt;swifter) (21.3)
-Requirement already satisfied: fsspec&gt;=0.6.0 in /usr/local/lib/python3.7/dist-packages (from dask[dataframe]&gt;=2.10.0-&gt;swifter) (2022.11.0)
+Requirement already satisfied: partd&gt;=0.3.10 in /usr/local/lib/python3.7/dist-packages (from dask[dataframe]&gt;=2.10.0-&gt;swifter) (1.3.0)
 Requirement already satisfied: numpy&gt;=1.18 in /usr/local/lib/python3.7/dist-packages (from dask[dataframe]&gt;=2.10.0-&gt;swifter) (1.21.6)
-Requirement already satisfied: widgetsnbextension~=3.6.0 in /usr/local/lib/python3.7/dist-packages (from ipywidgets&gt;=7.0.0-&gt;swifter) (3.6.1)
-Requirement already satisfied: ipython&gt;=4.0.0 in /usr/local/lib/python3.7/dist-packages (from ipywidgets&gt;=7.0.0-&gt;swifter) (7.9.0)
-Requirement already satisfied: ipython-genutils~=0.2.0 in /usr/local/lib/python3.7/dist-packages (from ipywidgets&gt;=7.0.0-&gt;swifter) (0.2.0)
-Requirement already satisfied: traitlets&gt;=4.3.1 in /usr/local/lib/python3.7/dist-packages (from ipywidgets&gt;=7.0.0-&gt;swifter) (5.1.1)
 Requirement already satisfied: ipykernel&gt;=4.5.1 in /usr/local/lib/python3.7/dist-packages (from ipywidgets&gt;=7.0.0-&gt;swifter) (5.3.4)
 Requirement already satisfied: jupyterlab-widgets&gt;=1.0.0 in /usr/local/lib/python3.7/dist-packages (from ipywidgets&gt;=7.0.0-&gt;swifter) (3.0.3)
-Requirement already satisfied: jupyter-client in /usr/local/lib/python3.7/dist-packages (from ipykernel&gt;=4.5.1-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (6.1.12)
+Requirement already satisfied: widgetsnbextension~=3.6.0 in /usr/local/lib/python3.7/dist-packages (from ipywidgets&gt;=7.0.0-&gt;swifter) (3.6.1)
+Requirement already satisfied: ipython-genutils~=0.2.0 in /usr/local/lib/python3.7/dist-packages (from ipywidgets&gt;=7.0.0-&gt;swifter) (0.2.0)
+Requirement already satisfied: traitlets&gt;=4.3.1 in /usr/local/lib/python3.7/dist-packages (from ipywidgets&gt;=7.0.0-&gt;swifter) (5.1.1)
+Requirement already satisfied: ipython&gt;=4.0.0 in /usr/local/lib/python3.7/dist-packages (from ipywidgets&gt;=7.0.0-&gt;swifter) (7.9.0)
 Requirement already satisfied: tornado&gt;=4.2 in /usr/local/lib/python3.7/dist-packages (from ipykernel&gt;=4.5.1-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (6.2)
-Requirement already satisfied: pexpect in /usr/local/lib/python3.7/dist-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (4.8.0)
-Requirement already satisfied: backcall in /usr/local/lib/python3.7/dist-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.2.0)
-Requirement already satisfied: setuptools&gt;=18.5 in /usr/local/lib/python3.7/dist-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (57.4.0)
-Requirement already satisfied: pickleshare in /usr/local/lib/python3.7/dist-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.7.5)
-Requirement already satisfied: pygments in /usr/local/lib/python3.7/dist-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (2.6.1)
-Requirement already satisfied: decorator in /usr/local/lib/python3.7/dist-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (4.4.2)
+Requirement already satisfied: jupyter-client in /usr/local/lib/python3.7/dist-packages (from ipykernel&gt;=4.5.1-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (6.1.12)
 Requirement already satisfied: jedi&gt;=0.10 in /usr/local/lib/python3.7/dist-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.18.2)
 Requirement already satisfied: prompt-toolkit&lt;2.1.0,&gt;=2.0.0 in /usr/local/lib/python3.7/dist-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (2.0.10)
+Requirement already satisfied: pickleshare in /usr/local/lib/python3.7/dist-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.7.5)
+Requirement already satisfied: decorator in /usr/local/lib/python3.7/dist-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (4.4.2)
+Requirement already satisfied: backcall in /usr/local/lib/python3.7/dist-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.2.0)
+Requirement already satisfied: pexpect in /usr/local/lib/python3.7/dist-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (4.8.0)
+Requirement already satisfied: setuptools&gt;=18.5 in /usr/local/lib/python3.7/dist-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (57.4.0)
+Requirement already satisfied: pygments in /usr/local/lib/python3.7/dist-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (2.6.1)
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: pyparsing!=3.0.5,&gt;=2.0.2 in /usr/local/lib/python3.7/dist-packages (from packaging&gt;=20.0-&gt;dask[dataframe]&gt;=2.10.0-&gt;swifter) (3.0.9)
-Requirement already satisfied: pytz&gt;=2017.3 in /usr/local/lib/python3.7/dist-packages (from pandas&gt;=1.0.0-&gt;swifter) (2022.6)
 Requirement already satisfied: python-dateutil&gt;=2.7.3 in /usr/local/lib/python3.7/dist-packages (from pandas&gt;=1.0.0-&gt;swifter) (2.8.2)
+Requirement already satisfied: pytz&gt;=2017.3 in /usr/local/lib/python3.7/dist-packages (from pandas&gt;=1.0.0-&gt;swifter) (2022.6)
 Requirement already satisfied: locket in /usr/local/lib/python3.7/dist-packages (from partd&gt;=0.3.10-&gt;dask[dataframe]&gt;=2.10.0-&gt;swifter) (1.0.0)
 Requirement already satisfied: wcwidth in /usr/local/lib/python3.7/dist-packages (from prompt-toolkit&lt;2.1.0,&gt;=2.0.0-&gt;ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.2.5)
 Requirement already satisfied: notebook&gt;=4.4.1 in /usr/local/lib/python3.7/dist-packages (from widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (5.7.16)
 Requirement already satisfied: jupyter-core&gt;=4.4.0 in /usr/local/lib/python3.7/dist-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (4.11.2)
-Requirement already satisfied: Send2Trash in /usr/local/lib/python3.7/dist-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (1.8.0)
+Requirement already satisfied: jinja2&lt;=3.0.0 in /usr/local/lib/python3.7/dist-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (2.11.3)
+Requirement already satisfied: nbconvert&lt;6.0 in /usr/local/lib/python3.7/dist-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (5.6.1)
 Requirement already satisfied: pyzmq&gt;=17 in /usr/local/lib/python3.7/dist-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (23.2.1)
+Requirement already satisfied: Send2Trash in /usr/local/lib/python3.7/dist-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (1.8.0)
 Requirement already satisfied: nbformat in /usr/local/lib/python3.7/dist-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (5.7.0)
 Requirement already satisfied: terminado&gt;=0.8.1 in /usr/local/lib/python3.7/dist-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.13.3)
 Requirement already satisfied: prometheus-client in /usr/local/lib/python3.7/dist-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.15.0)
-Requirement already satisfied: nbconvert&lt;6.0 in /usr/local/lib/python3.7/dist-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (5.6.1)
-Requirement already satisfied: jinja2&lt;=3.0.0 in /usr/local/lib/python3.7/dist-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (2.11.3)
 Requirement already satisfied: MarkupSafe&gt;=0.23 in /usr/local/lib/python3.7/dist-packages (from jinja2&lt;=3.0.0-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (2.0.1)
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: testpath in /usr/local/lib/python3.7/dist-packages (from nbconvert&lt;6.0-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.6.0)
-Requirement already satisfied: pandocfilters&gt;=1.4.1 in /usr/local/lib/python3.7/dist-packages (from nbconvert&lt;6.0-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (1.5.0)
-Requirement already satisfied: defusedxml in /usr/local/lib/python3.7/dist-packages (from nbconvert&lt;6.0-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.7.1)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: defusedxml in /usr/local/lib/python3.7/dist-packages (from nbconvert&lt;6.0-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.7.1)
 Requirement already satisfied: entrypoints&gt;=0.2.2 in /usr/local/lib/python3.7/dist-packages (from nbconvert&lt;6.0-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.4)
+Requirement already satisfied: testpath in /usr/local/lib/python3.7/dist-packages (from nbconvert&lt;6.0-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.6.0)
 Requirement already satisfied: mistune&lt;2,&gt;=0.8.1 in /usr/local/lib/python3.7/dist-packages (from nbconvert&lt;6.0-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.8.4)
+Requirement already satisfied: pandocfilters&gt;=1.4.1 in /usr/local/lib/python3.7/dist-packages (from nbconvert&lt;6.0-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (1.5.0)
 Requirement already satisfied: fastjsonschema in /usr/local/lib/python3.7/dist-packages (from nbformat-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (2.16.2)
-Requirement already satisfied: jsonschema&gt;=2.6 in /usr/local/lib/python3.7/dist-packages (from nbformat-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (3.2.0)
 Requirement already satisfied: importlib-metadata&gt;=3.6 in /usr/local/lib/python3.7/dist-packages (from nbformat-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (4.13.0)
+Requirement already satisfied: jsonschema&gt;=2.6 in /usr/local/lib/python3.7/dist-packages (from nbformat-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (3.2.0)
 Requirement already satisfied: typing-extensions&gt;=3.6.4 in /usr/local/lib/python3.7/dist-packages (from importlib-metadata&gt;=3.6-&gt;nbformat-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (4.1.1)
 Requirement already satisfied: zipp&gt;=0.5 in /usr/local/lib/python3.7/dist-packages (from importlib-metadata&gt;=3.6-&gt;nbformat-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (3.10.0)
 Requirement already satisfied: attrs&gt;=17.4.0 in /usr/local/lib/python3.7/dist-packages (from jsonschema&gt;=2.6-&gt;nbformat-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (21.4.0)
 Requirement already satisfied: pyrsistent&gt;=0.14.0 in /usr/local/lib/python3.7/dist-packages (from jsonschema&gt;=2.6-&gt;nbformat-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.19.2)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: ptyprocess in /usr/local/lib/python3.7/dist-packages (from terminado&gt;=0.8.1-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.7.0)
-Building wheels for collected packages: swifter
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Building wheel for swifter (setup.py) ... ?25l?25hdone
-  Created wheel for swifter: filename=swifter-1.3.4-py3-none-any.whl size=16321 sha256=e217dbaea060a1f64c14053c52c2b6a1661bc101ed76d4ce56d3b12b0de07b15
-  Stored in directory: /root/.cache/pip/wheels/29/a7/0e/3a8f17ac69d759e1e93647114bc9bdc95957e5b0cbfd405205
-Successfully built swifter
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: psutil, swifter
-  Attempting uninstall: psutil
-    Found existing installation: psutil 5.4.8
-    Uninstalling psutil-5.4.8:
-      Successfully uninstalled psutil-5.4.8
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Successfully installed psutil-5.9.4 swifter-1.3.4
+Requirement already satisfied: ptyprocess in /usr/local/lib/python3.7/dist-packages (from terminado&gt;=0.8.1-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.7.0)
 </pre></div>
 </div>
 </div>
@@ -2098,17 +1437,17 @@ Successfully built swifter
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     pita hitam umm di 40 hari tragedi kanjuruhan d...
-1     @indostransfer memang urusan sama si anu ini r...
-2     aremania menggugat sebut kejati ingin polisi t...
-3     mencoba untuk tidak peduli &amp;amp; bodo amat dg ...
-4     ini bukti kalau owner club, exco, atau apa lah...
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     @mafiawasit masih suasana berduka tragedi kanj...
+1     pita hitam umm di 40 hari tragedi kanjuruhan d...
+2     @indostransfer memang urusan sama si anu ini r...
+3     aremania menggugat sebut kejati ingin polisi t...
+4     mencoba untuk tidak peduli &amp;amp; bodo amat dg ...
                             ...                        
-71    @yusufs_abiie @garagarabola_ lah? dari tadi gw...
-72    kata pt lib soal pertandingan persib vs persij...
-73    @mafiawasit klo saya sih gak masalah liga lanj...
-74    this photo and poster is so deep... #usuttunta...
-75    dan h+5 dari batas ultimatum presidium-preside...
+71    update proses hukum tragedi kanjuruhan: nasib ...
+72    @yusufs_abiie @garagarabola_ lah? dari tadi gw...
+73    kata pt lib soal pertandingan persib vs persij...
+74    @mafiawasit klo saya sih gak masalah liga lanj...
+75    this photo and poster is so deep... #usuttunta...
 Name: tweet, Length: 76, dtype: object
 </pre></div>
 </div>
@@ -2125,9 +1464,9 @@ Name: tweet, Length: 76, dtype: object
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
 Requirement already satisfied: nltk in /usr/local/lib/python3.7/dist-packages (3.7)
 Requirement already satisfied: tqdm in /usr/local/lib/python3.7/dist-packages (from nltk) (4.64.1)
-Requirement already satisfied: click in /usr/local/lib/python3.7/dist-packages (from nltk) (7.1.2)
 Requirement already satisfied: joblib in /usr/local/lib/python3.7/dist-packages (from nltk) (1.2.0)
 Requirement already satisfied: regex&gt;=2021.8.3 in /usr/local/lib/python3.7/dist-packages (from nltk) (2022.6.2)
+Requirement already satisfied: click in /usr/local/lib/python3.7/dist-packages (from nltk) (7.1.2)
 </pre></div>
 </div>
 </div>
@@ -2161,17 +1500,17 @@ Requirement already satisfied: regex&gt;=2021.8.3 in /usr/local/lib/python3.7/di
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     pita hitam umm di 40 hari tragedi kanjuruhan d...
-1     memang urusan sama si anu ini ribet,,padahal t...
-2     aremania menggugat sebut kejati ingin polisi t...
-3     mencoba untuk tidak peduli &amp;amp; bodo amat dg ...
-4     ini bukti kalau owner club, exco, atau apa lah...
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0              masih suasana berduka tragedi kanjuruhan
+1     pita hitam umm di 40 hari tragedi kanjuruhan d...
+2     memang urusan sama si anu ini ribet,,padahal t...
+3     aremania menggugat sebut kejati ingin polisi t...
+4     mencoba untuk tidak peduli &amp;amp; bodo amat dg ...
                             ...                        
-71    _abiie _ lah? dari tadi gw bilang jam malam it...
-72    kata pt lib soal pertandingan persib vs persij...
-73    klo saya sih gak masalah liga lanjut, tapi per...
-74                  this photo and poster is so deep...
-75    dan h+5 dari batas ultimatum presidium-preside...
+71    update proses hukum tragedi kanjuruhan: nasib ...
+72    _abiie _ lah? dari tadi gw bilang jam malam it...
+73    kata pt lib soal pertandingan persib vs persij...
+74    klo saya sih gak masalah liga lanjut, tapi per...
+75                  this photo and poster is so deep...
 Name: tweet, Length: 76, dtype: object
 </pre></div>
 </div>
@@ -2192,17 +1531,17 @@ Name: tweet, Length: 76, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     pita hitam umm di  hari tragedi kanjuruhan dan...
-1     memang urusan sama si anu ini ribet,,padahal t...
-2     aremania menggugat sebut kejati ingin polisi t...
-3     mencoba untuk tidak peduli &amp;amp; bodo amat dg ...
-4     ini bukti kalau owner club, exco, atau apa lah...
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0              masih suasana berduka tragedi kanjuruhan
+1     pita hitam umm di  hari tragedi kanjuruhan dan...
+2     memang urusan sama si anu ini ribet,,padahal t...
+3     aremania menggugat sebut kejati ingin polisi t...
+4     mencoba untuk tidak peduli &amp;amp; bodo amat dg ...
                             ...                        
-71    _abiie _ lah? dari tadi gw bilang jam malam it...
-72    kata pt lib soal pertandingan persib vs persij...
-73    klo saya sih gak masalah liga lanjut, tapi per...
-74                  this photo and poster is so deep...
-75    dan h+ dari batas ultimatum presidium-presideu...
+71    update proses hukum tragedi kanjuruhan: nasib ...
+72    _abiie _ lah? dari tadi gw bilang jam malam it...
+73    kata pt lib soal pertandingan persib vs persij...
+74    klo saya sih gak masalah liga lanjut, tapi per...
+75                  this photo and poster is so deep...
 Name: tweet, Length: 76, dtype: object
 </pre></div>
 </div>
@@ -2223,17 +1562,17 @@ Name: tweet, Length: 76, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     pita hitam umm di  hari tragedi kanjuruhan dan...
-1     memang urusan sama si anu ini ribetpadahal ter...
-2     aremania menggugat sebut kejati ingin polisi t...
-3     mencoba untuk tidak peduli amp bodo amat dg li...
-4     ini bukti kalau owner club exco atau apa lah i...
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0              masih suasana berduka tragedi kanjuruhan
+1     pita hitam umm di  hari tragedi kanjuruhan dan...
+2     memang urusan sama si anu ini ribetpadahal ter...
+3     aremania menggugat sebut kejati ingin polisi t...
+4     mencoba untuk tidak peduli amp bodo amat dg li...
                             ...                        
-71    abiie  lah dari tadi gw bilang jam malam itu b...
-72    kata pt lib soal pertandingan persib vs persij...
-73    klo saya sih gak masalah liga lanjut tapi perj...
-74                     this photo and poster is so deep
-75    dan h dari batas ultimatum presidiumpresideuma...
+71    update proses hukum tragedi kanjuruhan nasib p...
+72    abiie  lah dari tadi gw bilang jam malam itu b...
+73    kata pt lib soal pertandingan persib vs persij...
+74    klo saya sih gak masalah liga lanjut tapi perj...
+75                     this photo and poster is so deep
 Name: tweet, Length: 76, dtype: object
 </pre></div>
 </div>
@@ -2261,17 +1600,17 @@ Name: tweet, Length: 76, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     pita hitam umm di hari tragedi kanjuruhan dan ...
-1     memang urusan sama si anu ini ribetpadahal ter...
-2     aremania menggugat sebut kejati ingin polisi t...
-3     mencoba untuk tidak peduli amp bodo amat dg li...
-4     ini bukti kalau owner club exco atau apa lah i...
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0              masih suasana berduka tragedi kanjuruhan
+1     pita hitam umm di hari tragedi kanjuruhan dan ...
+2     memang urusan sama si anu ini ribetpadahal ter...
+3     aremania menggugat sebut kejati ingin polisi t...
+4     mencoba untuk tidak peduli amp bodo amat dg li...
                             ...                        
-71    abiie lah dari tadi gw bilang jam malam itu bu...
-72    kata pt lib soal pertandingan persib vs persij...
-73    klo saya sih gak masalah liga lanjut tapi perj...
-74                     this photo and poster is so deep
-75    dan h dari batas ultimatum presidiumpresideuma...
+71    update proses hukum tragedi kanjuruhan nasib p...
+72    abiie lah dari tadi gw bilang jam malam itu bu...
+73    kata pt lib soal pertandingan persib vs persij...
+74    klo saya sih gak masalah liga lanjut tapi perj...
+75                     this photo and poster is so deep
 Name: tweet, Length: 76, dtype: object
 </pre></div>
 </div>
@@ -2292,17 +1631,17 @@ Name: tweet, Length: 76, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     pita hitam umm di hari tragedi kanjuruhan dan ...
-1     memang urusan sama si anu ini ribetpadahal ter...
-2     aremania menggugat sebut kejati ingin polisi t...
-3     mencoba untuk tidak peduli amp bodo amat dg li...
-4     ini bukti kalau owner club exco atau apa lah i...
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0              masih suasana berduka tragedi kanjuruhan
+1     pita hitam umm di hari tragedi kanjuruhan dan ...
+2     memang urusan sama si anu ini ribetpadahal ter...
+3     aremania menggugat sebut kejati ingin polisi t...
+4     mencoba untuk tidak peduli amp bodo amat dg li...
                             ...                        
-71    abiie lah dari tadi gw bilang jam malam itu bu...
-72    kata pt lib soal pertandingan persib vs persij...
-73    klo saya sih gak masalah liga lanjut tapi perj...
-74                     this photo and poster is so deep
-75    dan   dari batas ultimatum presidiumpresideuma...
+71    update proses hukum tragedi kanjuruhan nasib p...
+72    abiie lah dari tadi gw bilang jam malam itu bu...
+73    kata pt lib soal pertandingan persib vs persij...
+74    klo saya sih gak masalah liga lanjut tapi perj...
+75                     this photo and poster is so deep
 Name: tweet, Length: 76, dtype: object
 </pre></div>
 </div>
@@ -2342,17 +1681,17 @@ Name: tweet, Length: 76, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     [pita, hitam, umm, di, hari, tragedi, kanjuruh...
-1     [memang, urusan, sama, si, anu, ini, ribetpada...
-2     [aremania, menggugat, sebut, kejati, ingin, po...
-3     [mencoba, untuk, tidak, peduli, amp, bodo, ama...
-4     [ini, bukti, kalau, owner, club, exco, atau, a...
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0        [masih, suasana, berduka, tragedi, kanjuruhan]
+1     [pita, hitam, umm, di, hari, tragedi, kanjuruh...
+2     [memang, urusan, sama, si, anu, ini, ribetpada...
+3     [aremania, menggugat, sebut, kejati, ingin, po...
+4     [mencoba, untuk, tidak, peduli, amp, bodo, ama...
                             ...                        
-71    [abiie, lah, dari, tadi, gw, bilang, jam, mala...
-72    [kata, pt, lib, soal, pertandingan, persib, vs...
-73    [klo, saya, sih, gak, masalah, liga, lanjut, t...
-74             [this, photo, and, poster, is, so, deep]
-75    [dan, dari, batas, ultimatum, presidiumpreside...
+71    [update, proses, hukum, tragedi, kanjuruhan, n...
+72    [abiie, lah, dari, tadi, gw, bilang, jam, mala...
+73    [kata, pt, lib, soal, pertandingan, persib, vs...
+74    [klo, saya, sih, gak, masalah, liga, lanjut, t...
+75             [this, photo, and, poster, is, so, deep]
 Name: tweet, Length: 76, dtype: object
 </pre></div>
 </div>
@@ -2395,17 +1734,17 @@ Name: tweet, Length: 76, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     [pita, hitam, umm, tragedi, kanjuruhan, pahlawan]
-1     [urusan, si, anu, ribetpadahal, tersangka, kel...
-2     [aremania, menggugat, kejati, polisi, tersangk...
-3     [mencoba, peduli, amp, bodo, dg, liga, lokal, ...
-4     [bukti, owner, club, exco, sebutannya, tdk, pe...
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0               [suasana, berduka, tragedi, kanjuruhan]
+1     [pita, hitam, umm, tragedi, kanjuruhan, pahlawan]
+2     [urusan, si, anu, ribetpadahal, tersangka, kel...
+3     [aremania, menggugat, kejati, polisi, tersangk...
+4     [mencoba, peduli, amp, bodo, dg, liga, lokal, ...
                             ...                        
-71    [abiie, gw, bilang, jam, malam, karna, tragedi...
-72    [pt, lib, pertandingan, persib, vs, persija, t...
-73    [klo, sih, gak, liga, perjelas, tragedi, kanju...
-74             [this, photo, and, poster, is, so, deep]
-75    [batas, ultimatum, presidiumpresideuman, terkait]
+71    [update, proses, hukum, tragedi, kanjuruhan, n...
+72    [abiie, gw, bilang, jam, malam, karna, tragedi...
+73    [pt, lib, pertandingan, persib, vs, persija, t...
+74    [klo, sih, gak, liga, perjelas, tragedi, kanju...
+75             [this, photo, and, poster, is, so, deep]
 Name: tweet, Length: 76, dtype: object
 </pre></div>
 </div>
@@ -2457,38 +1796,42 @@ Name: tweet, Length: 76, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>464
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>462
 ------------------------
-pita : pita
-hitam : hitam
-umm : umm
+suasana : suasana
+berduka : duka
 tragedi : tragedi
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>kanjuruhan : kanjuruhan
+pita : pita
+hitam : hitam
+umm : umm
 pahlawan : pahlawan
 urusan : urus
 si : si
 anu : anu
 ribetpadahal : ribetpadahal
-tersangka : sangka
-kelompok : kelompok
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>jelasgmn : jelasgmn
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>tersangka : sangka
+kelompok : kelompok
+jelasgmn : jelasgmn
 kl : kl
 jd : jd
 utama : utama
-kemarinbisa : kemarinbisa
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>kemarinbisa : kemarinbisa
 gk : gk
 bola : bola
 indonesia : indonesia
 dalih : dalih
 keamanan : aman
+aremania : aremania
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>aremania : aremania
-menggugat : gugat
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>menggugat : gugat
 kejati : kejat
 polisi : polisi
 malang : malang
@@ -2581,10 +1924,10 @@ gas : gas
 air : air
 mata : mata
 nggak : nggak
-acara : acara
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dgn : dgn
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acara : acara
+dgn : dgn
 tensi : tensi
 emosi : emosi
 santai : santai
@@ -2625,10 +1968,10 @@ warga : warga
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>berjuang : juang
 satupun : satu
+penembakan : tembak
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>penembakan : tembak
-gasairmata : gasairmata
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>gasairmata : gasairmata
 ditetapkan : tetap
 </pre></div>
 </div>
@@ -2712,10 +2055,10 @@ bkn : bkn
 gub : gub
 presiden : presiden
 dasar : dasar
+ebong : ebong
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ebong : ebong
-nirnalar : nirnalar
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>nirnalar : nirnalar
 tetapkan : tetap
 buntut : buntut
 tunda : tunda
@@ -2724,49 +2067,49 @@ putaran : putar
 jenderal : jenderal
 andika : andika
 usut : usut
+penendangan : tendang
+suporter : suporter
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>penendangan : tendang
-suporter : suporter
-oiya : oiya
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>oiya : oiya
 kabar : kabar
 ya : ya
+hmmmm : hmmmm
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hmmmm : hmmmm
-nawak : nawak
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>nawak : nawak
 kemanusiaan : manusia
 butuh : butuh
 dm : dm
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>whats : whats
+whats : whats
 app : app
 tau : tau
 kondisi : kondisi
-bersinggungan : singgung
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>udah : udah
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>bersinggungan : singgung
+udah : udah
 fotonya : foto
 tangkap : tangkap
-hehe : hehe
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>tambeng : tambeng
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hehe : hehe
+tambeng : tambeng
 ketum : tum
-kaga : kaga
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ngebahas : ngebahas
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>kaga : kaga
+ngebahas : ngebahas
 lg : lg
-yakalo : yakalo
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>emng : emng
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>yakalo : yakalo
+emng : emng
 lu : lu
 mao : mao
-salahin : salahin
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>salahin : salahin
 minimal : minimal
 rangkul : rangkul
 kek : kek
@@ -2791,7 +2134,6 @@ memilukan : milu
 memalukan : malu
 pimpin : pimpin
 perubahan : ubah
-suasana : suasana
 duka : duka
 munafik : munafik
 </pre></div>
@@ -2845,11 +2187,11 @@ imam : imam
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>effendy : effendy
+rakor : rakor
+membahas : bahas
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>rakor : rakor
-membahas : bahas
-pemenuhan : penuh
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pemenuhan : penuh
 persyaratan : syarat
 penyelenggaraan : selenggara
 kompetisi : kompetisi
@@ -2887,11 +2229,10 @@ tc : tc
 timnas : timnas
 dihentikan : henti
 imbas : imbas
-kejaksaan : jaksa
-selaras
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> : selaras
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>kejaksaan : jaksa
+selaras : selaras
 tuntutan : tuntut
 proses : proses
 penyidikan : sidi
@@ -2923,12 +2264,14 @@ ayo : ayo
 bentar : bentar
 lupa : lupa
 diusut : usut
-muke : muke
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>tebel : tebel
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>muke : muke
+tebel : tebel
 iya : iya
-pedes : pedes
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pedes : pedes
 pas : pas
 </pre></div>
 </div>
@@ -2982,10 +2325,10 @@ tubuh : tubuh
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>seriusseriusnya : seriusseriusnya
 menangani : tangan
+kucatat : catat
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>kucatat : catat
-kuceritakan : cerita
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>kuceritakan : cerita
 cucu : cucu
 kelak : kelak
 negeri : negeri
@@ -3051,11 +2394,11 @@ bela : bela
 kejadian : jadi
 paham : paham
 pertandingan : tanding
-persib : persib
-vs : vs
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>tertunda : tunda
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>persib : persib
+vs : vs
+tertunda : tunda
 sih : sih
 perjelas : jelas
 persidangan : sidang
@@ -3073,28 +2416,23 @@ so : so
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>deep : deep
-batas : batas
-ultimatum : ultimatum
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>presidiumpresideuman : presidiumpresideuman
-{&#39;pita&#39;: &#39;pita&#39;, &#39;hitam&#39;: &#39;hitam&#39;, &#39;umm&#39;: &#39;umm&#39;, &#39;tragedi&#39;: &#39;tragedi&#39;, &#39;kanjuruhan&#39;: &#39;kanjuruhan&#39;, &#39;pahlawan&#39;: &#39;pahlawan&#39;, &#39;urusan&#39;: &#39;urus&#39;, &#39;si&#39;: &#39;si&#39;, &#39;anu&#39;: &#39;anu&#39;, &#39;ribetpadahal&#39;: &#39;ribetpadahal&#39;, &#39;tersangka&#39;: &#39;sangka&#39;, &#39;kelompok&#39;: &#39;kelompok&#39;, &#39;jelasgmn&#39;: &#39;jelasgmn&#39;, &#39;kl&#39;: &#39;kl&#39;, &#39;jd&#39;: &#39;jd&#39;, &#39;utama&#39;: &#39;utama&#39;, &#39;kemarinbisa&#39;: &#39;kemarinbisa&#39;, &#39;gk&#39;: &#39;gk&#39;, &#39;bola&#39;: &#39;bola&#39;, &#39;indonesia&#39;: &#39;indonesia&#39;, &#39;dalih&#39;: &#39;dalih&#39;, &#39;keamanan&#39;: &#39;aman&#39;, &#39;aremania&#39;: &#39;aremania&#39;, &#39;menggugat&#39;: &#39;gugat&#39;, &#39;kejati&#39;: &#39;kejat&#39;, &#39;polisi&#39;: &#39;polisi&#39;, &#39;malang&#39;: &#39;malang&#39;, &#39;ketua&#39;: &#39;ketua&#39;, &#39;tim&#39;: &#39;tim&#39;, &#39;advokasi&#39;: &#39;advokasi&#39;, &#39;bantuan&#39;: &#39;bantu&#39;, &#39;hukum&#39;: &#39;hukum&#39;, &#39;djoko&#39;: &#39;djoko&#39;, &#39;tritjahjana&#39;: &#39;tritjahjana&#39;, &#39;via&#39;: &#39;via&#39;, &#39;mencoba&#39;: &#39;coba&#39;, &#39;peduli&#39;: &#39;peduli&#39;, &#39;amp&#39;: &#39;amp&#39;, &#39;bodo&#39;: &#39;bodo&#39;, &#39;dg&#39;: &#39;dg&#39;, &#39;liga&#39;: &#39;liga&#39;, &#39;lokal&#39;: &#39;lokal&#39;, &#39;perkembangan&#39;: &#39;kembang&#39;, &#39;yg&#39;: &#39;yg&#39;, &#39;signifikan&#39;: &#39;signifikan&#39;, &#39;dr&#39;: &#39;dr&#39;, &#39;pengusutan&#39;: &#39;usut&#39;, &#39;bukti&#39;: &#39;bukti&#39;, &#39;owner&#39;: &#39;owner&#39;, &#39;club&#39;: &#39;club&#39;, &#39;exco&#39;: &#39;exco&#39;, &#39;sebutannya&#39;: &#39;sebut&#39;, &#39;tdk&#39;: &#39;tdk&#39;, &#39;kemarin&#39;: &#39;kemarin&#39;, &#39;korban&#39;: &#39;korban&#39;, &#39;statistik&#39;: &#39;statistik&#39;, &#39;jargon&#39;: &#39;jargon&#39;, &#39;sepak&#39;: &#39;sepak&#39;, &#39;seharga&#39;: &#39;harga&#39;, &#39;nyawa&#39;: &#39;nyawa&#39;, &#39;manusia&#39;: &#39;manusia&#39;, &#39;omong&#39;: &#39;omong&#39;, &#39;coro&#39;: &#39;coro&#39;, &#39;motivasi&#39;: &#39;motivasi&#39;, &#39;shin&#39;: &#39;shin&#39;, &#39;taeyong&#39;: &#39;taeyong&#39;, &#39;bawa&#39;: &#39;bawa&#39;, &#39;juara&#39;: &#39;juara&#39;, &#39;piala&#39;: &#39;piala&#39;, &#39;aff&#39;: &#39;aff&#39;, &#39;obati&#39;: &#39;obat&#39;, &#39;luka&#39;: &#39;luka&#39;, &#39;gelar&#39;: &#39;gelar&#39;, &#39;pelatih&#39;: &#39;latih&#39;, &#39;korea&#39;: &#39;korea&#39;, &#39;selatan&#39;: &#39;selatan&#39;, &#39;berbicara&#39;: &#39;bicara&#39;, &#39;perasaan&#39;: &#39;asa&#39;, &#39;hatinya&#39;: &#39;hati&#39;, &#39;terkait&#39;: &#39;kait&#39;, &#39;plan&#39;: &#39;plan&#39;, &#39;all&#39;: &#39;all&#39;, &#39;match&#39;: &#39;match&#39;, &#39;in&#39;: &#39;in&#39;, &#39;one&#39;: &#39;one&#39;, &#39;day&#39;: &#39;day&#39;, &#39;asli&#39;: &#39;asli&#39;, &#39;perbandingan&#39;: &#39;banding&#39;, &#39;bodoh&#39;: &#39;bodoh&#39;, &#39;dikanjuruhan&#39;: &#39;dikanjuruhan&#39;, &#39;klo&#39;: &#39;klo&#39;, &#39;gak&#39;: &#39;gak&#39;, &#39;gas&#39;: &#39;gas&#39;, &#39;air&#39;: &#39;air&#39;, &#39;mata&#39;: &#39;mata&#39;, &#39;nggak&#39;: &#39;nggak&#39;, &#39;acara&#39;: &#39;acara&#39;, &#39;dgn&#39;: &#39;dgn&#39;, &#39;tensi&#39;: &#39;tensi&#39;, &#39;emosi&#39;: &#39;emosi&#39;, &#39;santai&#39;: &#39;santai&#39;, &#39;rusuh&#39;: &#39;rusuh&#39;, &#39;orang&#39;: &#39;orang&#39;, &#39;goblok&#39;: &#39;goblok&#39;, &#39;banget&#39;: &#39;banget&#39;, &#39;pake&#39;: &#39;pake&#39;, &#39;darah&#39;: &#39;darah&#39;, &#39;juang&#39;: &#39;juang&#39;, &#39;mengalir&#39;: &#39;alir&#39;, &#39;badan&#39;: &#39;badan&#39;, &#39;trs&#39;: &#39;trs&#39;, &#39;brgerak&#39;: &#39;brgerak&#39;, &#39;bergelombang&#39;: &#39;gelombang&#39;, &#39;achmadi&#39;: &#39;achmadi&#39;, &#39;lhah&#39;: &#39;lhah&#39;, &#39;nasional&#39;: &#39;nasional&#39;, &#39;gimana&#39;: &#39;gimana&#39;, &#39;otak&#39;: &#39;otak&#39;, &#39;lo&#39;: &#39;lo&#39;, &#39;rum&#39;: &#39;rum&#39;, &#39;hasil&#39;: &#39;hasil&#39;, &#39;autopsi&#39;: &#39;autopsi&#39;, &#39;sudahkeluar&#39;: &#39;sudahkeluar&#39;, &#39;mohon&#39;: &#39;mohon&#39;, &#39;ditegakkan&#39;: &#39;tegak&#39;, &#39;keadilan&#39;: &#39;adil&#39;, &#39;masyarakat&#39;: &#39;masyarakat&#39;, &#39;warga&#39;: &#39;warga&#39;, &#39;berjuang&#39;: &#39;juang&#39;, &#39;satupun&#39;: &#39;satu&#39;, &#39;penembakan&#39;: &#39;tembak&#39;, &#39;gasairmata&#39;: &#39;gasairmata&#39;, &#39;ditetapkan&#39;: &#39;tetap&#39;, &#39;otopsi&#39;: &#39;otopsi&#39;, &#39;november&#39;: &#39;november&#39;, &#39;diserahkan&#39;: &#39;serah&#39;, &#39;langsung&#39;: &#39;langsung&#39;, &#39;dokter&#39;: &#39;dokter&#39;, &#39;forensik&#39;: &#39;forensik&#39;, &#39;penyidik&#39;: &#39;sidik&#39;, &#39;kepolisian&#39;: &#39;polisi&#39;, &#39;daerah&#39;: &#39;daerah&#39;, &#39;jawa&#39;: &#39;jawa&#39;, &#39;timur&#39;: &#39;timur&#39;, &#39;panglima&#39;: &#39;panglima&#39;, &#39;tni&#39;: &#39;tni&#39;, &#39;monitoring&#39;: &#39;monitoring&#39;, &#39;thread&#39;: &#39;thread&#39;, &#39;tolol&#39;: &#39;tolol&#39;, &#39;beresin&#39;: &#39;resin&#39;, &#39;aja&#39;: &#39;aja&#39;, &#39;ga&#39;: &#39;ga&#39;, &#39;berani&#39;: &#39;berani&#39;, &#39;membuahkan&#39;: &#39;buah&#39;, &#39;berkas&#39;: &#39;berkas&#39;, &#39;perkara&#39;: &#39;perkara&#39;, &#39;diteliti&#39;: &#39;teliti&#39;, &#39;jaksa&#39;: &#39;jaksa&#39;, &#39;jatim&#39;: &#39;jatim&#39;, &#39;petunjuk&#39;: &#39;tunjuk&#39;, &#39;polri&#39;: &#39;polri&#39;, &#39;pssi&#39;: &#39;pssi&#39;, &#39;rapat&#39;: &#39;rapat&#39;, &#39;koordinasi&#39;: &#39;koordinasi&#39;, &#39;pengamanan&#39;: &#39;aman&#39;, &#39;pasca&#39;: &#39;pasca&#39;, &#39;garis&#39;: &#39;garis&#39;, &#39;bawahi&#39;: &#39;bawah&#39;, &#39;laga&#39;: &#39;laga&#39;, &#39;home&#39;: &#39;home&#39;, &#39;penonton&#39;: &#39;tonton&#39;, &#39;maksudnya&#39;: &#39;maksud&#39;, &#39;orangtuanya&#39;: &#39;orangtuanya&#39;, &#39;bocah&#39;: &#39;bocah&#39;, &#39;kelas&#39;: &#39;kelas&#39;, &#39;senyum&#39;: &#39;senyum&#39;, &#39;anies&#39;: &#39;anies&#39;, &#39;empati&#39;: &#39;empati&#39;, &#39;mlh&#39;: &#39;mlh&#39;, &#39;deklarasi&#39;: &#39;deklarasi&#39;, &#39;capres&#39;: &#39;capres&#39;, &#39;kt&#39;: &#39;kt&#39;, &#39;grombolan&#39;: &#39;grombolan&#39;, &#39;hipokrit&#39;: &#39;hipokrit&#39;, &#39;bin&#39;: &#39;bin&#39;, &#39;stupid&#39;: &#39;stupid&#39;, &#39;pdhl&#39;: &#39;pdhl&#39;, &#39;bkn&#39;: &#39;bkn&#39;, &#39;gub&#39;: &#39;gub&#39;, &#39;presiden&#39;: &#39;presiden&#39;, &#39;dasar&#39;: &#39;dasar&#39;, &#39;ebong&#39;: &#39;ebong&#39;, &#39;nirnalar&#39;: &#39;nirnalar&#39;, &#39;tetapkan&#39;: &#39;tetap&#39;, &#39;buntut&#39;: &#39;buntut&#39;, &#39;tunda&#39;: &#39;tunda&#39;, &#39;diundur&#39;: &#39;undur&#39;, &#39;putaran&#39;: &#39;putar&#39;, &#39;jenderal&#39;: &#39;jenderal&#39;, &#39;andika&#39;: &#39;andika&#39;, &#39;usut&#39;: &#39;usut&#39;, &#39;penendangan&#39;: &#39;tendang&#39;, &#39;suporter&#39;: &#39;suporter&#39;, &#39;oiya&#39;: &#39;oiya&#39;, &#39;kabar&#39;: &#39;kabar&#39;, &#39;ya&#39;: &#39;ya&#39;, &#39;hmmmm&#39;: &#39;hmmmm&#39;, &#39;nawak&#39;: &#39;nawak&#39;, &#39;kemanusiaan&#39;: &#39;manusia&#39;, &#39;butuh&#39;: &#39;butuh&#39;, &#39;dm&#39;: &#39;dm&#39;, &#39;whats&#39;: &#39;whats&#39;, &#39;app&#39;: &#39;app&#39;, &#39;tau&#39;: &#39;tau&#39;, &#39;kondisi&#39;: &#39;kondisi&#39;, &#39;bersinggungan&#39;: &#39;singgung&#39;, &#39;udah&#39;: &#39;udah&#39;, &#39;fotonya&#39;: &#39;foto&#39;, &#39;tangkap&#39;: &#39;tangkap&#39;, &#39;hehe&#39;: &#39;hehe&#39;, &#39;tambeng&#39;: &#39;tambeng&#39;, &#39;ketum&#39;: &#39;tum&#39;, &#39;kaga&#39;: &#39;kaga&#39;, &#39;ngebahas&#39;: &#39;ngebahas&#39;, &#39;lg&#39;: &#39;lg&#39;, &#39;yakalo&#39;: &#39;yakalo&#39;, &#39;emng&#39;: &#39;emng&#39;, &#39;lu&#39;: &#39;lu&#39;, &#39;mao&#39;: &#39;mao&#39;, &#39;salahin&#39;: &#39;salahin&#39;, &#39;minimal&#39;: &#39;minimal&#39;, &#39;rangkul&#39;: &#39;rangkul&#39;, &#39;kek&#39;: &#39;kek&#39;, &#39;keluarga&#39;: &#39;keluarga&#39;, &#39;keilangan&#39;: &#39;keilangan&#39;, &#39;anak&#39;: &#39;anak&#39;, &#39;saudara&#39;: &#39;saudara&#39;, &#39;orangtua&#39;: &#39;orangtua&#39;, &#39;nya&#39;: &#39;nya&#39;, &#39;mah&#39;: &#39;mah&#39;, &#39;lepas&#39;: &#39;lepas&#39;, &#39;tangan&#39;: &#39;tangan&#39;, &#39;gitu&#39;: &#39;gitu&#39;, &#39;aj&#39;: &#39;aj&#39;, &#39;ahy&#39;: &#39;ahy&#39;, &#39;insiden&#39;: &#39;insiden&#39;, &#39;memilukan&#39;: &#39;milu&#39;, &#39;memalukan&#39;: &#39;malu&#39;, &#39;pimpin&#39;: &#39;pimpin&#39;, &#39;perubahan&#39;: &#39;ubah&#39;, &#39;suasana&#39;: &#39;suasana&#39;, &#39;duka&#39;: &#39;duka&#39;, &#39;munafik&#39;: &#39;munafik&#39;, &#39;nasdem&#39;: &#39;nasdem&#39;, &#39;bobrok&#39;: &#39;bobrok&#39;, &#39;ajak&#39;: &#39;ajak&#39;, &#39;kawal&#39;: &#39;kawal&#39;, &#39;investigasi&#39;: &#39;investigasi&#39;, &#39;tuntas&#39;: &#39;tuntas&#39;, &#39;ajukan&#39;: &#39;aju&#39;, &#39;gugatan&#39;: &#39;gugat&#39;, &#39;restitusi&#39;: &#39;restitusi&#39;, &#39;rp&#39;: &#39;rp&#39;, &#39;miliar&#39;: &#39;miliar&#39;, &#39;pekan&#39;: &#39;pekan&#39;, &#39;pasal&#39;: &#39;pasal&#39;, &#39;kelalaian&#39;: &#39;lalai&#39;, &#39;kerumitan&#39;: &#39;kerumit&#39;, &#39;dunia&#39;: &#39;dunia&#39;, &#39;persepakbolaan&#39;: &#39;persepakbolaan&#39;, &#39;salah&#39;: &#39;salah&#39;, &#39;contohnya&#39;: &#39;contoh&#39;, &#39;dibutuhkan&#39;: &#39;butuh&#39;, &#39;sosok&#39;: &#39;sosok&#39;, &#39;menteri&#39;: &#39;menteri&#39;, &#39;erick&#39;: &#39;erick&#39;, &#39;thohir&#39;: &#39;thohir&#39;, &#39;mengelola&#39;: &#39;kelola&#39;, &#39;terukur&#39;: &#39;ukur&#39;, &#39;terarah&#39;: &#39;arah&#39;, &#39;et&#39;: &#39;et&#39;, &#39;reformasi&#39;: &#39;reformasi&#39;, &#39;asisten&#39;: &#39;asisten&#39;, &#39;kapolri&#39;: &#39;kapolri&#39;, &#39;bidang&#39;: &#39;bidang&#39;, &#39;operasi&#39;: &#39;operasi&#39;, &#39;asops&#39;: &#39;asops&#39;, &#39;irjen&#39;: &#39;irjen&#39;, &#39;agung&#39;: &#39;agung&#39;, &#39;setya&#39;: &#39;setya&#39;, &#39;imam&#39;: &#39;imam&#39;, &#39;effendy&#39;: &#39;effendy&#39;, &#39;rakor&#39;: &#39;rakor&#39;, &#39;membahas&#39;: &#39;bahas&#39;, &#39;pemenuhan&#39;: &#39;penuh&#39;, &#39;persyaratan&#39;: &#39;syarat&#39;, &#39;penyelenggaraan&#39;: &#39;selenggara&#39;, &#39;kompetisi&#39;: &#39;kompetisi&#39;, &#39;pendampingan&#39;: &#39;damping&#39;, &#39;psikologis&#39;: &#39;psikologis&#39;, &#39;kevia&#39;: &#39;via&#39;, &#39;naswa&#39;: &#39;naswa&#39;, &#39;penyintas&#39;: &#39;sintas&#39;, &#39;sembuh&#39;: &#39;sembuh&#39;, &#39;gugat&#39;: &#39;gugat&#39;, &#39;polda&#39;: &#39;polda&#39;, &#39;penambahan&#39;: &#39;tambah&#39;, &#39;bek&#39;: &#39;bek&#39;, &#39;persija&#39;: &#39;persija&#39;, &#39;jakarta&#39;: &#39;jakarta&#39;, &#39;hansamu&#39;: &#39;hansamu&#39;, &#39;yama&#39;: &#39;yama&#39;, &#39;mengaku&#39;: &#39;aku&#39;, &#39;menemui&#39;: &#39;temu&#39;, &#39;kendala&#39;: &#39;kendala&#39;, &#39;mengikuti&#39;: &#39;ikut&#39;, &#39;tc&#39;: &#39;tc&#39;, &#39;timnas&#39;: &#39;timnas&#39;, &#39;dihentikan&#39;: &#39;henti&#39;, &#39;imbas&#39;: &#39;imbas&#39;, &#39;kejaksaan&#39;: &#39;jaksa&#39;, &#39;selaras&#39;: &#39;selaras&#39;, &#39;tuntutan&#39;: &#39;tuntut&#39;, &#39;proses&#39;: &#39;proses&#39;, &#39;penyidikan&#39;: &#39;sidi&#39;, &#39;mandek&#39;: &#39;mandek&#39;, &#39;kunjung&#39;: &#39;kunjung&#39;, &#39;ribuan&#39;: &#39;ribu&#39;, &#39;aksi&#39;: &#39;aksi&#39;, &#39;turun&#39;: &#39;turun&#39;, &#39;jalan&#39;: &#39;jalan&#39;, &#39;titik&#39;: &#39;titik&#39;, &#39;berbeda&#39;: &#39;beda&#39;, &#39;menuntut&#39;: &#39;tuntut&#39;, &#39;pelaku&#39;: &#39;laku&#39;, &#39;diseret&#39;: &#39;seret&#39;, &#39;diproses&#39;: &#39;proses&#39;, &#39;perkasa&#39;: &#39;perkasa&#39;, &#39;selengkapnya&#39;: &#39;lengkap&#39;, &#39;klik&#39;: &#39;klik&#39;, &#39;tautan&#39;: &#39;taut&#39;, &#39;kayak&#39;: &#39;kayak&#39;, &#39;mengusut&#39;: &#39;usut&#39;, &#39;anggota&#39;: &#39;anggota&#39;, &#39;ayo&#39;: &#39;ayo&#39;, &#39;alhmdllah&#39;: &#39;alhmdllah&#39;, &#39;bentar&#39;: &#39;bentar&#39;, &#39;lupa&#39;: &#39;lupa&#39;, &#39;diusut&#39;: &#39;usut&#39;, &#39;muke&#39;: &#39;muke&#39;, &#39;tebel&#39;: &#39;tebel&#39;, &#39;iya&#39;: &#39;iya&#39;, &#39;pedes&#39;: &#39;pedes&#39;, &#39;pas&#39;: &#39;pas&#39;, &#39;komennya&#39;: &#39;komennya&#39;, &#39;bergerak&#39;: &#39;gerak&#39;, &#39;giliran&#39;: &#39;gilir&#39;, &#39;kidul&#39;: &#39;kidul&#39;, &#39;pasar&#39;: &#39;pasar&#39;, &#39;terhenti&#39;: &#39;henti&#39;, &#39;oktober&#39;: &#39;oktober&#39;, &#39;pt&#39;: &#39;pt&#39;, &#39;lib&#39;: &#39;lib&#39;, &#39;kembalimelanjutkan&#39;: &#39;kembalimelanjutkan&#39;, &#39;bri&#39;: &#39;bri&#39;, &#39;musim&#39;: &#39;musim&#39;, &#39;format&#39;: &#39;format&#39;, &#39;id&#39;: &#39;id&#39;, &#39;dilaporkan&#39;: &#39;lapor&#39;, &#39;demokrat&#39;: &#39;demokrat&#39;, &#39;salurkan&#39;: &#39;salur&#39;, &#39;menggelar&#39;: &#39;gelar&#39;, &#39;solidaritas&#39;: &#39;solidaritas&#39;, &#39;black&#39;: &#39;black&#39;, &#39;sunday&#39;: &#39;sunday&#39;, &#39;jsp&#39;: &#39;jsp&#39;, &#39;disarankan&#39;: &#39;saran&#39;, &#39;bayi&#39;: &#39;bayi&#39;, &#39;balita&#39;: &#39;balita&#39;, &#39;batita&#39;: &#39;batita&#39;, &#39;usia&#39;: &#39;usia&#39;, &#39;sekolah&#39;: &#39;sekolah&#39;, &#39;dipisahkan&#39;: &#39;pisah&#39;, &#39;keluarganya&#39;: &#39;keluarga&#39;, &#39;berlamalama&#39;: &#39;berlamalama&#39;, &#39;pengungsian&#39;: &#39;ungsi&#39;, &#39;memantau&#39;: &#39;pantau&#39;, &#39;stadion&#39;: &#39;stadion&#39;, &#39;melibatkan&#39;: &#39;libat&#39;, &#39;genap&#39;: &#39;genap&#39;, &#39;biji&#39;: &#39;biji&#39;, &#39;tubuh&#39;: &#39;tubuh&#39;, &#39;seriusseriusnya&#39;: &#39;seriusseriusnya&#39;, &#39;menangani&#39;: &#39;tangan&#39;, &#39;kucatat&#39;: &#39;catat&#39;, &#39;kuceritakan&#39;: &#39;cerita&#39;, &#39;cucu&#39;: &#39;cucu&#39;, &#39;kelak&#39;: &#39;kelak&#39;, &#39;negeri&#39;: &#39;negeri&#39;, &#39;hobi&#39;: &#39;hobi&#39;, &#39;sesanti&#39;: &#39;sesanti&#39;, &#39;kosong&#39;: &#39;kosong&#39;, &#39;nurani&#39;: &#39;nurani&#39;, &#39;membidik&#39;: &#39;bidik&#39;, &#39;bertanggung&#39;: &#39;tanggung&#39;, &#39;kesedihan&#39;: &#39;sedih&#39;, &#39;iwan&#39;: &#39;iwan&#39;, &#39;bule&#39;: &#39;bule&#39;, &#39;mengapresiasi&#39;: &#39;apresiasi&#39;, &#39;tercapainya&#39;: &#39;capa&#39;, &#39;kesepatan&#39;: &#39;sepat&#39;, &#39;pemerintah&#39;: &#39;perintah&#39;, &#39;ri&#39;: &#39;ri&#39;, &#39;lanjutan&#39;: &#39;lanjut&#39;, &#39;terima&#39;: &#39;terima&#39;, &#39;kasih&#39;: &#39;kasih&#39;, &#39;menpora&#39;: &#39;menpora&#39;, &#39;kemenkes&#39;: &#39;kemenkes&#39;, &#39;kementerian&#39;: &#39;menteri&#39;, &#39;pupr&#39;: &#39;pupr&#39;, &#39;merespons&#39;: &#39;respons&#39;, &#39;task&#39;: &#39;task&#39;, &#39;force&#39;: &#39;force&#39;, &#39;selesaikan&#39;: &#39;selesai&#39;, &#39;update&#39;: &#39;update&#39;, &#39;nasib&#39;: &#39;nasib&#39;, &#39;penembak&#39;: &#39;tembak&#39;, &#39;abiie&#39;: &#39;abiie&#39;, &#39;gw&#39;: &#39;gw&#39;, &#39;bilang&#39;: &#39;bilang&#39;, &#39;jam&#39;: &#39;jam&#39;, &#39;malam&#39;: &#39;malam&#39;, &#39;karna&#39;: &#39;karna&#39;, &#39;doang&#39;: &#39;doang&#39;, &#39;majuin&#39;: &#39;majuin&#39;, &#39;kickoff&#39;: &#39;kickoff&#39;, &#39;rangkaian&#39;: &#39;rangkai&#39;, &#39;alami&#39;: &#39;alami&#39;, &#39;pulang&#39;: &#39;pulang&#39;, &#39;nonton&#39;: &#39;nonton&#39;, &#39;hak&#39;: &#39;hak&#39;, &#39;bela&#39;: &#39;bela&#39;, &#39;kejadian&#39;: &#39;jadi&#39;, &#39;paham&#39;: &#39;paham&#39;, &#39;pertandingan&#39;: &#39;tanding&#39;, &#39;persib&#39;: &#39;persib&#39;, &#39;vs&#39;: &#39;vs&#39;, &#39;tertunda&#39;: &#39;tunda&#39;, &#39;sih&#39;: &#39;sih&#39;, &#39;perjelas&#39;: &#39;jelas&#39;, &#39;persidangan&#39;: &#39;sidang&#39;, &#39;pengumuman&#39;: &#39;umum&#39;, &#39;nama&#39;: &#39;nama&#39;, &#39;diperjelas&#39;: &#39;jelas&#39;, &#39;this&#39;: &#39;this&#39;, &#39;photo&#39;: &#39;photo&#39;, &#39;and&#39;: &#39;and&#39;, &#39;poster&#39;: &#39;poster&#39;, &#39;is&#39;: &#39;is&#39;, &#39;so&#39;: &#39;so&#39;, &#39;deep&#39;: &#39;deep&#39;, &#39;batas&#39;: &#39;batas&#39;, &#39;ultimatum&#39;: &#39;ultimatum&#39;, &#39;presidiumpresideuman&#39;: &#39;presidiumpresideuman&#39;}
+{&#39;suasana&#39;: &#39;suasana&#39;, &#39;berduka&#39;: &#39;duka&#39;, &#39;tragedi&#39;: &#39;tragedi&#39;, &#39;kanjuruhan&#39;: &#39;kanjuruhan&#39;, &#39;pita&#39;: &#39;pita&#39;, &#39;hitam&#39;: &#39;hitam&#39;, &#39;umm&#39;: &#39;umm&#39;, &#39;pahlawan&#39;: &#39;pahlawan&#39;, &#39;urusan&#39;: &#39;urus&#39;, &#39;si&#39;: &#39;si&#39;, &#39;anu&#39;: &#39;anu&#39;, &#39;ribetpadahal&#39;: &#39;ribetpadahal&#39;, &#39;tersangka&#39;: &#39;sangka&#39;, &#39;kelompok&#39;: &#39;kelompok&#39;, &#39;jelasgmn&#39;: &#39;jelasgmn&#39;, &#39;kl&#39;: &#39;kl&#39;, &#39;jd&#39;: &#39;jd&#39;, &#39;utama&#39;: &#39;utama&#39;, &#39;kemarinbisa&#39;: &#39;kemarinbisa&#39;, &#39;gk&#39;: &#39;gk&#39;, &#39;bola&#39;: &#39;bola&#39;, &#39;indonesia&#39;: &#39;indonesia&#39;, &#39;dalih&#39;: &#39;dalih&#39;, &#39;keamanan&#39;: &#39;aman&#39;, &#39;aremania&#39;: &#39;aremania&#39;, &#39;menggugat&#39;: &#39;gugat&#39;, &#39;kejati&#39;: &#39;kejat&#39;, &#39;polisi&#39;: &#39;polisi&#39;, &#39;malang&#39;: &#39;malang&#39;, &#39;ketua&#39;: &#39;ketua&#39;, &#39;tim&#39;: &#39;tim&#39;, &#39;advokasi&#39;: &#39;advokasi&#39;, &#39;bantuan&#39;: &#39;bantu&#39;, &#39;hukum&#39;: &#39;hukum&#39;, &#39;djoko&#39;: &#39;djoko&#39;, &#39;tritjahjana&#39;: &#39;tritjahjana&#39;, &#39;via&#39;: &#39;via&#39;, &#39;mencoba&#39;: &#39;coba&#39;, &#39;peduli&#39;: &#39;peduli&#39;, &#39;amp&#39;: &#39;amp&#39;, &#39;bodo&#39;: &#39;bodo&#39;, &#39;dg&#39;: &#39;dg&#39;, &#39;liga&#39;: &#39;liga&#39;, &#39;lokal&#39;: &#39;lokal&#39;, &#39;perkembangan&#39;: &#39;kembang&#39;, &#39;yg&#39;: &#39;yg&#39;, &#39;signifikan&#39;: &#39;signifikan&#39;, &#39;dr&#39;: &#39;dr&#39;, &#39;pengusutan&#39;: &#39;usut&#39;, &#39;bukti&#39;: &#39;bukti&#39;, &#39;owner&#39;: &#39;owner&#39;, &#39;club&#39;: &#39;club&#39;, &#39;exco&#39;: &#39;exco&#39;, &#39;sebutannya&#39;: &#39;sebut&#39;, &#39;tdk&#39;: &#39;tdk&#39;, &#39;kemarin&#39;: &#39;kemarin&#39;, &#39;korban&#39;: &#39;korban&#39;, &#39;statistik&#39;: &#39;statistik&#39;, &#39;jargon&#39;: &#39;jargon&#39;, &#39;sepak&#39;: &#39;sepak&#39;, &#39;seharga&#39;: &#39;harga&#39;, &#39;nyawa&#39;: &#39;nyawa&#39;, &#39;manusia&#39;: &#39;manusia&#39;, &#39;omong&#39;: &#39;omong&#39;, &#39;coro&#39;: &#39;coro&#39;, &#39;motivasi&#39;: &#39;motivasi&#39;, &#39;shin&#39;: &#39;shin&#39;, &#39;taeyong&#39;: &#39;taeyong&#39;, &#39;bawa&#39;: &#39;bawa&#39;, &#39;juara&#39;: &#39;juara&#39;, &#39;piala&#39;: &#39;piala&#39;, &#39;aff&#39;: &#39;aff&#39;, &#39;obati&#39;: &#39;obat&#39;, &#39;luka&#39;: &#39;luka&#39;, &#39;gelar&#39;: &#39;gelar&#39;, &#39;pelatih&#39;: &#39;latih&#39;, &#39;korea&#39;: &#39;korea&#39;, &#39;selatan&#39;: &#39;selatan&#39;, &#39;berbicara&#39;: &#39;bicara&#39;, &#39;perasaan&#39;: &#39;asa&#39;, &#39;hatinya&#39;: &#39;hati&#39;, &#39;terkait&#39;: &#39;kait&#39;, &#39;plan&#39;: &#39;plan&#39;, &#39;all&#39;: &#39;all&#39;, &#39;match&#39;: &#39;match&#39;, &#39;in&#39;: &#39;in&#39;, &#39;one&#39;: &#39;one&#39;, &#39;day&#39;: &#39;day&#39;, &#39;asli&#39;: &#39;asli&#39;, &#39;perbandingan&#39;: &#39;banding&#39;, &#39;bodoh&#39;: &#39;bodoh&#39;, &#39;dikanjuruhan&#39;: &#39;dikanjuruhan&#39;, &#39;klo&#39;: &#39;klo&#39;, &#39;gak&#39;: &#39;gak&#39;, &#39;gas&#39;: &#39;gas&#39;, &#39;air&#39;: &#39;air&#39;, &#39;mata&#39;: &#39;mata&#39;, &#39;nggak&#39;: &#39;nggak&#39;, &#39;acara&#39;: &#39;acara&#39;, &#39;dgn&#39;: &#39;dgn&#39;, &#39;tensi&#39;: &#39;tensi&#39;, &#39;emosi&#39;: &#39;emosi&#39;, &#39;santai&#39;: &#39;santai&#39;, &#39;rusuh&#39;: &#39;rusuh&#39;, &#39;orang&#39;: &#39;orang&#39;, &#39;goblok&#39;: &#39;goblok&#39;, &#39;banget&#39;: &#39;banget&#39;, &#39;pake&#39;: &#39;pake&#39;, &#39;darah&#39;: &#39;darah&#39;, &#39;juang&#39;: &#39;juang&#39;, &#39;mengalir&#39;: &#39;alir&#39;, &#39;badan&#39;: &#39;badan&#39;, &#39;trs&#39;: &#39;trs&#39;, &#39;brgerak&#39;: &#39;brgerak&#39;, &#39;bergelombang&#39;: &#39;gelombang&#39;, &#39;achmadi&#39;: &#39;achmadi&#39;, &#39;lhah&#39;: &#39;lhah&#39;, &#39;nasional&#39;: &#39;nasional&#39;, &#39;gimana&#39;: &#39;gimana&#39;, &#39;otak&#39;: &#39;otak&#39;, &#39;lo&#39;: &#39;lo&#39;, &#39;rum&#39;: &#39;rum&#39;, &#39;hasil&#39;: &#39;hasil&#39;, &#39;autopsi&#39;: &#39;autopsi&#39;, &#39;sudahkeluar&#39;: &#39;sudahkeluar&#39;, &#39;mohon&#39;: &#39;mohon&#39;, &#39;ditegakkan&#39;: &#39;tegak&#39;, &#39;keadilan&#39;: &#39;adil&#39;, &#39;masyarakat&#39;: &#39;masyarakat&#39;, &#39;warga&#39;: &#39;warga&#39;, &#39;berjuang&#39;: &#39;juang&#39;, &#39;satupun&#39;: &#39;satu&#39;, &#39;penembakan&#39;: &#39;tembak&#39;, &#39;gasairmata&#39;: &#39;gasairmata&#39;, &#39;ditetapkan&#39;: &#39;tetap&#39;, &#39;otopsi&#39;: &#39;otopsi&#39;, &#39;november&#39;: &#39;november&#39;, &#39;diserahkan&#39;: &#39;serah&#39;, &#39;langsung&#39;: &#39;langsung&#39;, &#39;dokter&#39;: &#39;dokter&#39;, &#39;forensik&#39;: &#39;forensik&#39;, &#39;penyidik&#39;: &#39;sidik&#39;, &#39;kepolisian&#39;: &#39;polisi&#39;, &#39;daerah&#39;: &#39;daerah&#39;, &#39;jawa&#39;: &#39;jawa&#39;, &#39;timur&#39;: &#39;timur&#39;, &#39;panglima&#39;: &#39;panglima&#39;, &#39;tni&#39;: &#39;tni&#39;, &#39;monitoring&#39;: &#39;monitoring&#39;, &#39;thread&#39;: &#39;thread&#39;, &#39;tolol&#39;: &#39;tolol&#39;, &#39;beresin&#39;: &#39;resin&#39;, &#39;aja&#39;: &#39;aja&#39;, &#39;ga&#39;: &#39;ga&#39;, &#39;berani&#39;: &#39;berani&#39;, &#39;membuahkan&#39;: &#39;buah&#39;, &#39;berkas&#39;: &#39;berkas&#39;, &#39;perkara&#39;: &#39;perkara&#39;, &#39;diteliti&#39;: &#39;teliti&#39;, &#39;jaksa&#39;: &#39;jaksa&#39;, &#39;jatim&#39;: &#39;jatim&#39;, &#39;petunjuk&#39;: &#39;tunjuk&#39;, &#39;polri&#39;: &#39;polri&#39;, &#39;pssi&#39;: &#39;pssi&#39;, &#39;rapat&#39;: &#39;rapat&#39;, &#39;koordinasi&#39;: &#39;koordinasi&#39;, &#39;pengamanan&#39;: &#39;aman&#39;, &#39;pasca&#39;: &#39;pasca&#39;, &#39;garis&#39;: &#39;garis&#39;, &#39;bawahi&#39;: &#39;bawah&#39;, &#39;laga&#39;: &#39;laga&#39;, &#39;home&#39;: &#39;home&#39;, &#39;penonton&#39;: &#39;tonton&#39;, &#39;maksudnya&#39;: &#39;maksud&#39;, &#39;orangtuanya&#39;: &#39;orangtuanya&#39;, &#39;bocah&#39;: &#39;bocah&#39;, &#39;kelas&#39;: &#39;kelas&#39;, &#39;senyum&#39;: &#39;senyum&#39;, &#39;anies&#39;: &#39;anies&#39;, &#39;empati&#39;: &#39;empati&#39;, &#39;mlh&#39;: &#39;mlh&#39;, &#39;deklarasi&#39;: &#39;deklarasi&#39;, &#39;capres&#39;: &#39;capres&#39;, &#39;kt&#39;: &#39;kt&#39;, &#39;grombolan&#39;: &#39;grombolan&#39;, &#39;hipokrit&#39;: &#39;hipokrit&#39;, &#39;bin&#39;: &#39;bin&#39;, &#39;stupid&#39;: &#39;stupid&#39;, &#39;pdhl&#39;: &#39;pdhl&#39;, &#39;bkn&#39;: &#39;bkn&#39;, &#39;gub&#39;: &#39;gub&#39;, &#39;presiden&#39;: &#39;presiden&#39;, &#39;dasar&#39;: &#39;dasar&#39;, &#39;ebong&#39;: &#39;ebong&#39;, &#39;nirnalar&#39;: &#39;nirnalar&#39;, &#39;tetapkan&#39;: &#39;tetap&#39;, &#39;buntut&#39;: &#39;buntut&#39;, &#39;tunda&#39;: &#39;tunda&#39;, &#39;diundur&#39;: &#39;undur&#39;, &#39;putaran&#39;: &#39;putar&#39;, &#39;jenderal&#39;: &#39;jenderal&#39;, &#39;andika&#39;: &#39;andika&#39;, &#39;usut&#39;: &#39;usut&#39;, &#39;penendangan&#39;: &#39;tendang&#39;, &#39;suporter&#39;: &#39;suporter&#39;, &#39;oiya&#39;: &#39;oiya&#39;, &#39;kabar&#39;: &#39;kabar&#39;, &#39;ya&#39;: &#39;ya&#39;, &#39;hmmmm&#39;: &#39;hmmmm&#39;, &#39;nawak&#39;: &#39;nawak&#39;, &#39;kemanusiaan&#39;: &#39;manusia&#39;, &#39;butuh&#39;: &#39;butuh&#39;, &#39;dm&#39;: &#39;dm&#39;, &#39;whats&#39;: &#39;whats&#39;, &#39;app&#39;: &#39;app&#39;, &#39;tau&#39;: &#39;tau&#39;, &#39;kondisi&#39;: &#39;kondisi&#39;, &#39;bersinggungan&#39;: &#39;singgung&#39;, &#39;udah&#39;: &#39;udah&#39;, &#39;fotonya&#39;: &#39;foto&#39;, &#39;tangkap&#39;: &#39;tangkap&#39;, &#39;hehe&#39;: &#39;hehe&#39;, &#39;tambeng&#39;: &#39;tambeng&#39;, &#39;ketum&#39;: &#39;tum&#39;, &#39;kaga&#39;: &#39;kaga&#39;, &#39;ngebahas&#39;: &#39;ngebahas&#39;, &#39;lg&#39;: &#39;lg&#39;, &#39;yakalo&#39;: &#39;yakalo&#39;, &#39;emng&#39;: &#39;emng&#39;, &#39;lu&#39;: &#39;lu&#39;, &#39;mao&#39;: &#39;mao&#39;, &#39;salahin&#39;: &#39;salahin&#39;, &#39;minimal&#39;: &#39;minimal&#39;, &#39;rangkul&#39;: &#39;rangkul&#39;, &#39;kek&#39;: &#39;kek&#39;, &#39;keluarga&#39;: &#39;keluarga&#39;, &#39;keilangan&#39;: &#39;keilangan&#39;, &#39;anak&#39;: &#39;anak&#39;, &#39;saudara&#39;: &#39;saudara&#39;, &#39;orangtua&#39;: &#39;orangtua&#39;, &#39;nya&#39;: &#39;nya&#39;, &#39;mah&#39;: &#39;mah&#39;, &#39;lepas&#39;: &#39;lepas&#39;, &#39;tangan&#39;: &#39;tangan&#39;, &#39;gitu&#39;: &#39;gitu&#39;, &#39;aj&#39;: &#39;aj&#39;, &#39;ahy&#39;: &#39;ahy&#39;, &#39;insiden&#39;: &#39;insiden&#39;, &#39;memilukan&#39;: &#39;milu&#39;, &#39;memalukan&#39;: &#39;malu&#39;, &#39;pimpin&#39;: &#39;pimpin&#39;, &#39;perubahan&#39;: &#39;ubah&#39;, &#39;duka&#39;: &#39;duka&#39;, &#39;munafik&#39;: &#39;munafik&#39;, &#39;nasdem&#39;: &#39;nasdem&#39;, &#39;bobrok&#39;: &#39;bobrok&#39;, &#39;ajak&#39;: &#39;ajak&#39;, &#39;kawal&#39;: &#39;kawal&#39;, &#39;investigasi&#39;: &#39;investigasi&#39;, &#39;tuntas&#39;: &#39;tuntas&#39;, &#39;ajukan&#39;: &#39;aju&#39;, &#39;gugatan&#39;: &#39;gugat&#39;, &#39;restitusi&#39;: &#39;restitusi&#39;, &#39;rp&#39;: &#39;rp&#39;, &#39;miliar&#39;: &#39;miliar&#39;, &#39;pekan&#39;: &#39;pekan&#39;, &#39;pasal&#39;: &#39;pasal&#39;, &#39;kelalaian&#39;: &#39;lalai&#39;, &#39;kerumitan&#39;: &#39;kerumit&#39;, &#39;dunia&#39;: &#39;dunia&#39;, &#39;persepakbolaan&#39;: &#39;persepakbolaan&#39;, &#39;salah&#39;: &#39;salah&#39;, &#39;contohnya&#39;: &#39;contoh&#39;, &#39;dibutuhkan&#39;: &#39;butuh&#39;, &#39;sosok&#39;: &#39;sosok&#39;, &#39;menteri&#39;: &#39;menteri&#39;, &#39;erick&#39;: &#39;erick&#39;, &#39;thohir&#39;: &#39;thohir&#39;, &#39;mengelola&#39;: &#39;kelola&#39;, &#39;terukur&#39;: &#39;ukur&#39;, &#39;terarah&#39;: &#39;arah&#39;, &#39;et&#39;: &#39;et&#39;, &#39;reformasi&#39;: &#39;reformasi&#39;, &#39;asisten&#39;: &#39;asisten&#39;, &#39;kapolri&#39;: &#39;kapolri&#39;, &#39;bidang&#39;: &#39;bidang&#39;, &#39;operasi&#39;: &#39;operasi&#39;, &#39;asops&#39;: &#39;asops&#39;, &#39;irjen&#39;: &#39;irjen&#39;, &#39;agung&#39;: &#39;agung&#39;, &#39;setya&#39;: &#39;setya&#39;, &#39;imam&#39;: &#39;imam&#39;, &#39;effendy&#39;: &#39;effendy&#39;, &#39;rakor&#39;: &#39;rakor&#39;, &#39;membahas&#39;: &#39;bahas&#39;, &#39;pemenuhan&#39;: &#39;penuh&#39;, &#39;persyaratan&#39;: &#39;syarat&#39;, &#39;penyelenggaraan&#39;: &#39;selenggara&#39;, &#39;kompetisi&#39;: &#39;kompetisi&#39;, &#39;pendampingan&#39;: &#39;damping&#39;, &#39;psikologis&#39;: &#39;psikologis&#39;, &#39;kevia&#39;: &#39;via&#39;, &#39;naswa&#39;: &#39;naswa&#39;, &#39;penyintas&#39;: &#39;sintas&#39;, &#39;sembuh&#39;: &#39;sembuh&#39;, &#39;gugat&#39;: &#39;gugat&#39;, &#39;polda&#39;: &#39;polda&#39;, &#39;penambahan&#39;: &#39;tambah&#39;, &#39;bek&#39;: &#39;bek&#39;, &#39;persija&#39;: &#39;persija&#39;, &#39;jakarta&#39;: &#39;jakarta&#39;, &#39;hansamu&#39;: &#39;hansamu&#39;, &#39;yama&#39;: &#39;yama&#39;, &#39;mengaku&#39;: &#39;aku&#39;, &#39;menemui&#39;: &#39;temu&#39;, &#39;kendala&#39;: &#39;kendala&#39;, &#39;mengikuti&#39;: &#39;ikut&#39;, &#39;tc&#39;: &#39;tc&#39;, &#39;timnas&#39;: &#39;timnas&#39;, &#39;dihentikan&#39;: &#39;henti&#39;, &#39;imbas&#39;: &#39;imbas&#39;, &#39;kejaksaan&#39;: &#39;jaksa&#39;, &#39;selaras&#39;: &#39;selaras&#39;, &#39;tuntutan&#39;: &#39;tuntut&#39;, &#39;proses&#39;: &#39;proses&#39;, &#39;penyidikan&#39;: &#39;sidi&#39;, &#39;mandek&#39;: &#39;mandek&#39;, &#39;kunjung&#39;: &#39;kunjung&#39;, &#39;ribuan&#39;: &#39;ribu&#39;, &#39;aksi&#39;: &#39;aksi&#39;, &#39;turun&#39;: &#39;turun&#39;, &#39;jalan&#39;: &#39;jalan&#39;, &#39;titik&#39;: &#39;titik&#39;, &#39;berbeda&#39;: &#39;beda&#39;, &#39;menuntut&#39;: &#39;tuntut&#39;, &#39;pelaku&#39;: &#39;laku&#39;, &#39;diseret&#39;: &#39;seret&#39;, &#39;diproses&#39;: &#39;proses&#39;, &#39;perkasa&#39;: &#39;perkasa&#39;, &#39;selengkapnya&#39;: &#39;lengkap&#39;, &#39;klik&#39;: &#39;klik&#39;, &#39;tautan&#39;: &#39;taut&#39;, &#39;kayak&#39;: &#39;kayak&#39;, &#39;mengusut&#39;: &#39;usut&#39;, &#39;anggota&#39;: &#39;anggota&#39;, &#39;ayo&#39;: &#39;ayo&#39;, &#39;alhmdllah&#39;: &#39;alhmdllah&#39;, &#39;bentar&#39;: &#39;bentar&#39;, &#39;lupa&#39;: &#39;lupa&#39;, &#39;diusut&#39;: &#39;usut&#39;, &#39;muke&#39;: &#39;muke&#39;, &#39;tebel&#39;: &#39;tebel&#39;, &#39;iya&#39;: &#39;iya&#39;, &#39;pedes&#39;: &#39;pedes&#39;, &#39;pas&#39;: &#39;pas&#39;, &#39;komennya&#39;: &#39;komennya&#39;, &#39;bergerak&#39;: &#39;gerak&#39;, &#39;giliran&#39;: &#39;gilir&#39;, &#39;kidul&#39;: &#39;kidul&#39;, &#39;pasar&#39;: &#39;pasar&#39;, &#39;terhenti&#39;: &#39;henti&#39;, &#39;oktober&#39;: &#39;oktober&#39;, &#39;pt&#39;: &#39;pt&#39;, &#39;lib&#39;: &#39;lib&#39;, &#39;kembalimelanjutkan&#39;: &#39;kembalimelanjutkan&#39;, &#39;bri&#39;: &#39;bri&#39;, &#39;musim&#39;: &#39;musim&#39;, &#39;format&#39;: &#39;format&#39;, &#39;id&#39;: &#39;id&#39;, &#39;dilaporkan&#39;: &#39;lapor&#39;, &#39;demokrat&#39;: &#39;demokrat&#39;, &#39;salurkan&#39;: &#39;salur&#39;, &#39;menggelar&#39;: &#39;gelar&#39;, &#39;solidaritas&#39;: &#39;solidaritas&#39;, &#39;black&#39;: &#39;black&#39;, &#39;sunday&#39;: &#39;sunday&#39;, &#39;jsp&#39;: &#39;jsp&#39;, &#39;disarankan&#39;: &#39;saran&#39;, &#39;bayi&#39;: &#39;bayi&#39;, &#39;balita&#39;: &#39;balita&#39;, &#39;batita&#39;: &#39;batita&#39;, &#39;usia&#39;: &#39;usia&#39;, &#39;sekolah&#39;: &#39;sekolah&#39;, &#39;dipisahkan&#39;: &#39;pisah&#39;, &#39;keluarganya&#39;: &#39;keluarga&#39;, &#39;berlamalama&#39;: &#39;berlamalama&#39;, &#39;pengungsian&#39;: &#39;ungsi&#39;, &#39;memantau&#39;: &#39;pantau&#39;, &#39;stadion&#39;: &#39;stadion&#39;, &#39;melibatkan&#39;: &#39;libat&#39;, &#39;genap&#39;: &#39;genap&#39;, &#39;biji&#39;: &#39;biji&#39;, &#39;tubuh&#39;: &#39;tubuh&#39;, &#39;seriusseriusnya&#39;: &#39;seriusseriusnya&#39;, &#39;menangani&#39;: &#39;tangan&#39;, &#39;kucatat&#39;: &#39;catat&#39;, &#39;kuceritakan&#39;: &#39;cerita&#39;, &#39;cucu&#39;: &#39;cucu&#39;, &#39;kelak&#39;: &#39;kelak&#39;, &#39;negeri&#39;: &#39;negeri&#39;, &#39;hobi&#39;: &#39;hobi&#39;, &#39;sesanti&#39;: &#39;sesanti&#39;, &#39;kosong&#39;: &#39;kosong&#39;, &#39;nurani&#39;: &#39;nurani&#39;, &#39;membidik&#39;: &#39;bidik&#39;, &#39;bertanggung&#39;: &#39;tanggung&#39;, &#39;kesedihan&#39;: &#39;sedih&#39;, &#39;iwan&#39;: &#39;iwan&#39;, &#39;bule&#39;: &#39;bule&#39;, &#39;mengapresiasi&#39;: &#39;apresiasi&#39;, &#39;tercapainya&#39;: &#39;capa&#39;, &#39;kesepatan&#39;: &#39;sepat&#39;, &#39;pemerintah&#39;: &#39;perintah&#39;, &#39;ri&#39;: &#39;ri&#39;, &#39;lanjutan&#39;: &#39;lanjut&#39;, &#39;terima&#39;: &#39;terima&#39;, &#39;kasih&#39;: &#39;kasih&#39;, &#39;menpora&#39;: &#39;menpora&#39;, &#39;kemenkes&#39;: &#39;kemenkes&#39;, &#39;kementerian&#39;: &#39;menteri&#39;, &#39;pupr&#39;: &#39;pupr&#39;, &#39;merespons&#39;: &#39;respons&#39;, &#39;task&#39;: &#39;task&#39;, &#39;force&#39;: &#39;force&#39;, &#39;selesaikan&#39;: &#39;selesai&#39;, &#39;update&#39;: &#39;update&#39;, &#39;nasib&#39;: &#39;nasib&#39;, &#39;penembak&#39;: &#39;tembak&#39;, &#39;abiie&#39;: &#39;abiie&#39;, &#39;gw&#39;: &#39;gw&#39;, &#39;bilang&#39;: &#39;bilang&#39;, &#39;jam&#39;: &#39;jam&#39;, &#39;malam&#39;: &#39;malam&#39;, &#39;karna&#39;: &#39;karna&#39;, &#39;doang&#39;: &#39;doang&#39;, &#39;majuin&#39;: &#39;majuin&#39;, &#39;kickoff&#39;: &#39;kickoff&#39;, &#39;rangkaian&#39;: &#39;rangkai&#39;, &#39;alami&#39;: &#39;alami&#39;, &#39;pulang&#39;: &#39;pulang&#39;, &#39;nonton&#39;: &#39;nonton&#39;, &#39;hak&#39;: &#39;hak&#39;, &#39;bela&#39;: &#39;bela&#39;, &#39;kejadian&#39;: &#39;jadi&#39;, &#39;paham&#39;: &#39;paham&#39;, &#39;pertandingan&#39;: &#39;tanding&#39;, &#39;persib&#39;: &#39;persib&#39;, &#39;vs&#39;: &#39;vs&#39;, &#39;tertunda&#39;: &#39;tunda&#39;, &#39;sih&#39;: &#39;sih&#39;, &#39;perjelas&#39;: &#39;jelas&#39;, &#39;persidangan&#39;: &#39;sidang&#39;, &#39;pengumuman&#39;: &#39;umum&#39;, &#39;nama&#39;: &#39;nama&#39;, &#39;diperjelas&#39;: &#39;jelas&#39;, &#39;this&#39;: &#39;this&#39;, &#39;photo&#39;: &#39;photo&#39;, &#39;and&#39;: &#39;and&#39;, &#39;poster&#39;: &#39;poster&#39;, &#39;is&#39;: &#39;is&#39;, &#39;so&#39;: &#39;so&#39;, &#39;deep&#39;: &#39;deep&#39;}
 ------------------------
 </pre></div>
 </div>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "49dc069a026b48f287ecbf077a97f2d0"}
-</script><div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     [pita, hitam, umm, tragedi, kanjuruhan, pahlawan]
-1     [urus, si, anu, ribetpadahal, sangka, kelompok...
-2     [aremania, gugat, kejat, polisi, sangka, trage...
-3     [coba, peduli, amp, bodo, dg, liga, lokal, kem...
-4     [bukti, owner, club, exco, sebut, tdk, peduli,...
+{"version_major": 2, "version_minor": 0, "model_id": "35787e1fdf954fc6af82d1ebb2b32043"}
+</script><div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0                  [suasana, duka, tragedi, kanjuruhan]
+1     [pita, hitam, umm, tragedi, kanjuruhan, pahlawan]
+2     [urus, si, anu, ribetpadahal, sangka, kelompok...
+3     [aremania, gugat, kejat, polisi, sangka, trage...
+4     [coba, peduli, amp, bodo, dg, liga, lokal, kem...
                             ...                        
-71    [abiie, gw, bilang, jam, malam, karna, tragedi...
-72    [pt, lib, tanding, persib, vs, persija, tunda,...
-73    [klo, sih, gak, liga, jelas, tragedi, kanjuruh...
-74             [this, photo, and, poster, is, so, deep]
-75       [batas, ultimatum, presidiumpresideuman, kait]
+71    [update, proses, hukum, tragedi, kanjuruhan, n...
+72    [abiie, gw, bilang, jam, malam, karna, tragedi...
+73    [pt, lib, tanding, persib, vs, persija, tunda,...
+74    [klo, sih, gak, liga, jelas, tragedi, kanjuruh...
+75             [this, photo, and, poster, is, so, deep]
 Name: tweet, Length: 76, dtype: object
 </pre></div>
 </div>
@@ -3125,7 +2463,7 @@ Name: tweet, Length: 76, dtype: object
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-4e517877-2a78-440f-b6f8-b9985ca968fa">
+  <div id="df-55876527-362a-47df-803e-2b5450b86e33">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -3155,31 +2493,31 @@ Name: tweet, Length: 76, dtype: object
       <th>0</th>
       <td>0</td>
       <td>0</td>
-      <td>['pita', 'hitam', 'umm', 'tragedi', 'kanjuruha...</td>
+      <td>['suasana', 'duka', 'tragedi', 'kanjuruhan']</td>
     </tr>
     <tr>
       <th>1</th>
       <td>1</td>
       <td>1</td>
-      <td>['urus', 'si', 'anu', 'ribetpadahal', 'sangka'...</td>
+      <td>['pita', 'hitam', 'umm', 'tragedi', 'kanjuruha...</td>
     </tr>
     <tr>
       <th>2</th>
       <td>2</td>
       <td>2</td>
-      <td>['aremania', 'gugat', 'kejat', 'polisi', 'sang...</td>
+      <td>['urus', 'si', 'anu', 'ribetpadahal', 'sangka'...</td>
     </tr>
     <tr>
       <th>3</th>
       <td>3</td>
       <td>3</td>
-      <td>['coba', 'peduli', 'amp', 'bodo', 'dg', 'liga'...</td>
+      <td>['aremania', 'gugat', 'kejat', 'polisi', 'sang...</td>
     </tr>
     <tr>
       <th>4</th>
       <td>4</td>
       <td>4</td>
-      <td>['bukti', 'owner', 'club', 'exco', 'sebut', 't...</td>
+      <td>['coba', 'peduli', 'amp', 'bodo', 'dg', 'liga'...</td>
     </tr>
     <tr>
       <th>...</th>
@@ -3191,37 +2529,37 @@ Name: tweet, Length: 76, dtype: object
       <th>71</th>
       <td>71</td>
       <td>71</td>
-      <td>['abiie', 'gw', 'bilang', 'jam', 'malam', 'kar...</td>
+      <td>['update', 'proses', 'hukum', 'tragedi', 'kanj...</td>
     </tr>
     <tr>
       <th>72</th>
       <td>72</td>
       <td>72</td>
-      <td>['pt', 'lib', 'tanding', 'persib', 'vs', 'pers...</td>
+      <td>['abiie', 'gw', 'bilang', 'jam', 'malam', 'kar...</td>
     </tr>
     <tr>
       <th>73</th>
       <td>73</td>
       <td>73</td>
-      <td>['klo', 'sih', 'gak', 'liga', 'jelas', 'traged...</td>
+      <td>['pt', 'lib', 'tanding', 'persib', 'vs', 'pers...</td>
     </tr>
     <tr>
       <th>74</th>
       <td>74</td>
       <td>74</td>
-      <td>['this', 'photo', 'and', 'poster', 'is', 'so',...</td>
+      <td>['klo', 'sih', 'gak', 'liga', 'jelas', 'traged...</td>
     </tr>
     <tr>
       <th>75</th>
       <td>75</td>
       <td>75</td>
-      <td>['batas', 'ultimatum', 'presidiumpresideuman',...</td>
+      <td>['this', 'photo', 'and', 'poster', 'is', 'so',...</td>
     </tr>
   </tbody>
 </table>
 <p>76 rows × 3 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-4e517877-2a78-440f-b6f8-b9985ca968fa')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-55876527-362a-47df-803e-2b5450b86e33')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -3272,12 +2610,12 @@ Name: tweet, Length: 76, dtype: object
 
       <script>
         const buttonEl =
-          document.querySelector('#df-4e517877-2a78-440f-b6f8-b9985ca968fa button.colab-df-convert');
+          document.querySelector('#df-55876527-362a-47df-803e-2b5450b86e33 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-4e517877-2a78-440f-b6f8-b9985ca968fa');
+          const element = document.querySelector('#df-55876527-362a-47df-803e-2b5450b86e33');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -3307,7 +2645,7 @@ Name: tweet, Length: 76, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(76, 441)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(76, 438)
 </pre></div>
 </div>
 </div>
@@ -3323,23 +2661,22 @@ Name: tweet, Length: 76, dtype: object
        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0,
        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-       0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-       1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0,
        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0,
-       0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-       0])
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
 </pre></div>
 </div>
 </div>
@@ -3365,7 +2702,7 @@ Name: tweet, Length: 76, dtype: object
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-031ef26a-8de9-4649-827d-1d0e2744792c">
+  <div id="df-353b6fca-947d-4700-9393-160e64cf7bb2">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -3447,7 +2784,7 @@ Name: tweet, Length: 76, dtype: object
       <td>0</td>
       <td>...</td>
       <td>0</td>
-      <td>1</td>
+      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -3463,7 +2800,7 @@ Name: tweet, Length: 76, dtype: object
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
+      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -3471,8 +2808,8 @@ Name: tweet, Length: 76, dtype: object
       <td>0</td>
       <td>...</td>
       <td>0</td>
-      <td>0</td>
       <td>1</td>
+      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -3487,23 +2824,23 @@ Name: tweet, Length: 76, dtype: object
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
+      <td>1</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>5</th>
@@ -3518,6 +2855,7 @@ Name: tweet, Length: 76, dtype: object
       <td>0</td>
       <td>0</td>
       <td>...</td>
+      <td>1</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -3526,8 +2864,7 @@ Name: tweet, Length: 76, dtype: object
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>...</th>
@@ -3555,15 +2892,15 @@ Name: tweet, Length: 76, dtype: object
     </tr>
     <tr>
       <th>72</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
       <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
       <td>0</td>
       <td>...</td>
       <td>0</td>
@@ -3575,11 +2912,11 @@ Name: tweet, Length: 76, dtype: object
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>73</th>
-      <td>0</td>
+      <td>1</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -3593,13 +2930,13 @@ Name: tweet, Length: 76, dtype: object
       <td>0</td>
       <td>0</td>
       <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
       <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
     </tr>
     <tr>
       <th>74</th>
@@ -3617,13 +2954,13 @@ Name: tweet, Length: 76, dtype: object
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
       <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>75</th>
@@ -3647,7 +2984,7 @@ Name: tweet, Length: 76, dtype: object
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>76</th>
@@ -3675,9 +3012,9 @@ Name: tweet, Length: 76, dtype: object
     </tr>
   </tbody>
 </table>
-<p>76 rows × 441 columns</p>
+<p>76 rows × 438 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-031ef26a-8de9-4649-827d-1d0e2744792c')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-353b6fca-947d-4700-9393-160e64cf7bb2')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -3728,12 +3065,12 @@ Name: tweet, Length: 76, dtype: object
 
       <script>
         const buttonEl =
-          document.querySelector('#df-031ef26a-8de9-4649-827d-1d0e2744792c button.colab-df-convert');
+          document.querySelector('#df-353b6fca-947d-4700-9393-160e64cf7bb2 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-031ef26a-8de9-4649-827d-1d0e2744792c');
+          const element = document.querySelector('#df-353b6fca-947d-4700-9393-160e64cf7bb2');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -3758,7 +3095,7 @@ Name: tweet, Length: 76, dtype: object
 
 
 <script type="application/vnd.jupyter.widget-state+json">
-{"state": {"96505780aff64965842e8d74846ecce8": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d8e3516e2f9b44ac9234fecb86ac0cff": {"model_name": "ProgressStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ProgressStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "bar_color": null, "description_width": ""}}, "458bbf21762f4b6aabf9cb4fe877680d": {"model_name": "FloatProgressModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "FloatProgressModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ProgressView", "bar_style": "success", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_96505780aff64965842e8d74846ecce8", "max": 76.0, "min": 0.0, "orientation": "horizontal", "style": "IPY_MODEL_d8e3516e2f9b44ac9234fecb86ac0cff", "value": 76.0}}, "892990ac525d402aa76cc55382f32ded": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "6feb900de49e4267b123407fc3c647e0": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "3e2432adb00d4b1e854adab3940a6622": {"model_name": "HTMLModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HTMLView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_892990ac525d402aa76cc55382f32ded", "placeholder": "\u200b", "style": "IPY_MODEL_6feb900de49e4267b123407fc3c647e0", "value": "Pandas Apply: 100%"}}, "c65655559db3403c98019fc1f494d0f6": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "bb1f56cc28134f70aacba914b21faf12": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "4b50e996ac3c4e52ba1007ac2fb87e70": {"model_name": "HTMLModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HTMLView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_c65655559db3403c98019fc1f494d0f6", "placeholder": "\u200b", "style": "IPY_MODEL_bb1f56cc28134f70aacba914b21faf12", "value": " 76/76 [00:00&lt;00:00, 2443.86it/s]"}}, "feb0097f9c324af2a8ae4ddbf6e49de2": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "49dc069a026b48f287ecbf077a97f2d0": {"model_name": "HBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_3e2432adb00d4b1e854adab3940a6622", "IPY_MODEL_458bbf21762f4b6aabf9cb4fe877680d", "IPY_MODEL_4b50e996ac3c4e52ba1007ac2fb87e70"], "layout": "IPY_MODEL_feb0097f9c324af2a8ae4ddbf6e49de2"}}}, "version_major": 2, "version_minor": 0}
+{"state": {"9cc5f86a0ad241c2a1f1db20828f6b77": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "c67c07f7bbfb49a59ec57470805f3bcc": {"model_name": "ProgressStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ProgressStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "bar_color": null, "description_width": ""}}, "a5e5b7e4e8384ae1b9e1539cd07c91d3": {"model_name": "FloatProgressModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "FloatProgressModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ProgressView", "bar_style": "success", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_9cc5f86a0ad241c2a1f1db20828f6b77", "max": 76.0, "min": 0.0, "orientation": "horizontal", "style": "IPY_MODEL_c67c07f7bbfb49a59ec57470805f3bcc", "value": 76.0}}, "e896ea023122432784f73b48c99762f9": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "c46b3306839a497e8820d783d6e7c277": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "cb27093aa261464e9760bca71018991f": {"model_name": "HTMLModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HTMLView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_e896ea023122432784f73b48c99762f9", "placeholder": "\u200b", "style": "IPY_MODEL_c46b3306839a497e8820d783d6e7c277", "value": "Pandas Apply: 100%"}}, "00fc9c34063b442cbda264e811c43bfc": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "9c6bb80b042b46759f5021055fd5a6d4": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "5c09f5b46cee4a359d71e14a9071ddaf": {"model_name": "HTMLModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HTMLView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_00fc9c34063b442cbda264e811c43bfc", "placeholder": "\u200b", "style": "IPY_MODEL_9c6bb80b042b46759f5021055fd5a6d4", "value": " 76/76 [00:00&lt;00:00, 2524.65it/s]"}}, "90c1e6cafe2046258b4015d98a071dad": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "35787e1fdf954fc6af82d1ebb2b32043": {"model_name": "HBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_cb27093aa261464e9760bca71018991f", "IPY_MODEL_a5e5b7e4e8384ae1b9e1539cd07c91d3", "IPY_MODEL_5c09f5b46cee4a359d71e14a9071ddaf"], "layout": "IPY_MODEL_90c1e6cafe2046258b4015d98a071dad"}}}, "version_major": 2, "version_minor": 0}
 </script>
 
 
@@ -3789,12 +3126,19 @@ Name: tweet, Length: 76, dtype: object
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="markdown-notebooks.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="markdown.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Notebooks with MyST Markdown</p>
+            <p class="prev-next-title">Markdown Files</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="notebooks.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Content with notebooks</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>
