@@ -1,0 +1,737 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>&lt;no title&gt; &#8212; My sample book</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Data crawling" href="analisis%20sentimen%20twitter.html" />
+    <link rel="prev" title="Markdown Files" href="markdown.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">My sample book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown.html">
+   Markdown Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="analisis%20sentimen%20twitter.html">
+   <strong>
+    Data crawling
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks.html">
+   Content with notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown-notebooks.html">
+   Notebooks with MyST Markdown
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/text ranked.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://colab.research.google.com/github/executablebooks/jupyter-book/blob/master/docs/text ranked.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ftext ranked.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/text ranked.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1><no title></h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <p><em><strong>Summarization</strong></em> adalah suatu cara untuk meringkas suatu dokumen ke dalam bentuk yang lebih sederhana dengan mengambil poin-poin penting dalam dokumen tersebut.</p>
+<p>Secara umum, pendekatan news summarization dibagi menjadi dua, yaitu extractive dan abstractive. Extractive summarization berarti mengidentifikasi bagian-bagian penting dari teks dan membuat kalimat dari kata-kata tersebut. Sementara abstractive summarization mereproduksi materi penting dengan cara baru setelah melakukan interpretasi dan memeriksa teks menggunakan NLP untuk membuat kalimat baru yang berasal dari dokumen aslinya.</p>
+<p><em><strong>TextRank</strong></em> adalah algoritma peringkat berbasis grafik untuk memproses teks. TextRank menghasilkan ekstraksi kalimat sebagai ringkasan. Salah satu kelebihan dari algoritma ini, tidak diperlukannya pelatihan menggunakan data training pada algoritma yang digunakan.</p>
+<p><strong>Langkah pertama adalah meng-import library yang diperlukan</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">nltk</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">from</span> <span class="nn">nltk.tokenize</span> <span class="kn">import</span> <span class="n">sent_tokenize</span>
+<span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>
+<span class="kn">from</span> <span class="nn">gensim.models</span> <span class="kn">import</span> <span class="n">Word2Vec</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">spatial</span>
+<span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Teks berita yang digunakan</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">text</span><span class="o">=</span><span class="s1">&#39;&#39;&#39;The Double Asteroid Redirection Test successfully changed the trajectory of the asteroid Dimorphos when the NASA spacecraft intentionally slammed into the space rock on September 26, according to the agency. The DART mission, a full-scale demonstration of deflection technology, was the world’s first conducted on behalf of planetary defense. The mission was also the first time humanity intentionally changed the motion of a celestial object in space. Prior to impact, it took Dimorphos 11 hours and 55 minutes to orbit its larger parent asteroid Didymos. Astronomers used ground-based telescopes to measure how Dimorphos’ orbit changed after impact. Now, it takes Dimorphos 11 hours and 23 minutes to circle Didymos. The DART spacecraft changed the moonlet asteroid’s orbit by 32 minutes. Initially, astronomers expected DART to be a success if it shortened the trajectory by 10 minutes. “All of us have a responsibility to protect our home planet. After all, it’s the only one we have,” said NASA Administrator Bill Nelson. “This mission shows that NASA is trying to be ready for whatever the universe throws at us. NASA has proven we are serious as a defender of the planet. This is a watershed moment for planetary defense and all of humanity, demonstrating commitment from NASA’s exceptional team and partners from around the world.”&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;punkt&#39;</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">nltk</span> <span class="kn">import</span> <span class="n">sent_tokenize</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Tokenizing paragraph ke bentuk list sentences</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sentences</span><span class="o">=</span><span class="n">sent_tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sentences</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;The Double Asteroid Redirection Test successfully changed the trajectory of the asteroid Dimorphos when the NASA spacecraft intentionally slammed into the space rock on September 26, according to the agency.&#39;, &#39;The DART mission, a full-scale demonstration of deflection technology, was the world’s first conducted on behalf of planetary defense.&#39;, &#39;The mission was also the first time humanity intentionally changed the motion of a celestial object in space.&#39;, &#39;Prior to impact, it took Dimorphos 11 hours and 55 minutes to orbit its larger parent asteroid Didymos.&#39;, &#39;Astronomers used ground-based telescopes to measure how Dimorphos’ orbit changed after impact.&#39;, &#39;Now, it takes Dimorphos 11 hours and 23 minutes to circle Didymos.&#39;, &#39;The DART spacecraft changed the moonlet asteroid’s orbit by 32 minutes.&#39;, &#39;Initially, astronomers expected DART to be a success if it shortened the trajectory by 10 minutes.&#39;, &#39;“All of us have a responsibility to protect our home planet.&#39;, &#39;After all, it’s the only one we have,” said NASA Administrator Bill Nelson.&#39;, &#39;“This mission shows that NASA is trying to be ready for whatever the universe throws at us.&#39;, &#39;NASA has proven we are serious as a defender of the planet.&#39;, &#39;This is a watershed moment for planetary defense and all of humanity, demonstrating commitment from NASA’s exceptional team and partners from around the world.”&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Tahap Preprocessing</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;stopwords&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>re.sub(r’[^\w\s]’) menghapus semua tanda baca dari setiap kalimat menggunakan pemahaman daftar</p></li>
+<li><p>Hapus stopwords (a, the, an, dll) untuk fokus pada kata-kata yang lebih signifikan dalam sebuah kalimat.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sentences_clean</span><span class="o">=</span><span class="p">[</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;[^\w\s]&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="n">sentence</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span> <span class="k">for</span> <span class="n">sentence</span> <span class="ow">in</span> <span class="n">sentences</span><span class="p">]</span>
+<span class="n">stop_words</span> <span class="o">=</span> <span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;english&#39;</span><span class="p">)</span>
+<span class="n">sentence_tokens</span><span class="o">=</span><span class="p">[[</span><span class="n">words</span> <span class="k">for</span> <span class="n">words</span> <span class="ow">in</span> <span class="n">sentence</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span> <span class="k">if</span> <span class="n">words</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stop_words</span><span class="p">]</span> <span class="k">for</span> <span class="n">sentence</span> <span class="ow">in</span> <span class="n">sentences_clean</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sentence_tokens</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[&#39;double&#39;, &#39;asteroid&#39;, &#39;redirection&#39;, &#39;test&#39;, &#39;successfully&#39;, &#39;changed&#39;, &#39;trajectory&#39;, &#39;asteroid&#39;, &#39;dimorphos&#39;, &#39;nasa&#39;, &#39;spacecraft&#39;, &#39;intentionally&#39;, &#39;slammed&#39;, &#39;space&#39;, &#39;rock&#39;, &#39;september&#39;, &#39;26&#39;, &#39;according&#39;, &#39;agency&#39;], [&#39;dart&#39;, &#39;mission&#39;, &#39;fullscale&#39;, &#39;demonstration&#39;, &#39;deflection&#39;, &#39;technology&#39;, &#39;worlds&#39;, &#39;first&#39;, &#39;conducted&#39;, &#39;behalf&#39;, &#39;planetary&#39;, &#39;defense&#39;], [&#39;mission&#39;, &#39;also&#39;, &#39;first&#39;, &#39;time&#39;, &#39;humanity&#39;, &#39;intentionally&#39;, &#39;changed&#39;, &#39;motion&#39;, &#39;celestial&#39;, &#39;object&#39;, &#39;space&#39;], [&#39;prior&#39;, &#39;impact&#39;, &#39;took&#39;, &#39;dimorphos&#39;, &#39;11&#39;, &#39;hours&#39;, &#39;55&#39;, &#39;minutes&#39;, &#39;orbit&#39;, &#39;larger&#39;, &#39;parent&#39;, &#39;asteroid&#39;, &#39;didymos&#39;], [&#39;astronomers&#39;, &#39;used&#39;, &#39;groundbased&#39;, &#39;telescopes&#39;, &#39;measure&#39;, &#39;dimorphos&#39;, &#39;orbit&#39;, &#39;changed&#39;, &#39;impact&#39;], [&#39;takes&#39;, &#39;dimorphos&#39;, &#39;11&#39;, &#39;hours&#39;, &#39;23&#39;, &#39;minutes&#39;, &#39;circle&#39;, &#39;didymos&#39;], [&#39;dart&#39;, &#39;spacecraft&#39;, &#39;changed&#39;, &#39;moonlet&#39;, &#39;asteroids&#39;, &#39;orbit&#39;, &#39;32&#39;, &#39;minutes&#39;], [&#39;initially&#39;, &#39;astronomers&#39;, &#39;expected&#39;, &#39;dart&#39;, &#39;success&#39;, &#39;shortened&#39;, &#39;trajectory&#39;, &#39;10&#39;, &#39;minutes&#39;], [&#39;us&#39;, &#39;responsibility&#39;, &#39;protect&#39;, &#39;home&#39;, &#39;planet&#39;], [&#39;one&#39;, &#39;said&#39;, &#39;nasa&#39;, &#39;administrator&#39;, &#39;bill&#39;, &#39;nelson&#39;], [&#39;mission&#39;, &#39;shows&#39;, &#39;nasa&#39;, &#39;trying&#39;, &#39;ready&#39;, &#39;whatever&#39;, &#39;universe&#39;, &#39;throws&#39;, &#39;us&#39;], [&#39;nasa&#39;, &#39;proven&#39;, &#39;serious&#39;, &#39;defender&#39;, &#39;planet&#39;], [&#39;watershed&#39;, &#39;moment&#39;, &#39;planetary&#39;, &#39;defense&#39;, &#39;humanity&#39;, &#39;demonstrating&#39;, &#39;commitment&#39;, &#39;nasas&#39;, &#39;exceptional&#39;, &#39;team&#39;, &#39;partners&#39;, &#39;around&#39;, &#39;world&#39;]]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Seperti yang kita ketahui kita perlu mengkonversi data teks ke dalam bentuk numerik, pertama kita akan menghitung penyisipan kata &amp; menggunakan penyematan ini akan menghitung penyisipan kalimat menggunakan variabel sentence_tokens yang dihitung di atas.</p>
+<ul class="simple">
+<li><p>Menggunakan Word2Vec() gensim, menghitung embedding untuk setiap kata dari teks.</p></li>
+<li><p>Menggunakan pemahaman daftar, kami akan mengganti token kata dengan penyematannya di kalimat_tokens</p></li>
+<li><p>Menghitung max_length kalimat dalam teks yang ada</p></li>
+<li><p>Penyematan kalimat padding menggunakan 0s hingga max_len. Ini telah dilakukan untuk mempertahankan ukuran embedding yang sama untuk setiap kalimat.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">w2v</span><span class="o">=</span><span class="n">Word2Vec</span><span class="p">(</span><span class="n">sentence_tokens</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">min_count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="nb">iter</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+<span class="n">sentence_embeddings</span><span class="o">=</span><span class="p">[[</span><span class="n">w2v</span><span class="p">[</span><span class="n">word</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">]</span> <span class="k">for</span> <span class="n">words</span> <span class="ow">in</span> <span class="n">sentence_tokens</span><span class="p">]</span>
+<span class="n">max_len</span><span class="o">=</span><span class="nb">max</span><span class="p">([</span><span class="nb">len</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span> <span class="k">for</span> <span class="n">tokens</span> <span class="ow">in</span> <span class="n">sentence_tokens</span><span class="p">])</span>
+<span class="n">sentence_embeddings</span><span class="o">=</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">pad</span><span class="p">(</span><span class="n">embedding</span><span class="p">,(</span><span class="mi">0</span><span class="p">,</span><span class="n">max_len</span><span class="o">-</span><span class="nb">len</span><span class="p">(</span><span class="n">embedding</span><span class="p">)),</span><span class="s1">&#39;constant&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">embedding</span> <span class="ow">in</span> <span class="n">sentence_embeddings</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sentence_embeddings</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING:gensim.models.base_any2vec:consider setting layer size to a multiple of 4 for greater performance
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[array([-1.4162344, -1.6126682, -1.5029532, -1.4391676, -1.4341013,
+       -1.5466633, -1.5377697, -1.6126682, -1.5449578, -1.6187936,
+       -1.5113544, -1.5975767, -1.4400818, -1.6452527, -1.602138 ,
+       -1.6399454, -1.6423252, -1.582047 , -1.6461289], dtype=float32), array([-1.6326512, -1.6898235, -1.5491015, -1.7039665, -1.7377571,
+       -1.7479652, -1.7308434, -1.6886978, -1.654112 , -1.62525  ,
+       -1.784221 , -1.7285303,  0.       ,  0.       ,  0.       ,
+        0.       ,  0.       ,  0.       ,  0.       ], dtype=float32), array([-1.6898235, -1.3990278, -1.6886978, -1.4665003, -1.7066438,
+       -1.5975767, -1.5466633, -1.520082 , -1.4944812, -1.5068694,
+       -1.6452527,  0.       ,  0.       ,  0.       ,  0.       ,
+        0.       ,  0.       ,  0.       ,  0.       ], dtype=float32), array([-1.3248092, -1.4933038, -1.4903748, -1.5449578, -1.5662116,
+       -1.5501729, -1.4149665, -1.5221826, -1.5041952, -1.3950704,
+       -1.3604592, -1.6126682, -1.5645136,  0.       ,  0.       ,
+        0.       ,  0.       ,  0.       ,  0.       ], dtype=float32), array([-1.6103401, -1.4814521, -1.3788245, -1.4206246, -1.3614523,
+       -1.5449578, -1.5041952, -1.5466633, -1.4933038,  0.       ,
+        0.       ,  0.       ,  0.       ,  0.       ,  0.       ,
+        0.       ,  0.       ,  0.       ,  0.       ], dtype=float32), array([-1.3647468, -1.5449578, -1.5662116, -1.5501729, -1.4121268,
+       -1.5221826, -1.4385904, -1.5645136,  0.       ,  0.       ,
+        0.       ,  0.       ,  0.       ,  0.       ,  0.       ,
+        0.       ,  0.       ,  0.       ,  0.       ], dtype=float32), array([-1.6326512, -1.5113544, -1.5466633, -1.3029325, -1.3969647,
+       -1.5041952, -1.2810322, -1.5221826,  0.       ,  0.       ,
+        0.       ,  0.       ,  0.       ,  0.       ,  0.       ,
+        0.       ,  0.       ,  0.       ,  0.       ], dtype=float32), array([-1.4511788, -1.6103401, -1.464429 , -1.6326512, -1.5833578,
+       -1.5335304, -1.5377697, -1.4817092, -1.5221826,  0.       ,
+        0.       ,  0.       ,  0.       ,  0.       ,  0.       ,
+        0.       ,  0.       ,  0.       ,  0.       ], dtype=float32), array([-1.599618 , -1.4360934, -1.419935 , -1.42498  , -1.4596258,
+        0.       ,  0.       ,  0.       ,  0.       ,  0.       ,
+        0.       ,  0.       ,  0.       ,  0.       ,  0.       ,
+        0.       ,  0.       ,  0.       ,  0.       ], dtype=float32), array([-1.4378359, -1.4809489, -1.6187936, -1.4853684, -1.5364683,
+       -1.5168599,  0.       ,  0.       ,  0.       ,  0.       ,
+        0.       ,  0.       ,  0.       ,  0.       ,  0.       ,
+        0.       ,  0.       ,  0.       ,  0.       ], dtype=float32), array([-1.6898235, -1.5884426, -1.6187936, -1.6178051, -1.593526 ,
+       -1.727377 , -1.6453595, -1.6463917, -1.599618 ,  0.       ,
+        0.       ,  0.       ,  0.       ,  0.       ,  0.       ,
+        0.       ,  0.       ,  0.       ,  0.       ], dtype=float32), array([-1.6187936, -1.3249228, -1.3405352, -1.3593172, -1.4596258,
+        0.       ,  0.       ,  0.       ,  0.       ,  0.       ,
+        0.       ,  0.       ,  0.       ,  0.       ,  0.       ,
+        0.       ,  0.       ,  0.       ,  0.       ], dtype=float32), array([-1.5295417, -1.7043289, -1.784221 , -1.7285303, -1.7066438,
+       -1.7260495, -1.7058752, -1.7504109, -1.73501  , -1.7451558,
+       -1.8037134, -1.8370538, -1.6624578,  0.       ,  0.       ,
+        0.       ,  0.       ,  0.       ,  0.       ], dtype=float32)]
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:2: DeprecationWarning: Call to deprecated `__getitem__` (Method will be removed in 4.0.0, use self.wv.__getitem__() instead).
+  
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>calculate the similarity matrix</strong></p>
+<blockquote>
+<div><p>Inisialisasi kesamaan_matriks dimensi N x N di mana N adalah jumlah total kalimat dalam teks</p>
+</div></blockquote>
+<blockquote>
+<div><p>Menggunakan 1-spatial.distance.cosine(), hitung kesamaan antara setiap dua pasang kalimat.</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">similarity_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="nb">len</span><span class="p">(</span><span class="n">sentence_tokens</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">sentence_tokens</span><span class="p">)])</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">row_embedding</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sentence_embeddings</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span><span class="p">,</span><span class="n">column_embedding</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sentence_embeddings</span><span class="p">):</span>
+        <span class="n">similarity_matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="o">-</span><span class="n">spatial</span><span class="o">.</span><span class="n">distance</span><span class="o">.</span><span class="n">cosine</span><span class="p">(</span><span class="n">row_embedding</span><span class="p">,</span><span class="n">column_embedding</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">similarity_matrix</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1.         0.78036511 0.74192572 0.80789965 0.66917765 0.63004202
+  0.62821609 0.6691677  0.4865019  0.53776342 0.66939449 0.48486239
+  0.80920714]
+ [0.78036511 1.         0.95276922 0.95485413 0.86046815 0.81261647
+  0.81002229 0.86150974 0.63409024 0.70045096 0.86129624 0.63301361
+  0.96248126]
+ [0.74192572 0.95276922 1.         0.90465206 0.90024096 0.8527016
+  0.85411054 0.89990103 0.68222958 0.7477712  0.90208083 0.68236625
+  0.9144485 ]
+ [0.80789965 0.95485413 0.90465206 1.         0.82953709 0.78362364
+  0.77991599 0.83211136 0.61543149 0.68162328 0.83127433 0.6136986
+  0.99844027]
+ [0.66917765 0.86046815 0.90024096 0.82953709 1.         0.93885875
+  0.93954527 0.99694347 0.72931015 0.80463541 0.99923939 0.72847986
+  0.82116145]
+ [0.63004202 0.81261647 0.8527016  0.78362364 0.93885875 1.
+  0.9956125  0.94231623 0.78296667 0.86398643 0.94371188 0.77999115
+  0.77498966]
+ [0.62821609 0.81002229 0.85411054 0.77991599 0.93954527 0.9956125
+  1.         0.93812752 0.79761541 0.87451214 0.9428643  0.79654455
+  0.77134484]
+ [0.6691677  0.86150974 0.89990103 0.83211136 0.99694347 0.94231623
+  0.93812752 1.         0.74941218 0.82066989 0.99838948 0.74742085
+  0.82295591]
+ [0.4865019  0.63409024 0.68222958 0.61543149 0.72931015 0.78296667
+  0.79761541 0.74941218 1.         0.90971595 0.73828912 0.99936277
+  0.60546505]
+ [0.53776342 0.70045096 0.7477712  0.68162328 0.80463541 0.86398643
+  0.87451214 0.82066989 0.90971595 1.         0.81685352 0.90753156
+  0.66821182]
+ [0.66939449 0.86129624 0.90208083 0.83127433 0.99923939 0.94371188
+  0.9428643  0.99838948 0.73828912 0.81685352 1.         0.73724234
+  0.82266289]
+ [0.48486239 0.63301361 0.68236625 0.6136986  0.72847986 0.77999115
+  0.79654455 0.74742085 0.99936277 0.90753156 0.73724234 1.
+  0.60352319]
+ [0.80920714 0.96248126 0.9144485  0.99844027 0.82116145 0.77498966
+  0.77134484 0.82295591 0.60546505 0.66821182 0.82266289 0.60352319
+  1.        ]]
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>implement PageRank</strong></p>
+<blockquote>
+<div><p>Convert the similarity matrix to a network/graph</p>
+</div></blockquote>
+<blockquote>
+<div><p>Apply pagerank()</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nx_graph</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">from_numpy_array</span><span class="p">(</span><span class="n">similarity_matrix</span><span class="p">)</span>
+<span class="n">scores</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">pagerank</span><span class="p">(</span><span class="n">nx_graph</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{0: 0.06661013716911558, 1: 0.07832093692559706, 2: 0.0796159463209114, 3: 0.07715478926225842, 4: 0.08071912132273082, 5: 0.0800130886107798, 6: 0.08018270450791466, 7: 0.08110130812601633, 8: 0.07162996325033018, 9: 0.07532467177373962, 10: 0.08100248242278742, 11: 0.07152912334709881, 12: 0.07679572696071994}
+</pre></div>
+</div>
+</div>
+</div>
+<p>Sekarang, yang akan kita lakukan adalah membuat kamus dengan kalimat (kita dapatkan setelah sent_tokenize()) sebagai kunci &amp; PageRank mereka sebagai nilai &amp; mengurutkan kamus ini berdasarkan PageRanks kalimat. Disini diambil 4 kalimat teratas untuk ringkasan:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">top_sentence</span><span class="o">=</span><span class="p">{</span><span class="n">sentence</span><span class="p">:</span><span class="n">scores</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="k">for</span> <span class="n">index</span><span class="p">,</span><span class="n">sentence</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sentences</span><span class="p">)}</span>
+<span class="n">top</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">top_sentence</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)[:</span><span class="mi">4</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">top</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Initially, astronomers expected DART to be a success if it shortened the trajectory by 10 minutes.&#39;: 0.08110130812601633, &#39;“This mission shows that NASA is trying to be ready for whatever the universe throws at us.&#39;: 0.08100248242278742, &#39;Astronomers used ground-based telescopes to measure how Dimorphos’ orbit changed after impact.&#39;: 0.08071912132273082, &#39;The DART spacecraft changed the moonlet asteroid’s orbit by 32 minutes.&#39;: 0.08018270450791466}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">sent</span> <span class="ow">in</span> <span class="n">sentences</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">sent</span> <span class="ow">in</span> <span class="n">top</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">sent</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Astronomers used ground-based telescopes to measure how Dimorphos’ orbit changed after impact.
+The DART spacecraft changed the moonlet asteroid’s orbit by 32 minutes.
+Initially, astronomers expected DART to be a success if it shortened the trajectory by 10 minutes.
+“This mission shows that NASA is trying to be ready for whatever the universe throws at us.
+</pre></div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="markdown.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Markdown Files</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="analisis%20sentimen%20twitter.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>Data crawling</strong></p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By The Jupyter Book Community<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

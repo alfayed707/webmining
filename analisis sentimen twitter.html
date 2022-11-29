@@ -1,0 +1,2871 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Data crawling &#8212; My sample book</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Content with notebooks" href="notebooks.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="text%20ranked.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">My sample book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown.html">
+   Markdown Files
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   <strong>
+    Data crawling
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks.html">
+   Content with notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown-notebooks.html">
+   Notebooks with MyST Markdown
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/analisis sentimen twitter.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://colab.research.google.com/github/executablebooks/jupyter-book/blob/master/docs/analisis sentimen twitter.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fanalisis sentimen twitter.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/analisis sentimen twitter.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   <strong>
+    Data crawling
+   </strong>
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#twint">
+     Twint
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mengambil-data">
+   <strong>
+    Mengambil Data
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#case-folding">
+   <em>
+    Case Folding
+   </em>
+   *
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#menghapus-karakter-spesial">
+     Menghapus Karakter Spesial
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#menghapus-angka">
+     Menghapus Angka
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#menghapus-tanda-baca">
+     Menghapus Tanda Baca
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#menghapus-spasi">
+     Menghapus Spasi
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#menghapus-huruf">
+     Menghapus huruf
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tokenizing">
+   <strong>
+    Tokenizing
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#filtering-stopwords-removal">
+   <strong>
+    Filtering(Stopwords Removal)
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stemming">
+   <strong>
+    Stemming
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tf">
+   <strong>
+    TF
+   </strong>
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Data crawling</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   <strong>
+    Data crawling
+   </strong>
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#twint">
+     Twint
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mengambil-data">
+   <strong>
+    Mengambil Data
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#case-folding">
+   <em>
+    Case Folding
+   </em>
+   *
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#menghapus-karakter-spesial">
+     Menghapus Karakter Spesial
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#menghapus-angka">
+     Menghapus Angka
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#menghapus-tanda-baca">
+     Menghapus Tanda Baca
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#menghapus-spasi">
+     Menghapus Spasi
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#menghapus-huruf">
+     Menghapus huruf
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tokenizing">
+   <strong>
+    Tokenizing
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#filtering-stopwords-removal">
+   <strong>
+    Filtering(Stopwords Removal)
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stemming">
+   <strong>
+    Stemming
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tf">
+   <strong>
+    TF
+   </strong>
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="data-crawling">
+<h1><strong>Data crawling</strong><a class="headerlink" href="#data-crawling" title="Permalink to this headline">#</a></h1>
+<p>Data crawling atau perayapan data adalah proses pengambilan data yang tersedia secara online untuk umum. Proses ini kemudian mengimpor informasi atau data yang telah ditemukan ke dalam file lokal di komputer Anda.</p>
+<section id="twint">
+<h2>Twint<a class="headerlink" href="#twint" title="Permalink to this headline">#</a></h2>
+<p>Twint adalah sebuah tools yang digunakan untuk melakukan scrapping dari aplikasi twitter yang disetting secara khusus menggunakan bahasa pemrograman Python. Twint dapat kita gunakan dan jalankan tanpa harus menggunakan API dari Twitter itu sendiri, dengan kapasitas scrapping data maksimalnya adalah 3200 tweet.</p>
+<p>Bukan hanya digunakan pada tweet, twint juga bisa kita gunakan untuk melakukan scrapping pada user, followers, retweet dan sebagainya. Twint memanfaatkan operator pencarian twitter untuk memungkinkan proses penghapusan tweet dari user tertentu, memilih dan memilah informasi-informasi yang sensitif, termasuk email dan nomor telepon di dalamnya.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>git clone --depth<span class="o">=</span><span class="m">1</span> https://github.com/twintproject/twint.git
+<span class="o">%</span><span class="k">cd</span> twint
+<span class="o">!</span>pip3 install . -r requirements.txt
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>fatal: destination path &#39;twint&#39; already exists and is not an empty directory.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/content/drive/MyDrive/webmining/twint
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Processing /content/drive/MyDrive/webmining/twint
+<span class=" -Color -Color-Yellow">  DEPRECATION: A future pip version will change local packages to be built in-place without first copying to a temporary directory. We recommend you use --use-feature=in-tree-build to test your packages with this new behavior before it becomes the default.</span>
+<span class=" -Color -Color-Yellow">   pip 21.3 will remove support for this functionality. You can find discussion regarding this at https://github.com/pypa/pip/issues/7555.</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: aiohttp in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 1)) (3.7.0)
+Requirement already satisfied: aiodns in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 2)) (3.0.0)
+Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 3)) (4.6.3)
+Requirement already satisfied: cchardet in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 4)) (2.1.7)
+Requirement already satisfied: dataclasses in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 5)) (0.6)
+Requirement already satisfied: elasticsearch in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 6)) (8.5.2)
+Requirement already satisfied: pysocks in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 7)) (1.7.1)
+Requirement already satisfied: pandas&gt;=0.23.0 in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 8)) (1.3.5)
+Requirement already satisfied: aiohttp_socks&lt;=0.4.1 in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 9)) (0.4.1)
+Requirement already satisfied: schedule in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 10)) (1.1.0)
+Requirement already satisfied: geopy in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 11)) (1.17.0)
+Requirement already satisfied: fake-useragent in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 12)) (1.1.0)
+Requirement already satisfied: googletransx in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 13)) (2.4.2)
+Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.7/dist-packages (from pandas&gt;=0.23.0-&gt;-r requirements.txt (line 8)) (1.21.6)
+Requirement already satisfied: pytz&gt;=2017.3 in /usr/local/lib/python3.7/dist-packages (from pandas&gt;=0.23.0-&gt;-r requirements.txt (line 8)) (2022.6)
+Requirement already satisfied: python-dateutil&gt;=2.7.3 in /usr/local/lib/python3.7/dist-packages (from pandas&gt;=0.23.0-&gt;-r requirements.txt (line 8)) (2.8.2)
+Requirement already satisfied: attrs&gt;=19.2.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp_socks&lt;=0.4.1-&gt;-r requirements.txt (line 9)) (21.4.0)
+Requirement already satisfied: async-timeout&lt;4.0,&gt;=3.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (3.0.1)
+Requirement already satisfied: multidict&lt;7.0,&gt;=4.5 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (6.0.2)
+Requirement already satisfied: chardet&lt;4.0,&gt;=2.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (3.0.4)
+Requirement already satisfied: yarl&lt;2.0,&gt;=1.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (1.8.1)
+Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.7/dist-packages (from python-dateutil&gt;=2.7.3-&gt;pandas&gt;=0.23.0-&gt;-r requirements.txt (line 8)) (1.15.0)
+Requirement already satisfied: idna&gt;=2.0 in /usr/local/lib/python3.7/dist-packages (from yarl&lt;2.0,&gt;=1.0-&gt;aiohttp-&gt;-r requirements.txt (line 1)) (2.10)
+Requirement already satisfied: typing-extensions&gt;=3.7.4 in /usr/local/lib/python3.7/dist-packages (from yarl&lt;2.0,&gt;=1.0-&gt;aiohttp-&gt;-r requirements.txt (line 1)) (4.1.1)
+Requirement already satisfied: pycares&gt;=4.0.0 in /usr/local/lib/python3.7/dist-packages (from aiodns-&gt;-r requirements.txt (line 2)) (4.2.2)
+Requirement already satisfied: cffi&gt;=1.5.0 in /usr/local/lib/python3.7/dist-packages (from pycares&gt;=4.0.0-&gt;aiodns-&gt;-r requirements.txt (line 2)) (1.15.1)
+Requirement already satisfied: pycparser in /usr/local/lib/python3.7/dist-packages (from cffi&gt;=1.5.0-&gt;pycares&gt;=4.0.0-&gt;aiodns-&gt;-r requirements.txt (line 2)) (2.21)
+Requirement already satisfied: elastic-transport&lt;9,&gt;=8 in /usr/local/lib/python3.7/dist-packages (from elasticsearch-&gt;-r requirements.txt (line 6)) (8.4.0)
+Requirement already satisfied: certifi in /usr/local/lib/python3.7/dist-packages (from elastic-transport&lt;9,&gt;=8-&gt;elasticsearch-&gt;-r requirements.txt (line 6)) (2022.9.24)
+Requirement already satisfied: urllib3&lt;2,&gt;=1.26.2 in /usr/local/lib/python3.7/dist-packages (from elastic-transport&lt;9,&gt;=8-&gt;elasticsearch-&gt;-r requirements.txt (line 6)) (1.26.13)
+Requirement already satisfied: geographiclib&lt;2,&gt;=1.49 in /usr/local/lib/python3.7/dist-packages (from geopy-&gt;-r requirements.txt (line 11)) (1.52)
+Requirement already satisfied: importlib-metadata~=4.0 in /usr/local/lib/python3.7/dist-packages (from fake-useragent-&gt;-r requirements.txt (line 12)) (4.13.0)
+Requirement already satisfied: importlib-resources&gt;=5.0 in /usr/local/lib/python3.7/dist-packages (from fake-useragent-&gt;-r requirements.txt (line 12)) (5.10.0)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: zipp&gt;=0.5 in /usr/local/lib/python3.7/dist-packages (from importlib-metadata~=4.0-&gt;fake-useragent-&gt;-r requirements.txt (line 12)) (3.10.0)
+Requirement already satisfied: requests in /usr/local/lib/python3.7/dist-packages (from googletransx-&gt;-r requirements.txt (line 13)) (2.28.1)
+Requirement already satisfied: charset-normalizer&lt;3,&gt;=2 in /usr/local/lib/python3.7/dist-packages (from requests-&gt;googletransx-&gt;-r requirements.txt (line 13)) (2.1.1)
+Building wheels for collected packages: twint
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Building wheel for twint (setup.py) ... ?25l?25hdone
+  Created wheel for twint: filename=twint-2.1.21-py3-none-any.whl size=38870 sha256=10e365fdb8dcfca219dd48e69ce241fc5665dc2a7143e692233174bb14913992
+  Stored in directory: /tmp/pip-ephem-wheel-cache-w2ieggqd/wheels/e9/ec/3e/afce1504e717ffb071a1da041aaedb611b6a1f08030c1c5af3
+Successfully built twint
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: twint
+  Attempting uninstall: twint
+    Found existing installation: twint 2.1.21
+    Uninstalling twint-2.1.21:
+      Successfully uninstalled twint-2.1.21
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Successfully installed twint-2.1.21
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip install nest-asyncio
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Requirement already satisfied: nest-asyncio in /usr/local/lib/python3.7/dist-packages (1.5.6)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip install <span class="nv">aiohttp</span><span class="o">==</span><span class="m">3</span>.7.0
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Requirement already satisfied: aiohttp==3.7.0 in /usr/local/lib/python3.7/dist-packages (3.7.0)
+Requirement already satisfied: yarl&lt;2.0,&gt;=1.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp==3.7.0) (1.8.1)
+Requirement already satisfied: async-timeout&lt;4.0,&gt;=3.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp==3.7.0) (3.0.1)
+Requirement already satisfied: attrs&gt;=17.3.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp==3.7.0) (21.4.0)
+Requirement already satisfied: multidict&lt;7.0,&gt;=4.5 in /usr/local/lib/python3.7/dist-packages (from aiohttp==3.7.0) (6.0.2)
+Requirement already satisfied: chardet&lt;4.0,&gt;=2.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp==3.7.0) (3.0.4)
+Requirement already satisfied: idna&gt;=2.0 in /usr/local/lib/python3.7/dist-packages (from yarl&lt;2.0,&gt;=1.0-&gt;aiohttp==3.7.0) (2.10)
+Requirement already satisfied: typing-extensions&gt;=3.7.4 in /usr/local/lib/python3.7/dist-packages (from yarl&lt;2.0,&gt;=1.0-&gt;aiohttp==3.7.0) (4.1.1)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">nest_asyncio</span>
+<span class="n">nest_asyncio</span><span class="o">.</span><span class="n">apply</span><span class="p">()</span> <span class="c1">#digunakan sekali untuk mengaktifkan tindakan serentak dalam notebook jupyter.</span>
+<span class="kn">import</span> <span class="nn">twint</span> <span class="c1">#untuk import twint</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">twint</span><span class="o">.</span><span class="n">Config</span><span class="p">()</span>
+<span class="n">c</span><span class="o">.</span><span class="n">Search</span> <span class="o">=</span> <span class="s1">&#39;tragedi kanjuruhan&#39;</span>
+<span class="n">c</span><span class="o">.</span><span class="n">Pandas</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">c</span><span class="o">.</span><span class="n">Limit</span> <span class="o">=</span> <span class="mi">70</span>
+<span class="n">twint</span><span class="o">.</span><span class="n">run</span><span class="o">.</span><span class="n">Search</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1597568858256445441 2022-11-29 12:31:11 +0000 &lt;braling2_mas&gt; @MafiaWasit Masih suasana berduka tragedi kanjuruhan
+1597561015796789249 2022-11-29 12:00:02 +0000 &lt;UMMcampus&gt; Pita Hitam UMM di 40 Hari Tragedi Kanjuruhan dan Hari Pahlawan |  https://t.co/QNi4OoZDRY | #UMMCampus  https://t.co/YDDmHZywIC
+1597559474650112000 2022-11-29 11:53:54 +0000 &lt;Bimessi&gt; @Indostransfer Memang urusan sama si ANU ini ribet,,padahal tersangka dari kelompok si Anu belum jelas,,gmn jadinya kl si Anu jd tersangka utama tragedi kanjuruhan kemarin,,,bisa2 gk akan ada bola lagi di indonesia dengan dalih keamanan
+1597553984348516353 2022-11-29 11:32:05 +0000 &lt;beritajatimcom&gt; Aremania Menggugat Sebut Kejati Ingin Polisi Tambah Tersangka Baru Tragedi Kanjuruhan.  Malang ( https://t.co/ksziGGp1k3) – Ketua Tim Advokasi Bantuan Hukum Aremania Menggugat, Djoko Tritjahjana…  https://t.co/Z8JphdHFAY #Olahraga #Aremania #AremaniaMenggugat via @beritajatimcom
+1597550958300762112 2022-11-29 11:20:04 +0000 &lt;seniman_bola&gt; Mencoba untuk tidak peduli &amp;amp; bodo amat dg liga lokal sampai ada perkembangan yg signifikan dr  pengusutan tragedi kanjuruhan.
+1597545084559687683 2022-11-29 10:56:43 +0000 &lt;nrendiansyah&gt; Ini bukti kalau owner club, exco, atau apa lah itu sebutannya sama sekali tdk peduli dg tragedi kanjuruhan kemarin, bagi mereka korban2 kemarin hanya sekadar statistik saja. Jargon “tidak ada sepak bola seharga nyawa manusia” itu cuma omong coro.
+1597542394140176384 2022-11-29 10:46:02 +0000 &lt;KompasBola&gt; Tragedi Kanjuruhan Jadi Motivasi Shin Tae-yong Bawa Indonesia Juara Piala AFF 2022  https://t.co/W4QVyQsFQb
+1597541144854155264 2022-11-29 10:41:04 +0000 &lt;KanalnewsC&gt; Shin Tae-yong Ingin Obati Luka Tragedi Kanjuruhan dengan Gelar Juara Piala AFF 2022  https://t.co/dLqEyp45NW lewat @KanalnewsC #Timnas #PialaAFF2022
+1597539978635988992 2022-11-29 10:36:26 +0000 &lt;BolaSportcom&gt; Pelatih asal Korea Selatan itu kembali berbicara mengenai tragedi Kanjuruhan. Beberapa waktu lalu, Shin Tae-yong memang mengungkapkan perasaan hatinya terkait tragedi Kanjuruhan  https://t.co/poSarSxKet
+1597535370144800768 2022-11-29 10:18:07 +0000 &lt;Starlog20&gt; @lutfikr00 @UpdateBolabola Ini plan sebelum tragedi kanjuruhan. All match in one day 🥶  https://t.co/TJ1QkQIfFS
+1597532288207945728 2022-11-29 10:05:52 +0000 &lt;IndraShaza&gt; @kumparan Asli ini perbandingan yg sangat bodoh, dikanjuruhan klo gak ada gas air mata nggak akan ada satu pun korban, lah ini acara memang bukan dgn tensi n emosi yg tinggi acara santai maka kemungkinan rusuh kecil, asli ini orang goblok banget pake perbandingan tragedi Kanjuruhan
+1597528010626039808 2022-11-29 09:48:53 +0000 &lt;doediindra&gt; Darah juang mengalir sepanjang badan, akan trs brgerak dan bergelombang #UsutTuntas #TragediKanjuruhan  #kidulpasar  https://t.co/BBsx8HUWTA
+1597524784312504320 2022-11-29 09:36:03 +0000 &lt;mas_ucupBensin&gt; @bachrum_achmadi Lhah katanya tragedi Kanjuruhan tragedi nasional .. ??? Gimana otak Lo rum??
+1597523690694266880 2022-11-29 09:31:43 +0000 &lt;Om_Willie&gt; #menolaklupa #UsutTuntas #TragediKanjuruhan  https://t.co/ulGHxHhF0Y
+1597521394648088578 2022-11-29 09:22:35 +0000 &lt;Serucoid1&gt; Hasil Autopsi Korban Tragedi Kanjuruhan Sudah Keluar  https://t.co/UxL5qDVPdB
+1597518858164002816 2022-11-29 09:12:30 +0000 &lt;KAPANCERDAS&gt; Bapak @mohmahfudmd mohon ditegakkan KEADILAN BAGI SELURUH MASYARAKAT pak. Sudah 2bulan warga malang berjuang untuk korban korban tragedi kanjuruhan. Dan sampai saat ini tidak ada satupun TERSANGKA penembakan GASAIRMATA ditetapkan. #UsutTuntas  https://t.co/5YY9auhIiG
+1597518064815218688 2022-11-29 09:09:21 +0000 &lt;KompasKlasika&gt; Hasil otopsi korban Tragedi Kanjuruhan yang dilakukan pada 5 November lalu sudah keluar. Hasil otopsi tersebut diserahkan langsung oleh tim dokter forensik ke penyidik Kepolisian Daerah Jawa Timur. #Nusantara #AdadiKompas  https://t.co/K2xoPyc9Ic
+1597517492125323265 2022-11-29 09:07:05 +0000 &lt;Konfrontasi_co&gt; Panglima TNI Masih Terus Monitoring Kasus Tragedi Kanjuruhan  https://t.co/k3lmFCmyQw
+1597515444205780992 2022-11-29 08:58:56 +0000 &lt;hariankompas&gt; Hasil otopsi korban Tragedi Kanjuruhan yang dilakukan pada 5 November lalu sudah keluar. Hasil otopsi tersebut diserahkan langsung oleh tim dokter forensik ke penyidik Kepolisian Daerah Jawa Timur. #Nusantara #AdadiKompas  https://t.co/zql4DgVNLk
+1597514133288599557 2022-11-29 08:53:44 +0000 &lt;AuisGrand&gt; Hasil otopsi korban Tragedi Kanjuruhan yang dilakukan pada 5 November lalu sudah keluar. Hasil otopsi tersebut diserahkan langsung oleh tim dokter forensik ke penyidik Kepolisian Daerah Jawa Timur. #Nusantara #AdadiKompas  https://t.co/6SrV2CemGg
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1597512921763893248 2022-11-29 08:48:55 +0000 &lt;sotengs&gt; Thread tolol 😂😂😂 beresin tragedi kanjuruhan aja ga berani kok 💩💩💩
+1597511375957688321 2022-11-29 08:42:47 +0000 &lt;YojiIis&gt; @Indostransfer Apakah akhirnya tragedi kanjuruhan tidak membuahkan apa apa 😢
+1597510942224678914 2022-11-29 08:41:03 +0000 &lt;merdekadotcom&gt; Berkas Perkara Tragedi Kanjuruhan Diteliti Jaksa Kejati Jatim  https://t.co/FMUtHW8Agx
+1597509698181541888 2022-11-29 08:36:06 +0000 &lt;VIVAbola&gt; Kejati Jatim Beri Petunjuk Polisi, Harus Ada Tersangka Baru di Tragedi Kanjuruhan  https://t.co/qx2XO9uqje
+1597508811853635584 2022-11-29 08:32:35 +0000 &lt;rsaupwr&gt; Polri dan PSSI Gelar Rapat Koordinasi Pengamanan Liga 1 Pasca- Tragedi Kanjuruhan  https://t.co/YxdGO61HmY
+1597508223925297152 2022-11-29 08:30:15 +0000 &lt;bhismaaa10&gt; Di garis bawahi  5laga home tanpa penonton maksudnya Dan itu terjadi sebelum tragedi Kanjuruhan
+1597507351971614720 2022-11-29 08:26:47 +0000 &lt;RatnoWistu&gt;  https://t.co/dKvge0jeNs : Kedua Orangtuanya Jadi Korban Tragedi Kanjuruhan, Bocah Kelas 5 Ini Bisa Senyum Lagi  https://t.co/7sGDYTNq2d
+1597504027863838721 2022-11-29 08:13:35 +0000 &lt;bachrum_achmadi&gt; Anies ga punya empati saat tragedi kanjuruhan mlh deklarasi capres, kt grombolan hipokrit bin stupid.  Pdhl Anies bkn gub jatim, bkn pula presiden. Dasar ebong stupid nirnalar!😂😂😂👎👎👎
+1597503513017593858 2022-11-29 08:11:32 +0000 &lt;VIVAcoid&gt; Tragedi Kanjuruhan, Kejati Disebut Minta Polisi Tetapkan Tersangka Baru  https://t.co/hzI8l1fmKW
+1597498904563830784 2022-11-29 07:53:13 +0000 &lt;jpnncom&gt; #BeritaJatim  Buntut Tragedi Kanjuruhan, 3 Laga Tunda Liga 1 Diundur Sampai Putaran Pertama Usai #tragedikanjuruhan  #liga12022   https://t.co/QmS6TmdFIa
+1597498770958483456 2022-11-29 07:52:41 +0000 &lt;jpnncom&gt; Buntut Tragedi Kanjuruhan, 3 Laga Tunda Liga 1 Diundur Sampai Putaran Pertama Usai #tragedikanjuruhan   https://t.co/QmS6TmdFIa
+1597498766311165952 2022-11-29 07:52:40 +0000 &lt;jpnncom&gt; (Thread) Hampir 2 Bulan, Jenderal Andika Masih Usut Penendangan Suporter oleh TNI di Kanjuruhan #tragedikanjuruhan   https://t.co/8kHcq17TLu
+1597498515802165248 2022-11-29 07:51:40 +0000 &lt;djawanewsmedia&gt; Oiya, #TragediKanjuruhan apa kabar ya? Hmmmm  https://t.co/CSeaFcZPFn
+1597498191250788355 2022-11-29 07:50:23 +0000 &lt;jpnncom&gt; #BeritaJatim  Hampir 2 Bulan, Jenderal Andika Masih Usut Penendangan Suporter oleh TNI di Kanjuruhan #jenderalandika  #tragedikanjuruhan   https://t.co/8kHcq0PKxm
+1597498106396160000 2022-11-29 07:50:03 +0000 &lt;jpnncom&gt; Buntut Tragedi Kanjuruhan, 3 Laga Tunda Liga 1 Diundur Sampai Putaran Pertama Usai #lagatunda  https://t.co/QmS6TmdFIa
+1597497500050812928 2022-11-29 07:47:38 +0000 &lt;joshuanade&gt; Sekali lagi untuk nawak2 , yang sekitarnya masih ada korban tragedi kemanusiaan kanjuruhan dan butuh bantuan bisa dm saya atau whats app saya ya..  Karena yang tau kondisi dari orang sekitar atau orang yang bersinggungan langsung 🙏🏻  https://t.co/iGd6iwZNTp
+1597495799466053632 2022-11-29 07:40:53 +0000 &lt;heruanggaSS&gt; Tragedi kanjuruhan udah jelas jelas fotonya masih ga bisa di tangkap hehe
+1597494109119614977 2022-11-29 07:34:10 +0000 &lt;lewispoolilies&gt; Polri dan PSSI Gelar Rapat Koordinasi Pengamanan Liga 1 Pasca- Tragedi Kanjuruhan  https://t.co/rhXK3crd3H
+1597494074793414657 2022-11-29 07:34:02 +0000 &lt;notbadfather&gt; Si tambeng @iriawan84 ketum @PSSI udah kaga pernah ngebahas tragedi kanjuruhan lg ya.kalo emng lu lu orang gk mao di salahin ya minimal lu rangkul kek keluarga korban yg udah keilangan anak, saudara, terutama anak2 yg keilangan orangtua nya. Ini mah malah lepas tangan gitu aj
+1597488402332471299 2022-11-29 07:11:29 +0000 &lt;HendriAlfianch1&gt; AHY: Tragedi Kanjuruhan insiden yang memilukan, juga memalukan. #DemokratHarapanRakyat AHY Pimpin Perubahan  https://t.co/MtGqFncQeD
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1597488157431418880 2022-11-29 07:10:31 +0000 &lt;Sukma1996Rah&gt; Masih suasana duka tragedi kanjuruhan Anies munafik, NasDem bobrok  #HTIDukungAnies #AniesDidukungKHILAFAH #AniesNasdemOut  #TenggelamkanAniesBaswedan #TenggelamkanPartaiNasdem #AniesMelacurKAHMI #AniesDidukungKoruptor #AniesPendukungKhilafah #AniesPendukungOrmasRadikal  https://t.co/QEnJUvbLBp
+1597488034697465863 2022-11-29 07:10:02 +0000 &lt;HendriAlfianch1&gt; 40 Hari pasca tragedi Kanjuruhan, AHY ajak masyarakat kawal investigasi hingga tuntas #DemokratHarapanRakyat AHY Pimpin Perubahan  https://t.co/zWmQHDY6zP
+1597486769158529024 2022-11-29 07:05:00 +0000 &lt;inewsdotid&gt; Korban Tragedi Kanjuruhan Ajukan Gugatan Restitusi Rp20 Miliar Pekan Ini  https://t.co/RdEVPYDDTF
+1597486156199104517 2022-11-29 07:02:34 +0000 &lt;VIVAcoid&gt; Kejati Minta Tersangka Baru, Pasal Kelalaian Dalam Tragedi Kanjuruhan  https://t.co/JoC0x24AmQ  https://t.co/BV4WGueW8W
+1597485512683446273 2022-11-29 07:00:00 +0000 &lt;BismahBalqis&gt; Dengan berbagai kerumitan di dunia persepakbolaan Indonesia, salah satu contohnya tragedi Kanjuruhan, memang dibutuhkan sosok seperti menteri Erick Thohir yang bisa mengelola dengan berani, terukur dan terarah. ET Reformasi PSSI  #TalentPool
+1597485022663282688 2022-11-29 06:58:03 +0000 &lt;Metro_TV&gt; Asisten Kapolri bidang Operasi (Asops) Irjen Agung Setya Imam Effendy mengatakan rakor itu akan membahas pengamanan dan pemenuhan persyaratan penyelenggaraan kompetisi sepak bola.  #TragediKanjuruhan #LigaSatu #LigaIndonesiaBersama #Polri #PSSI #JusticeForKanjuruhan  https://t.co/5ugU37jZoC
+1597481962670739461 2022-11-29 06:45:54 +0000 &lt;medcom_id&gt; 265 Anak Korban Tragedi Kanjuruhan Dapat Pendampingan Psikologis  https://t.co/dHL9cLMs1b
+1597479108128440320 2022-11-29 06:34:33 +0000 &lt;radar_malang&gt; &quot;Kevia Naswa, Penyintas Tragedi Kanjuruhan yang Masih Berjuang Sembuh Mata&quot;  https://t.co/qQiacLLNaR
+1597477961405440000 2022-11-29 06:30:00 +0000 &lt;SINDOnews&gt; Korban Tragedi Kanjuruhan Gugat Polri hingga PSSI Rp20 Miliar  https://t.co/XkQx1eBJNr
+1597473065595990016 2022-11-29 06:10:33 +0000 &lt;ngopibareng_id&gt; Kejati Jatim memberikan petunjuk hukum kepada penyidik Polda Jatim untuk dilakukan penambahan tersangka dan pasal perkara Tragedi Kanjuruhan.  https://t.co/BB57NUPxqb
+1597472032924798976 2022-11-29 06:06:26 +0000 &lt;BolaSportcom&gt; Bek Persija Jakarta, Hansamu Yama, mengaku tidak menemui kendala yang berarti dalam mengikuti TC timnas Indonesia meskipun Liga 1 2022-2023 tengah dihentikan sementara imbas Tragedi Kanjuruhan. 🇮🇩💪🏻  https://t.co/BbdaevHzYj
+1597471929572610048 2022-11-29 06:06:02 +0000 &lt;KompasBola&gt; Kejaksaan Selaras dengan Tuntutan Aremania Menggugat terkait Tragedi Kanjuruhan  https://t.co/l20OT3cvEJ
+1597467657552662528 2022-11-29 05:49:03 +0000 &lt;ngopibareng_id&gt; Saat ini proses penyidikan Tragedi Kanjuruhan mandek di tangan Polda Jatim. Belum ada perkembangan yang signifikan dari proses penyidikan.  https://t.co/2CRIX68PNL
+1597461251478519808 2022-11-29 05:23:36 +0000 &lt;CNNIDdaily&gt; Tak kunjung mendapat keadilan dalam kasus tragedi Kanjuruhan, ribuan Aremania melakukan aksi turun ke jalan di 30 titik berbeda. Mereka menuntut pelaku penembakan gas air mata diseret dan diproses secara hukum.  https://t.co/ns6OyEyJew  https://t.co/8AwaB7uL8t
+1597460979041779712 2022-11-29 05:22:31 +0000 &lt;murianewscom&gt; Jenderal Andika Perkasa Minta Pengusutan Tragedi Kanjuruhan Harus Tuntas    Selengkapnya Klik Tautan Berikut ini #Jakarta #PanglimaTNI #Jenderalandikaperkasa #Tragedikanjuruhan   https://t.co/NZjU4HHU30
+1597459861658546182 2022-11-29 05:18:05 +0000 &lt;kumparan&gt; &quot;Ya kan daripada acara lain kayak kemarin tragedi Kanjuruhan akhirnya terjadi korban begitu banyak.&quot; #kumparanNews #NewsUpdate  https://t.co/gOkcBnwowz
+1597457858152763393 2022-11-29 05:10:07 +0000 &lt;pecutpecutan&gt; TNI tegas akan mengusut anggota nya yg salah.. Ayo Polri bapak @ListyoSigitP Anda pasti mampu juga untuk tegas mengusut tragedi kanjuruhan. #UsutTuntasTragediKanjuruhan
+1597456095685251075 2022-11-29 05:03:07 +0000 &lt;wongfehunk&gt; @kaesangp Alhmdllah tragedi kanjuruhan bentar lagi lupa
+1597448865279774721 2022-11-29 04:34:23 +0000 &lt;mpitsky&gt; 60 hari tragedi kanjuruhan dan masih belum juga diusut tuntas? muke lu tebel @PSSI #UsutTuntasTragediKanjuruhan
+1597447195892256769 2022-11-29 04:27:45 +0000 &lt;zahraquinsha&gt; @premanbighit @hmmrandomguy @filmzoir Iya pedes banget mereka. Pas tragedi kanjuruhan kan juga ada yg gimana gitu komennya.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1597447188971331585 2022-11-29 04:27:43 +0000 &lt;RayaMalang&gt; Terus Bergerak #UsutTuntas @AremaIDN @AremafcOfficial @AremaFC  #tragedikanjuruhan giliran Kidul Pasar @infomalang @info_malang  https://t.co/Og2knUlptb
+1597446283819913217 2022-11-29 04:24:07 +0000 &lt;IdeNews_id&gt; Setelah terhenti selama dua bulan karena Tragedi Kanjuruhan pada awal bulan Oktober lalu, akhirnya PT Liga Indonesia Baru (PT LIB) akan kembali melanjutkan BRI Liga 1 Musim 2022/2023 namun dengan Format Baru. @pt_lib @BANKBRI_ID @mappirewa @aepsaefulfajar   https://t.co/nBEWdwaUhj
+1597442488284823552 2022-11-29 04:09:02 +0000 &lt;jpnncom&gt; Soal Tragedi Kanjuruhan, Jenderal Andika: Harus Dilaporkan Setiap Hari ke Saya #PanglimaTNI  https://t.co/nNHrFZCS2J
+1597438841371373568 2022-11-29 03:54:33 +0000 &lt;HendriAlfianch1&gt; Demokrat salurkan bantuan kepada keluarga korban Tragedi Kanjuruhan Malang. #DemokratHarapanRakyat AHY Pimpin Perubahan   https://t.co/ZcyvOufOFs
+1597436112527847424 2022-11-29 03:43:42 +0000 &lt;SeputariNews&gt; Aremania turun ke jalan menggelar aksi Solidaritas Malang Black Sunday menuntut kasus hukum tragedi kanjuruhan. JSP   #RCTI #SeputariNews #Aremania #Kanjuruhan #Solidaritas  https://t.co/AcpO7S4bnV
+1597435443171459073 2022-11-29 03:41:03 +0000 &lt;jatimnowdotcom&gt; Untuk itu sangat tidak disarankan bayi, balita, batita, anak anak usia sekolah tidak dipisahkan dari keluarganya dan berlama-lama dalam pengungsian. #JatimNow #KPAI #gempaCianjur #TragediKanjuruhan #TraumaHealing #bencana  https://t.co/S0rkjdvlNl
+1597435429812285440 2022-11-29 03:41:00 +0000 &lt;chatnews_id&gt; Panglima TNI Jenderal Andika Perkasa terus memantau perkembangan kasus Stadion Kanjuruhan yang melibatkan anggota TNI. #panglimatni #AndikaPerkasa #TNI #KanjuruhanStadium #TRAGEDIKANJURUHAN    https://t.co/OreOmqdZNT
+1597434166345625606 2022-11-29 03:35:58 +0000 &lt;lantip&gt; hari ini,  tragedi kanjuruhan genap 60 hari.  jumlah tersangka masih 6 biji. juga tak ada perubahan di tubuh pssi.  135 nyawa, tak ada serius-seriusnya dalam menangani. kucatat dan akan kuceritakan ke anak cucu kelak, bahwa negeri yang hobi sesanti ini, kosong nurani.
+1597421305670008834 2022-11-29 02:44:52 +0000 &lt;BolaSportcom&gt; Pelatih timnas Indonesia, Shin Tae-yong, membidik gelar juara Piala AFF 2022.  🗣️: &quot;Saya merasa harus bertanggung jawab atas kesedihan pada masyarakat dalam tragedi Kanjuruhan jadi juara Timnas pada Piala AFF.&quot;  https://t.co/nHNtCF4e85
+1597420486237249536 2022-11-29 02:41:37 +0000 &lt;BolaSportcom&gt; Ketum PSSI, Iwan Bule, mengapresiasi tercapainya kesepatan dengan Pemerintah RI terkait lanjutan Liga 1 2022-2023.  🗣️: &quot;Terima kasih kepada Menpora, Kemenkes, Kementerian PUPR dan Polri yang sudah merespons hasil task force terkait tragedi Kanjuruhan.&quot;   https://t.co/ZA6cmmSdZV
+1597419393881116672 2022-11-29 02:37:16 +0000 &lt;wewegomb&gt; @kaesangp Selesaikan dulu persoalan darah dan nyawa tragedi Kanjuruhan.
+1597419108844572672 2022-11-29 02:36:08 +0000 &lt;pikiran_rakyat&gt; Update Proses Hukum Tragedi Kanjuruhan: Nasib Para Tersangka hingga Polisi Penembak Gas Air Mata  https://t.co/uEdBI3FLdl  https://t.co/xQocupEtHZ
+1597414928587292672 2022-11-29 02:19:32 +0000 &lt;dah33__&gt; @Yusufs_abiie @garagarabola_ Lah? Dari tadi gw bilang Jam malam itu bukan cuma karna tragedi kanjuruhan doang, tuntutan buat majuin kickoff itu karna rangkaian tragedi yg di alami suporter pas pulang nonton bola, mereka juga punya hak buat di bela dan agar tidak kejadian lagi, paham?
+1597410550719606784 2022-11-29 02:02:08 +0000 &lt;PRFMnews&gt; Kata PT LIB Soal Pertandingan Persib vs Persija yang Tertunda Karena Tragedi Kanjuruhan  https://t.co/OuoZlsl9kt
+1597410150100656128 2022-11-29 02:00:32 +0000 &lt;AqsaDipta&gt; @MafiaWasit Klo saya sih gak masalah liga lanjut, TAPI perjelas dulu kasus tragedi Kanjuruhan sudah sampai mana? Sudah siap untuk ke persidangan ATAU hanya sampai pengumuman nama tersangka saja???? Itu yg harus diperjelas.
+1597409801889161217 2022-11-29 01:59:09 +0000 &lt;samacksamakk&gt; This photo and poster is so deep... #UsutTuntas #tragedikanjuruhan  https://t.co/NGmFwpOyc6
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Tweets_dfs</span> <span class="o">=</span> <span class="n">twint</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">panda</span><span class="o">.</span><span class="n">Tweets_df</span>
+<span class="n">Tweets_dfs</span><span class="p">[</span><span class="s2">&quot;tweet&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     @MafiaWasit Masih suasana berduka tragedi kanj...
+1     Pita Hitam UMM di 40 Hari Tragedi Kanjuruhan d...
+2     @Indostransfer Memang urusan sama si ANU ini r...
+3     Aremania Menggugat Sebut Kejati Ingin Polisi T...
+4     Mencoba untuk tidak peduli &amp;amp; bodo amat dg ...
+                            ...                        
+71    Update Proses Hukum Tragedi Kanjuruhan: Nasib ...
+72    @Yusufs_abiie @garagarabola_ Lah? Dari tadi gw...
+73    Kata PT LIB Soal Pertandingan Persib vs Persij...
+74    @MafiaWasit Klo saya sih gak masalah liga lanj...
+75    This photo and poster is so deep... #UsutTunta...
+Name: tweet, Length: 76, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Tweets_dfs</span><span class="p">[</span><span class="s2">&quot;tweet&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;TRAGEDI.csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="mengambil-data">
+<h1><strong>Mengambil Data</strong><a class="headerlink" href="#mengambil-data" title="Permalink to this headline">#</a></h1>
+<p>Proses ini digunakan untuk mengambil 100 data tweet yang telah disimpan dalam github dengan format .csv</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#install library pandas</span>
+<span class="o">!</span>pip install pandas
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Requirement already satisfied: pandas in /usr/local/lib/python3.7/dist-packages (1.3.5)
+Requirement already satisfied: pytz&gt;=2017.3 in /usr/local/lib/python3.7/dist-packages (from pandas) (2022.6)
+Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.7/dist-packages (from pandas) (1.21.6)
+Requirement already satisfied: python-dateutil&gt;=2.7.3 in /usr/local/lib/python3.7/dist-packages (from pandas) (2.8.2)
+Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.7/dist-packages (from python-dateutil&gt;=2.7.3-&gt;pandas) (1.15.0)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#install library numpy</span>
+<span class="o">!</span>pip install numpy
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Requirement already satisfied: numpy in /usr/local/lib/python3.7/dist-packages (1.21.6)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> 
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">data_abstrak</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;TRAGEDI.csv&quot;</span><span class="p">)</span>
+
+<span class="n">data_abstrak</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-1a67da30-959e-4c0a-bbdf-be80094da678">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>tweet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>@MafiaWasit Masih suasana berduka tragedi kanj...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>Pita Hitam UMM di 40 Hari Tragedi Kanjuruhan d...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>@Indostransfer Memang urusan sama si ANU ini r...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>Aremania Menggugat Sebut Kejati Ingin Polisi T...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>Mencoba untuk tidak peduli &amp;amp; bodo amat dg ...</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>71</td>
+      <td>Update Proses Hukum Tragedi Kanjuruhan: Nasib ...</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>72</td>
+      <td>@Yusufs_abiie @garagarabola_ Lah? Dari tadi gw...</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>73</td>
+      <td>Kata PT LIB Soal Pertandingan Persib vs Persij...</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>74</td>
+      <td>@MafiaWasit Klo saya sih gak masalah liga lanj...</td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td>75</td>
+      <td>This photo and poster is so deep... #UsutTunta...</td>
+    </tr>
+  </tbody>
+</table>
+<p>76 rows × 2 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-1a67da30-959e-4c0a-bbdf-be80094da678')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-1a67da30-959e-4c0a-bbdf-be80094da678 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-1a67da30-959e-4c0a-bbdf-be80094da678');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#install library sastrawi</span>
+<span class="o">!</span>pip install sastrawi
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Requirement already satisfied: sastrawi in /usr/local/lib/python3.7/dist-packages (1.0.1)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#install library swifter</span>
+<span class="o">!</span>pip install swifter
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Requirement already satisfied: swifter in /usr/local/lib/python3.7/dist-packages (1.3.4)
+Requirement already satisfied: psutil&gt;=5.6.6 in /usr/local/lib/python3.7/dist-packages (from swifter) (5.9.4)
+Requirement already satisfied: pandas&gt;=1.0.0 in /usr/local/lib/python3.7/dist-packages (from swifter) (1.3.5)
+Requirement already satisfied: ipywidgets&gt;=7.0.0 in /usr/local/lib/python3.7/dist-packages (from swifter) (7.7.1)
+Requirement already satisfied: parso&gt;0.4.0 in /usr/local/lib/python3.7/dist-packages (from swifter) (0.8.3)
+Requirement already satisfied: cloudpickle&gt;=0.2.2 in /usr/local/lib/python3.7/dist-packages (from swifter) (1.5.0)
+Requirement already satisfied: tqdm&gt;=4.33.0 in /usr/local/lib/python3.7/dist-packages (from swifter) (4.64.1)
+Requirement already satisfied: bleach&gt;=3.1.1 in /usr/local/lib/python3.7/dist-packages (from swifter) (5.0.1)
+Requirement already satisfied: dask[dataframe]&gt;=2.10.0 in /usr/local/lib/python3.7/dist-packages (from swifter) (2022.2.0)
+Requirement already satisfied: webencodings in /usr/local/lib/python3.7/dist-packages (from bleach&gt;=3.1.1-&gt;swifter) (0.5.1)
+Requirement already satisfied: six&gt;=1.9.0 in /usr/local/lib/python3.7/dist-packages (from bleach&gt;=3.1.1-&gt;swifter) (1.15.0)
+Requirement already satisfied: fsspec&gt;=0.6.0 in /usr/local/lib/python3.7/dist-packages (from dask[dataframe]&gt;=2.10.0-&gt;swifter) (2022.11.0)
+Requirement already satisfied: toolz&gt;=0.8.2 in /usr/local/lib/python3.7/dist-packages (from dask[dataframe]&gt;=2.10.0-&gt;swifter) (0.12.0)
+Requirement already satisfied: partd&gt;=0.3.10 in /usr/local/lib/python3.7/dist-packages (from dask[dataframe]&gt;=2.10.0-&gt;swifter) (1.3.0)
+Requirement already satisfied: packaging&gt;=20.0 in /usr/local/lib/python3.7/dist-packages (from dask[dataframe]&gt;=2.10.0-&gt;swifter) (21.3)
+Requirement already satisfied: pyyaml&gt;=5.3.1 in /usr/local/lib/python3.7/dist-packages (from dask[dataframe]&gt;=2.10.0-&gt;swifter) (6.0)
+Requirement already satisfied: numpy&gt;=1.18 in /usr/local/lib/python3.7/dist-packages (from dask[dataframe]&gt;=2.10.0-&gt;swifter) (1.21.6)
+Requirement already satisfied: widgetsnbextension~=3.6.0 in /usr/local/lib/python3.7/dist-packages (from ipywidgets&gt;=7.0.0-&gt;swifter) (3.6.1)
+Requirement already satisfied: ipython&gt;=4.0.0 in /usr/local/lib/python3.7/dist-packages (from ipywidgets&gt;=7.0.0-&gt;swifter) (7.9.0)
+Requirement already satisfied: jupyterlab-widgets&gt;=1.0.0 in /usr/local/lib/python3.7/dist-packages (from ipywidgets&gt;=7.0.0-&gt;swifter) (3.0.3)
+Requirement already satisfied: ipython-genutils~=0.2.0 in /usr/local/lib/python3.7/dist-packages (from ipywidgets&gt;=7.0.0-&gt;swifter) (0.2.0)
+Requirement already satisfied: ipykernel&gt;=4.5.1 in /usr/local/lib/python3.7/dist-packages (from ipywidgets&gt;=7.0.0-&gt;swifter) (5.3.4)
+Requirement already satisfied: traitlets&gt;=4.3.1 in /usr/local/lib/python3.7/dist-packages (from ipywidgets&gt;=7.0.0-&gt;swifter) (5.1.1)
+Requirement already satisfied: tornado&gt;=4.2 in /usr/local/lib/python3.7/dist-packages (from ipykernel&gt;=4.5.1-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (6.2)
+Requirement already satisfied: jupyter-client in /usr/local/lib/python3.7/dist-packages (from ipykernel&gt;=4.5.1-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (6.1.12)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: backcall in /usr/local/lib/python3.7/dist-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.2.0)
+Requirement already satisfied: jedi&gt;=0.10 in /usr/local/lib/python3.7/dist-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.18.2)
+Requirement already satisfied: pygments in /usr/local/lib/python3.7/dist-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (2.6.1)
+Requirement already satisfied: setuptools&gt;=18.5 in /usr/local/lib/python3.7/dist-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (57.4.0)
+Requirement already satisfied: prompt-toolkit&lt;2.1.0,&gt;=2.0.0 in /usr/local/lib/python3.7/dist-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (2.0.10)
+Requirement already satisfied: pickleshare in /usr/local/lib/python3.7/dist-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.7.5)
+Requirement already satisfied: decorator in /usr/local/lib/python3.7/dist-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (4.4.2)
+Requirement already satisfied: pexpect in /usr/local/lib/python3.7/dist-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (4.8.0)
+Requirement already satisfied: pyparsing!=3.0.5,&gt;=2.0.2 in /usr/local/lib/python3.7/dist-packages (from packaging&gt;=20.0-&gt;dask[dataframe]&gt;=2.10.0-&gt;swifter) (3.0.9)
+Requirement already satisfied: python-dateutil&gt;=2.7.3 in /usr/local/lib/python3.7/dist-packages (from pandas&gt;=1.0.0-&gt;swifter) (2.8.2)
+Requirement already satisfied: pytz&gt;=2017.3 in /usr/local/lib/python3.7/dist-packages (from pandas&gt;=1.0.0-&gt;swifter) (2022.6)
+Requirement already satisfied: locket in /usr/local/lib/python3.7/dist-packages (from partd&gt;=0.3.10-&gt;dask[dataframe]&gt;=2.10.0-&gt;swifter) (1.0.0)
+Requirement already satisfied: wcwidth in /usr/local/lib/python3.7/dist-packages (from prompt-toolkit&lt;2.1.0,&gt;=2.0.0-&gt;ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.2.5)
+Requirement already satisfied: notebook&gt;=4.4.1 in /usr/local/lib/python3.7/dist-packages (from widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (5.7.16)
+Requirement already satisfied: jinja2&lt;=3.0.0 in /usr/local/lib/python3.7/dist-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (2.11.3)
+Requirement already satisfied: nbconvert&lt;6.0 in /usr/local/lib/python3.7/dist-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (5.6.1)
+Requirement already satisfied: pyzmq&gt;=17 in /usr/local/lib/python3.7/dist-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (23.2.1)
+Requirement already satisfied: terminado&gt;=0.8.1 in /usr/local/lib/python3.7/dist-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.13.3)
+Requirement already satisfied: prometheus-client in /usr/local/lib/python3.7/dist-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.15.0)
+Requirement already satisfied: nbformat in /usr/local/lib/python3.7/dist-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (5.7.0)
+Requirement already satisfied: Send2Trash in /usr/local/lib/python3.7/dist-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (1.8.0)
+Requirement already satisfied: jupyter-core&gt;=4.4.0 in /usr/local/lib/python3.7/dist-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (4.11.2)
+Requirement already satisfied: MarkupSafe&gt;=0.23 in /usr/local/lib/python3.7/dist-packages (from jinja2&lt;=3.0.0-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (2.0.1)
+Requirement already satisfied: testpath in /usr/local/lib/python3.7/dist-packages (from nbconvert&lt;6.0-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.6.0)
+Requirement already satisfied: entrypoints&gt;=0.2.2 in /usr/local/lib/python3.7/dist-packages (from nbconvert&lt;6.0-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.4)
+Requirement already satisfied: pandocfilters&gt;=1.4.1 in /usr/local/lib/python3.7/dist-packages (from nbconvert&lt;6.0-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (1.5.0)
+Requirement already satisfied: defusedxml in /usr/local/lib/python3.7/dist-packages (from nbconvert&lt;6.0-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.7.1)
+Requirement already satisfied: mistune&lt;2,&gt;=0.8.1 in /usr/local/lib/python3.7/dist-packages (from nbconvert&lt;6.0-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.8.4)
+Requirement already satisfied: fastjsonschema in /usr/local/lib/python3.7/dist-packages (from nbformat-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (2.16.2)
+Requirement already satisfied: jsonschema&gt;=2.6 in /usr/local/lib/python3.7/dist-packages (from nbformat-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (3.2.0)
+Requirement already satisfied: importlib-metadata&gt;=3.6 in /usr/local/lib/python3.7/dist-packages (from nbformat-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (4.13.0)
+Requirement already satisfied: typing-extensions&gt;=3.6.4 in /usr/local/lib/python3.7/dist-packages (from importlib-metadata&gt;=3.6-&gt;nbformat-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (4.1.1)
+Requirement already satisfied: zipp&gt;=0.5 in /usr/local/lib/python3.7/dist-packages (from importlib-metadata&gt;=3.6-&gt;nbformat-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (3.10.0)
+Requirement already satisfied: pyrsistent&gt;=0.14.0 in /usr/local/lib/python3.7/dist-packages (from jsonschema&gt;=2.6-&gt;nbformat-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.19.2)
+Requirement already satisfied: attrs&gt;=17.4.0 in /usr/local/lib/python3.7/dist-packages (from jsonschema&gt;=2.6-&gt;nbformat-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (21.4.0)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: ptyprocess in /usr/local/lib/python3.7/dist-packages (from terminado&gt;=0.8.1-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.7.0)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="case-folding">
+<h1><em>Case Folding</em>*<a class="headerlink" href="#case-folding" title="Permalink to this headline">#</a></h1>
+<p>Tahap untuk merubah teks yang memiliki huruf kapital menjadi huruf kecil</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+
+<span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     @mafiawasit masih suasana berduka tragedi kanj...
+1     pita hitam umm di 40 hari tragedi kanjuruhan d...
+2     @indostransfer memang urusan sama si anu ini r...
+3     aremania menggugat sebut kejati ingin polisi t...
+4     mencoba untuk tidak peduli &amp;amp; bodo amat dg ...
+                            ...                        
+71    update proses hukum tragedi kanjuruhan: nasib ...
+72    @yusufs_abiie @garagarabola_ lah? dari tadi gw...
+73    kata pt lib soal pertandingan persib vs persij...
+74    @mafiawasit klo saya sih gak masalah liga lanj...
+75    this photo and poster is so deep... #usuttunta...
+Name: tweet, Length: 76, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#install library nltk</span>
+<span class="o">!</span>pip install nltk
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Requirement already satisfied: nltk in /usr/local/lib/python3.7/dist-packages (3.7)
+Requirement already satisfied: click in /usr/local/lib/python3.7/dist-packages (from nltk) (7.1.2)
+Requirement already satisfied: tqdm in /usr/local/lib/python3.7/dist-packages (from nltk) (4.64.1)
+Requirement already satisfied: joblib in /usr/local/lib/python3.7/dist-packages (from nltk) (1.2.0)
+Requirement already satisfied: regex&gt;=2021.8.3 in /usr/local/lib/python3.7/dist-packages (from nltk) (2022.6.2)
+</pre></div>
+</div>
+</div>
+</div>
+<section id="menghapus-karakter-spesial">
+<h2>Menghapus Karakter Spesial<a class="headerlink" href="#menghapus-karakter-spesial" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">string</span> 
+<span class="kn">import</span> <span class="nn">re</span> <span class="c1">#regex library</span>
+<span class="c1"># import word_tokenize &amp; FreqDist from NLTK</span>
+
+<span class="kn">from</span> <span class="nn">nltk.tokenize</span> <span class="kn">import</span> <span class="n">word_tokenize</span> 
+<span class="kn">from</span> <span class="nn">nltk.probability</span> <span class="kn">import</span> <span class="n">FreqDist</span>
+
+<span class="c1"># ------ Tokenizing ---------</span>
+
+<span class="k">def</span> <span class="nf">remove_special</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="c1"># remove tab, new line, ans back slice</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">t&#39;</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">n&#39;</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">u&#39;</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">f&#39;</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">r&#39;</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+    <span class="c1"># remove non ASCII (emoticon, chinese word, .etc)</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">,</span> <span class="s1">&#39;replace&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">)</span>
+    <span class="c1"># remove mention, link, hashtag</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;([@#][A-Za-z0-9]+)|(\w+:\/\/\S+)&quot;</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+    <span class="c1"># remove incomplete URL</span>
+    <span class="k">return</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;http://&quot;</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;https://&quot;</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">)</span>
+                
+<span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">remove_special</span><span class="p">)</span>
+<span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0              masih suasana berduka tragedi kanjuruhan
+1     pita hitam umm di 40 hari tragedi kanjuruhan d...
+2     memang urusan sama si anu ini ribet,,padahal t...
+3     aremania menggugat sebut kejati ingin polisi t...
+4     mencoba untuk tidak peduli &amp;amp; bodo amat dg ...
+                            ...                        
+71    update proses hukum tragedi kanjuruhan: nasib ...
+72    _abiie _ lah? dari tadi gw bilang jam malam it...
+73    kata pt lib soal pertandingan persib vs persij...
+74    klo saya sih gak masalah liga lanjut, tapi per...
+75                  this photo and poster is so deep...
+Name: tweet, Length: 76, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="menghapus-angka">
+<h2>Menghapus Angka<a class="headerlink" href="#menghapus-angka" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#remove number</span>
+<span class="k">def</span> <span class="nf">remove_number</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="k">return</span>  <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\d+&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+
+<span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">remove_number</span><span class="p">)</span>
+<span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0              masih suasana berduka tragedi kanjuruhan
+1     pita hitam umm di  hari tragedi kanjuruhan dan...
+2     memang urusan sama si anu ini ribet,,padahal t...
+3     aremania menggugat sebut kejati ingin polisi t...
+4     mencoba untuk tidak peduli &amp;amp; bodo amat dg ...
+                            ...                        
+71    update proses hukum tragedi kanjuruhan: nasib ...
+72    _abiie _ lah? dari tadi gw bilang jam malam it...
+73    kata pt lib soal pertandingan persib vs persij...
+74    klo saya sih gak masalah liga lanjut, tapi per...
+75                  this photo and poster is so deep...
+Name: tweet, Length: 76, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="menghapus-tanda-baca">
+<h2>Menghapus Tanda Baca<a class="headerlink" href="#menghapus-tanda-baca" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#remove punctuation</span>
+<span class="k">def</span> <span class="nf">remove_punctuation</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">text</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">maketrans</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="n">string</span><span class="o">.</span><span class="n">punctuation</span><span class="p">))</span>
+
+<span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">remove_punctuation</span><span class="p">)</span>
+<span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0              masih suasana berduka tragedi kanjuruhan
+1     pita hitam umm di  hari tragedi kanjuruhan dan...
+2     memang urusan sama si anu ini ribetpadahal ter...
+3     aremania menggugat sebut kejati ingin polisi t...
+4     mencoba untuk tidak peduli amp bodo amat dg li...
+                            ...                        
+71    update proses hukum tragedi kanjuruhan nasib p...
+72    abiie  lah dari tadi gw bilang jam malam itu b...
+73    kata pt lib soal pertandingan persib vs persij...
+74    klo saya sih gak masalah liga lanjut tapi perj...
+75                     this photo and poster is so deep
+Name: tweet, Length: 76, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="menghapus-spasi">
+<h2>Menghapus Spasi<a class="headerlink" href="#menghapus-spasi" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#remove whitespace leading &amp; trailing</span>
+<span class="k">def</span> <span class="nf">remove_whitespace_LT</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+<span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">remove_whitespace_LT</span><span class="p">)</span>
+
+
+<span class="c1">#remove multiple whitespace into single whitespace</span>
+<span class="k">def</span> <span class="nf">remove_whitespace_multiple</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;\s+&#39;</span><span class="p">,</span><span class="s1">&#39; &#39;</span><span class="p">,</span><span class="n">text</span><span class="p">)</span>
+
+<span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">remove_whitespace_multiple</span><span class="p">)</span>
+<span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0              masih suasana berduka tragedi kanjuruhan
+1     pita hitam umm di hari tragedi kanjuruhan dan ...
+2     memang urusan sama si anu ini ribetpadahal ter...
+3     aremania menggugat sebut kejati ingin polisi t...
+4     mencoba untuk tidak peduli amp bodo amat dg li...
+                            ...                        
+71    update proses hukum tragedi kanjuruhan nasib p...
+72    abiie lah dari tadi gw bilang jam malam itu bu...
+73    kata pt lib soal pertandingan persib vs persij...
+74    klo saya sih gak masalah liga lanjut tapi perj...
+75                     this photo and poster is so deep
+Name: tweet, Length: 76, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="menghapus-huruf">
+<h2>Menghapus huruf<a class="headerlink" href="#menghapus-huruf" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># remove single char</span>
+<span class="k">def</span> <span class="nf">remove_singl_char</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\b[a-zA-Z]\b&quot;</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+
+<span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">remove_singl_char</span><span class="p">)</span>
+<span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0              masih suasana berduka tragedi kanjuruhan
+1     pita hitam umm di hari tragedi kanjuruhan dan ...
+2     memang urusan sama si anu ini ribetpadahal ter...
+3     aremania menggugat sebut kejati ingin polisi t...
+4     mencoba untuk tidak peduli amp bodo amat dg li...
+                            ...                        
+71    update proses hukum tragedi kanjuruhan nasib p...
+72    abiie lah dari tadi gw bilang jam malam itu bu...
+73    kata pt lib soal pertandingan persib vs persij...
+74    klo saya sih gak masalah liga lanjut tapi perj...
+75                     this photo and poster is so deep
+Name: tweet, Length: 76, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;punkt&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="tokenizing">
+<h1><strong>Tokenizing</strong><a class="headerlink" href="#tokenizing" title="Permalink to this headline">#</a></h1>
+<p>Tokenizing adalah proses pemisahan teks menjadi potongan-potongan yang disebut sebagai token untuk kemudian di analisa. Kata, angka, simbol, tanda baca dan entitas penting lainnya dapat dianggap sebagai token</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># NLTK word Tokenize </span>
+<span class="k">def</span> <span class="nf">word_tokenize_wrapper</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">word_tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+
+<span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">word_tokenize_wrapper</span><span class="p">)</span>
+<span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0        [masih, suasana, berduka, tragedi, kanjuruhan]
+1     [pita, hitam, umm, di, hari, tragedi, kanjuruh...
+2     [memang, urusan, sama, si, anu, ini, ribetpada...
+3     [aremania, menggugat, sebut, kejati, ingin, po...
+4     [mencoba, untuk, tidak, peduli, amp, bodo, ama...
+                            ...                        
+71    [update, proses, hukum, tragedi, kanjuruhan, n...
+72    [abiie, lah, dari, tadi, gw, bilang, jam, mala...
+73    [kata, pt, lib, soal, pertandingan, persib, vs...
+74    [klo, saya, sih, gak, masalah, liga, lanjut, t...
+75             [this, photo, and, poster, is, so, deep]
+Name: tweet, Length: 76, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="filtering-stopwords-removal">
+<h1><strong>Filtering(Stopwords Removal)</strong><a class="headerlink" href="#filtering-stopwords-removal" title="Permalink to this headline">#</a></h1>
+<p>Proses untuk menghapus kata hubung atau kata yang tidak memiliki makna</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
+<span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;stopwords&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">list_stopwords</span> <span class="o">=</span> <span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;indonesian&#39;</span><span class="p">)</span>
+
+<span class="c1">#Menghapus Stopword dari list token</span>
+<span class="k">def</span> <span class="nf">stopwords_removal</span><span class="p">(</span><span class="n">words</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span> <span class="k">if</span> <span class="n">word</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">list_stopwords</span><span class="p">]</span>
+
+<span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">stopwords_removal</span><span class="p">)</span>
+
+<span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0               [suasana, berduka, tragedi, kanjuruhan]
+1     [pita, hitam, umm, tragedi, kanjuruhan, pahlawan]
+2     [urusan, si, anu, ribetpadahal, tersangka, kel...
+3     [aremania, menggugat, kejati, polisi, tersangk...
+4     [mencoba, peduli, amp, bodo, dg, liga, lokal, ...
+                            ...                        
+71    [update, proses, hukum, tragedi, kanjuruhan, n...
+72    [abiie, gw, bilang, jam, malam, karna, tragedi...
+73    [pt, lib, pertandingan, persib, vs, persija, t...
+74    [klo, sih, gak, liga, perjelas, tragedi, kanju...
+75             [this, photo, and, poster, is, so, deep]
+Name: tweet, Length: 76, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="stemming">
+<h1><strong>Stemming</strong><a class="headerlink" href="#stemming" title="Permalink to this headline">#</a></h1>
+<p>Data training hasil dari filtering akan dilakukan pengecekan atau pencarian kata-kata yang sesuai dengan kamus umum. Apabila data training hasil filtering sesuai dengan kamus umum maka kata akan dikeluarkan sementara, karena sudah dianggap sebagai kata dasar. Apabila masih terdapat kata yang tidak termasuk dalam kata dasar maka tahap selanjutnya adalah menghapus inflection suffixes yang merupakan akhiran pertama. Kata yang memiliki akhiran partticles seperti “-pun”, “-kah”, “-tah”, “- lah” dan akhiran possessive pronoun seperti “-mu”, “-ku” dan “-nya” dihilangkan. Setelah dilakukan proses case folding, tokenezing, dan filtering, proses selanjutnya yaitu stemming. Stemming yang digunakan pada penelitian ini menggunakan algoritma Enhanced Confix Stipping Stemmer, terdiri dari beberapa langkah: Data training hasil dari filtering akan dilakukan pengecekan atau pencarian kata-kata yang sesuai dengan kamus umum. Apabila data training hasil filtering sesuai dengan kamus umum maka kata akan dikeluarkan sementara, karena sudah dianggap sebagai kata dasar. Apabila masih terdapat kata yang tidak termasuk dalam kata dasar maka tahap selanjutnya adalah menghapus inflection suffixes yang merupakan akhiran pertama. Kata yang memiliki akhiran partticles seperti “-pun”, “-kah”, “-tah”, “- lah” dan akhiran possessive pronoun seperti “-mu”, “-ku” dan “-nya” dihilangkan.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">Sastrawi.Stemmer.StemmerFactory</span> <span class="kn">import</span> <span class="n">StemmerFactory</span>
+<span class="kn">import</span> <span class="nn">swifter</span>
+
+
+<span class="c1"># create stemmer</span>
+<span class="n">factory</span> <span class="o">=</span> <span class="n">StemmerFactory</span><span class="p">()</span>
+<span class="n">stemmer</span> <span class="o">=</span> <span class="n">factory</span><span class="o">.</span><span class="n">create_stemmer</span><span class="p">()</span>
+
+<span class="c1"># stemmed</span>
+<span class="k">def</span> <span class="nf">stemmed_wrapper</span><span class="p">(</span><span class="n">term</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">stemmer</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">term</span><span class="p">)</span>
+
+<span class="n">term_dict</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="k">for</span> <span class="n">document</span> <span class="ow">in</span> <span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]:</span>
+    <span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="n">document</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">term</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">term_dict</span><span class="p">:</span>
+            <span class="n">term_dict</span><span class="p">[</span><span class="n">term</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span>
+            
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">term_dict</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;------------------------&quot;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="n">term_dict</span><span class="p">:</span>
+    <span class="n">term_dict</span><span class="p">[</span><span class="n">term</span><span class="p">]</span> <span class="o">=</span> <span class="n">stemmed_wrapper</span><span class="p">(</span><span class="n">term</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">term</span><span class="p">,</span><span class="s2">&quot;:&quot;</span> <span class="p">,</span><span class="n">term_dict</span><span class="p">[</span><span class="n">term</span><span class="p">])</span>
+    
+<span class="nb">print</span><span class="p">(</span><span class="n">term_dict</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;------------------------&quot;</span><span class="p">)</span>
+
+
+<span class="c1"># apply stemmed term to dataframe</span>
+<span class="k">def</span> <span class="nf">get_stemmed_term</span><span class="p">(</span><span class="n">document</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">term_dict</span><span class="p">[</span><span class="n">term</span><span class="p">]</span> <span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="n">document</span><span class="p">]</span>
+
+<span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">swifter</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">get_stemmed_term</span><span class="p">)</span>
+<span class="n">data_abstrak</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>462
+------------------------
+suasana : suasana
+berduka : duka
+tragedi : tragedi
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>kanjuruhan : kanjuruhan
+pita : pita
+hitam : hitam
+umm : umm
+pahlawan : pahlawan
+urusan : urus
+si : si
+anu : anu
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ribetpadahal : ribetpadahal
+tersangka : sangka
+kelompok : kelompok
+jelasgmn : jelasgmn
+kl : kl
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>jd : jd
+utama : utama
+kemarinbisa : kemarinbisa
+gk : gk
+bola : bola
+indonesia : indonesia
+dalih : dalih
+keamanan : aman
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>aremania : aremania
+menggugat : gugat
+kejati : kejat
+polisi : polisi
+malang : malang
+ketua : ketua
+tim : tim
+advokasi : advokasi
+bantuan : bantu
+hukum : hukum
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>djoko : djoko
+tritjahjana : tritjahjana
+via : via
+mencoba : coba
+peduli : peduli
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>amp : amp
+bodo : bodo
+dg : dg
+liga : liga
+lokal : lokal
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>perkembangan : kembang
+yg : yg
+signifikan : signifikan
+dr : dr
+pengusutan : usut
+bukti : bukti
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>owner : owner
+club : club
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>exco : exco
+sebutannya : sebut
+tdk : tdk
+kemarin : kemarin
+korban : korban
+statistik : statistik
+jargon : jargon
+sepak : sepak
+seharga : harga
+nyawa : nyawa
+manusia : manusia
+omong : omong
+coro : coro
+motivasi : motivasi
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>shin : shin
+taeyong : taeyong
+bawa : bawa
+juara : juara
+piala : piala
+aff : aff
+obati : obat
+luka : luka
+gelar : gelar
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pelatih : latih
+korea : korea
+selatan : selatan
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>berbicara : bicara
+perasaan : asa
+hatinya : hati
+terkait : kait
+plan : plan
+all : all
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>match : match
+in : in
+one : one
+day : day
+asli : asli
+perbandingan : banding
+bodoh : bodoh
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dikanjuruhan : dikanjuruhan
+klo : klo
+gak : gak
+gas : gas
+air : air
+mata : mata
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>nggak : nggak
+acara : acara
+dgn : dgn
+tensi : tensi
+emosi : emosi
+santai : santai
+rusuh : rusuh
+orang : orang
+goblok : goblok
+banget : banget
+pake : pake
+darah : darah
+juang : juang
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mengalir : alir
+badan : badan
+trs : trs
+brgerak : brgerak
+bergelombang : gelombang
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>achmadi : achmadi
+lhah : lhah
+nasional : nasional
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>gimana : gimana
+otak : otak
+lo : lo
+rum : rum
+hasil : hasil
+autopsi : autopsi
+sudahkeluar : sudahkeluar
+mohon : mohon
+ditegakkan : tegak
+keadilan : adil
+masyarakat : 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>masyarakat
+warga : warga
+berjuang : juang
+satupun : satu
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>penembakan : tembak
+gasairmata : gasairmata
+ditetapkan : tetap
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>otopsi : otopsi
+november : november
+diserahkan : serah
+langsung : langsung
+dokter : dokter
+forensik : forensik
+penyidik : sidik
+kepolisian : polisi
+daerah : daerah
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>jawa : jawa
+timur : timur
+panglima : panglima
+tni : tni
+monitoring : monitoring
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>thread : thread
+tolol : tolol
+beresin : resin
+aja : aja
+ga : ga
+berani : berani
+membuahkan : buah
+berkas : berkas
+perkara : perkara
+diteliti : teliti
+jaksa : jaksa
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>jatim : jatim
+petunjuk : tunjuk
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>polri : polri
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pssi : pssi
+rapat : rapat
+koordinasi : koordinasi
+pengamanan : aman
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pasca : pasca
+garis : garis
+bawahi : bawah
+laga : laga
+home : home
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>penonton : tonton
+maksudnya : maksud
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>orangtuanya : orangtuanya
+bocah : bocah
+kelas : kelas
+senyum : senyum
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>anies : anies
+empati : empati
+mlh : mlh
+deklarasi : deklarasi
+capres : capres
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>kt : kt
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>grombolan : grombolan
+hipokrit : hipokrit
+bin : bin
+stupid : stupid
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pdhl : pdhl
+bkn : bkn
+gub : gub
+presiden : presiden
+dasar : dasar
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ebong : ebong
+nirnalar : nirnalar
+tetapkan : tetap
+buntut : buntut
+tunda : tunda
+diundur : undur
+putaran : 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>putar
+jenderal : jenderal
+andika : andika
+usut : usut
+penendangan : tendang
+suporter : suporter
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>oiya : oiya
+kabar : kabar
+ya : ya
+hmmmm : hmmmm
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>nawak : nawak
+kemanusiaan : manusia
+butuh : butuh
+dm : dm
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>whats : whats
+app : app
+tau : tau
+kondisi : kondisi
+bersinggungan : singgung
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>udah : udah
+fotonya : foto
+tangkap : tangkap
+hehe : hehe
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>tambeng : tambeng
+ketum : tum
+kaga : kaga
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ngebahas : ngebahas
+lg : lg
+yakalo : yakalo
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>emng : emng
+lu : lu
+mao : mao
+salahin : salahin
+minimal : minimal
+rangkul : rangkul
+kek : kek
+keluarga :
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> keluarga
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>keilangan : keilangan
+anak : anak
+saudara : saudara
+orangtua : orangtua
+nya : nya
+mah : mah
+lepas : lepas
+tangan : tangan
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>gitu : gitu
+aj : aj
+ahy : ahy
+insiden : insiden
+memilukan : milu
+memalukan : malu
+pimpin : pimpin
+perubahan : ubah
+duka : duka
+munafik : munafik
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>nasdem : nasdem
+bobrok : bobrok
+ajak : ajak
+kawal : kawal
+investigasi : investigasi
+tuntas : tuntas
+ajukan : aju
+gugatan : gugat
+restitusi : restitusi
+rp : rp
+miliar : miliar
+pekan : pekan
+pasal : pasal
+kelalaian : lalai
+kerumitan : kerumit
+dunia : dunia
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>persepakbolaan : persepakbolaan
+salah : salah
+contohnya : contoh
+dibutuhkan : butuh
+sosok : sosok
+menteri : menteri
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>erick : erick
+thohir : thohir
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mengelola : kelola
+terukur : ukur
+terarah : arah
+et : et
+reformasi : reformasi
+asisten : asisten
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>kapolri : kapolri
+bidang : bidang
+operasi : operasi
+asops : asops
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>irjen : irjen
+agung : agung
+setya : setya
+imam : imam
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>effendy : effendy
+rakor : rakor
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>membahas : bahas
+pemenuhan : penuh
+persyaratan : syarat
+penyelenggaraan : selenggara
+kompetisi : kompetisi
+pendampingan : damping
+psikologis : psikologis
+kevia : via
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>naswa : naswa
+penyintas : sintas
+sembuh : sembuh
+gugat : gugat
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>polda : polda
+penambahan : tambah
+bek : bek
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>persija : persija
+jakarta : jakarta
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hansamu : hansamu
+yama : yama
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mengaku : aku
+menemui : temu
+kendala : kendala
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mengikuti : ikut
+tc : tc
+timnas : timnas
+dihentikan : henti
+imbas : imbas
+kejaksaan : jaksa
+selaras : selaras
+tuntutan : tuntut
+proses : proses
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>penyidikan : sidi
+mandek : mandek
+kunjung : kunjung
+ribuan : ribu
+aksi : aksi
+turun : turun
+jalan : jalan
+titik : titik
+berbeda : beda
+menuntut : tuntut
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pelaku : laku
+diseret : seret
+diproses : proses
+perkasa : perkasa
+selengkapnya : lengkap
+klik : klik
+tautan : taut
+kayak : kayak
+mengusut : usut
+anggota : anggota
+ayo : ayo
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>alhmdllah : alhmdllah
+bentar : bentar
+lupa : lupa
+diusut : usut
+muke : muke
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>tebel : tebel
+iya : iya
+pedes : pedes
+pas : pas
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>komennya : komennya
+bergerak : gerak
+giliran : gilir
+kidul : kidul
+pasar : pasar
+terhenti : henti
+oktober : oktober
+pt : pt
+lib : lib
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>kembalimelanjutkan : kembalimelanjutkan
+bri : bri
+musim : musim
+format : format
+id : id
+dilaporkan : lapor
+demokrat : demokrat
+salurkan : salur
+menggelar : gelar
+solidaritas : solidaritas
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>black : black
+sunday : sunday
+jsp : jsp
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>disarankan : saran
+bayi : bayi
+balita : balita
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>batita : batita
+usia : usia
+sekolah : sekolah
+dipisahkan : pisah
+keluarganya : keluarga
+berlamalama : berlamalama
+pengungsian : ungsi
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>memantau : pantau
+stadion : stadion
+melibatkan : libat
+genap : genap
+biji : biji
+tubuh : tubuh
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>seriusseriusnya : seriusseriusnya
+menangani : tangan
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>kucatat : catat
+kuceritakan : cerita
+cucu : cucu
+kelak : kelak
+negeri : negeri
+hobi : hobi
+sesanti : sesanti
+kosong : kosong
+nurani : nurani
+membidik : bidik
+bertanggung : tanggung
+kesedihan : sedih
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>iwan : iwan
+bule : bule
+mengapresiasi : apresiasi
+tercapainya : capa
+kesepatan : sepat
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pemerintah : perintah
+ri : ri
+lanjutan : lanjut
+terima : terima
+kasih : kasih
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>menpora : menpora
+kemenkes : kemenkes
+kementerian : menteri
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pupr : pupr
+merespons : respons
+task : task
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>force : force
+selesaikan : selesai
+update : update
+nasib : nasib
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>penembak : tembak
+abiie : abiie
+gw : gw
+bilang : bilang
+jam : jam
+malam : malam
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>karna : karna
+doang : doang
+majuin : majuin
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>kickoff : kickoff
+rangkaian : rangkai
+alami : alami
+pulang : pulang
+nonton : nonton
+hak : hak
+bela : bela
+kejadian : jadi
+paham : paham
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pertandingan : tanding
+persib : persib
+vs : vs
+tertunda : tunda
+sih : sih
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>perjelas : jelas
+persidangan : sidang
+pengumuman : umum
+nama : nama
+diperjelas : jelas
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>this : this
+photo : photo
+and : and
+poster : poster
+is : is
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>so : so
+deep : deep
+{&#39;suasana&#39;: &#39;suasana&#39;, &#39;berduka&#39;: &#39;duka&#39;, &#39;tragedi&#39;: &#39;tragedi&#39;, &#39;kanjuruhan&#39;: &#39;kanjuruhan&#39;, &#39;pita&#39;: &#39;pita&#39;, &#39;hitam&#39;: &#39;hitam&#39;, &#39;umm&#39;: &#39;umm&#39;, &#39;pahlawan&#39;: &#39;pahlawan&#39;, &#39;urusan&#39;: &#39;urus&#39;, &#39;si&#39;: &#39;si&#39;, &#39;anu&#39;: &#39;anu&#39;, &#39;ribetpadahal&#39;: &#39;ribetpadahal&#39;, &#39;tersangka&#39;: &#39;sangka&#39;, &#39;kelompok&#39;: &#39;kelompok&#39;, &#39;jelasgmn&#39;: &#39;jelasgmn&#39;, &#39;kl&#39;: &#39;kl&#39;, &#39;jd&#39;: &#39;jd&#39;, &#39;utama&#39;: &#39;utama&#39;, &#39;kemarinbisa&#39;: &#39;kemarinbisa&#39;, &#39;gk&#39;: &#39;gk&#39;, &#39;bola&#39;: &#39;bola&#39;, &#39;indonesia&#39;: &#39;indonesia&#39;, &#39;dalih&#39;: &#39;dalih&#39;, &#39;keamanan&#39;: &#39;aman&#39;, &#39;aremania&#39;: &#39;aremania&#39;, &#39;menggugat&#39;: &#39;gugat&#39;, &#39;kejati&#39;: &#39;kejat&#39;, &#39;polisi&#39;: &#39;polisi&#39;, &#39;malang&#39;: &#39;malang&#39;, &#39;ketua&#39;: &#39;ketua&#39;, &#39;tim&#39;: &#39;tim&#39;, &#39;advokasi&#39;: &#39;advokasi&#39;, &#39;bantuan&#39;: &#39;bantu&#39;, &#39;hukum&#39;: &#39;hukum&#39;, &#39;djoko&#39;: &#39;djoko&#39;, &#39;tritjahjana&#39;: &#39;tritjahjana&#39;, &#39;via&#39;: &#39;via&#39;, &#39;mencoba&#39;: &#39;coba&#39;, &#39;peduli&#39;: &#39;peduli&#39;, &#39;amp&#39;: &#39;amp&#39;, &#39;bodo&#39;: &#39;bodo&#39;, &#39;dg&#39;: &#39;dg&#39;, &#39;liga&#39;: &#39;liga&#39;, &#39;lokal&#39;: &#39;lokal&#39;, &#39;perkembangan&#39;: &#39;kembang&#39;, &#39;yg&#39;: &#39;yg&#39;, &#39;signifikan&#39;: &#39;signifikan&#39;, &#39;dr&#39;: &#39;dr&#39;, &#39;pengusutan&#39;: &#39;usut&#39;, &#39;bukti&#39;: &#39;bukti&#39;, &#39;owner&#39;: &#39;owner&#39;, &#39;club&#39;: &#39;club&#39;, &#39;exco&#39;: &#39;exco&#39;, &#39;sebutannya&#39;: &#39;sebut&#39;, &#39;tdk&#39;: &#39;tdk&#39;, &#39;kemarin&#39;: &#39;kemarin&#39;, &#39;korban&#39;: &#39;korban&#39;, &#39;statistik&#39;: &#39;statistik&#39;, &#39;jargon&#39;: &#39;jargon&#39;, &#39;sepak&#39;: &#39;sepak&#39;, &#39;seharga&#39;: &#39;harga&#39;, &#39;nyawa&#39;: &#39;nyawa&#39;, &#39;manusia&#39;: &#39;manusia&#39;, &#39;omong&#39;: &#39;omong&#39;, &#39;coro&#39;: &#39;coro&#39;, &#39;motivasi&#39;: &#39;motivasi&#39;, &#39;shin&#39;: &#39;shin&#39;, &#39;taeyong&#39;: &#39;taeyong&#39;, &#39;bawa&#39;: &#39;bawa&#39;, &#39;juara&#39;: &#39;juara&#39;, &#39;piala&#39;: &#39;piala&#39;, &#39;aff&#39;: &#39;aff&#39;, &#39;obati&#39;: &#39;obat&#39;, &#39;luka&#39;: &#39;luka&#39;, &#39;gelar&#39;: &#39;gelar&#39;, &#39;pelatih&#39;: &#39;latih&#39;, &#39;korea&#39;: &#39;korea&#39;, &#39;selatan&#39;: &#39;selatan&#39;, &#39;berbicara&#39;: &#39;bicara&#39;, &#39;perasaan&#39;: &#39;asa&#39;, &#39;hatinya&#39;: &#39;hati&#39;, &#39;terkait&#39;: &#39;kait&#39;, &#39;plan&#39;: &#39;plan&#39;, &#39;all&#39;: &#39;all&#39;, &#39;match&#39;: &#39;match&#39;, &#39;in&#39;: &#39;in&#39;, &#39;one&#39;: &#39;one&#39;, &#39;day&#39;: &#39;day&#39;, &#39;asli&#39;: &#39;asli&#39;, &#39;perbandingan&#39;: &#39;banding&#39;, &#39;bodoh&#39;: &#39;bodoh&#39;, &#39;dikanjuruhan&#39;: &#39;dikanjuruhan&#39;, &#39;klo&#39;: &#39;klo&#39;, &#39;gak&#39;: &#39;gak&#39;, &#39;gas&#39;: &#39;gas&#39;, &#39;air&#39;: &#39;air&#39;, &#39;mata&#39;: &#39;mata&#39;, &#39;nggak&#39;: &#39;nggak&#39;, &#39;acara&#39;: &#39;acara&#39;, &#39;dgn&#39;: &#39;dgn&#39;, &#39;tensi&#39;: &#39;tensi&#39;, &#39;emosi&#39;: &#39;emosi&#39;, &#39;santai&#39;: &#39;santai&#39;, &#39;rusuh&#39;: &#39;rusuh&#39;, &#39;orang&#39;: &#39;orang&#39;, &#39;goblok&#39;: &#39;goblok&#39;, &#39;banget&#39;: &#39;banget&#39;, &#39;pake&#39;: &#39;pake&#39;, &#39;darah&#39;: &#39;darah&#39;, &#39;juang&#39;: &#39;juang&#39;, &#39;mengalir&#39;: &#39;alir&#39;, &#39;badan&#39;: &#39;badan&#39;, &#39;trs&#39;: &#39;trs&#39;, &#39;brgerak&#39;: &#39;brgerak&#39;, &#39;bergelombang&#39;: &#39;gelombang&#39;, &#39;achmadi&#39;: &#39;achmadi&#39;, &#39;lhah&#39;: &#39;lhah&#39;, &#39;nasional&#39;: &#39;nasional&#39;, &#39;gimana&#39;: &#39;gimana&#39;, &#39;otak&#39;: &#39;otak&#39;, &#39;lo&#39;: &#39;lo&#39;, &#39;rum&#39;: &#39;rum&#39;, &#39;hasil&#39;: &#39;hasil&#39;, &#39;autopsi&#39;: &#39;autopsi&#39;, &#39;sudahkeluar&#39;: &#39;sudahkeluar&#39;, &#39;mohon&#39;: &#39;mohon&#39;, &#39;ditegakkan&#39;: &#39;tegak&#39;, &#39;keadilan&#39;: &#39;adil&#39;, &#39;masyarakat&#39;: &#39;masyarakat&#39;, &#39;warga&#39;: &#39;warga&#39;, &#39;berjuang&#39;: &#39;juang&#39;, &#39;satupun&#39;: &#39;satu&#39;, &#39;penembakan&#39;: &#39;tembak&#39;, &#39;gasairmata&#39;: &#39;gasairmata&#39;, &#39;ditetapkan&#39;: &#39;tetap&#39;, &#39;otopsi&#39;: &#39;otopsi&#39;, &#39;november&#39;: &#39;november&#39;, &#39;diserahkan&#39;: &#39;serah&#39;, &#39;langsung&#39;: &#39;langsung&#39;, &#39;dokter&#39;: &#39;dokter&#39;, &#39;forensik&#39;: &#39;forensik&#39;, &#39;penyidik&#39;: &#39;sidik&#39;, &#39;kepolisian&#39;: &#39;polisi&#39;, &#39;daerah&#39;: &#39;daerah&#39;, &#39;jawa&#39;: &#39;jawa&#39;, &#39;timur&#39;: &#39;timur&#39;, &#39;panglima&#39;: &#39;panglima&#39;, &#39;tni&#39;: &#39;tni&#39;, &#39;monitoring&#39;: &#39;monitoring&#39;, &#39;thread&#39;: &#39;thread&#39;, &#39;tolol&#39;: &#39;tolol&#39;, &#39;beresin&#39;: &#39;resin&#39;, &#39;aja&#39;: &#39;aja&#39;, &#39;ga&#39;: &#39;ga&#39;, &#39;berani&#39;: &#39;berani&#39;, &#39;membuahkan&#39;: &#39;buah&#39;, &#39;berkas&#39;: &#39;berkas&#39;, &#39;perkara&#39;: &#39;perkara&#39;, &#39;diteliti&#39;: &#39;teliti&#39;, &#39;jaksa&#39;: &#39;jaksa&#39;, &#39;jatim&#39;: &#39;jatim&#39;, &#39;petunjuk&#39;: &#39;tunjuk&#39;, &#39;polri&#39;: &#39;polri&#39;, &#39;pssi&#39;: &#39;pssi&#39;, &#39;rapat&#39;: &#39;rapat&#39;, &#39;koordinasi&#39;: &#39;koordinasi&#39;, &#39;pengamanan&#39;: &#39;aman&#39;, &#39;pasca&#39;: &#39;pasca&#39;, &#39;garis&#39;: &#39;garis&#39;, &#39;bawahi&#39;: &#39;bawah&#39;, &#39;laga&#39;: &#39;laga&#39;, &#39;home&#39;: &#39;home&#39;, &#39;penonton&#39;: &#39;tonton&#39;, &#39;maksudnya&#39;: &#39;maksud&#39;, &#39;orangtuanya&#39;: &#39;orangtuanya&#39;, &#39;bocah&#39;: &#39;bocah&#39;, &#39;kelas&#39;: &#39;kelas&#39;, &#39;senyum&#39;: &#39;senyum&#39;, &#39;anies&#39;: &#39;anies&#39;, &#39;empati&#39;: &#39;empati&#39;, &#39;mlh&#39;: &#39;mlh&#39;, &#39;deklarasi&#39;: &#39;deklarasi&#39;, &#39;capres&#39;: &#39;capres&#39;, &#39;kt&#39;: &#39;kt&#39;, &#39;grombolan&#39;: &#39;grombolan&#39;, &#39;hipokrit&#39;: &#39;hipokrit&#39;, &#39;bin&#39;: &#39;bin&#39;, &#39;stupid&#39;: &#39;stupid&#39;, &#39;pdhl&#39;: &#39;pdhl&#39;, &#39;bkn&#39;: &#39;bkn&#39;, &#39;gub&#39;: &#39;gub&#39;, &#39;presiden&#39;: &#39;presiden&#39;, &#39;dasar&#39;: &#39;dasar&#39;, &#39;ebong&#39;: &#39;ebong&#39;, &#39;nirnalar&#39;: &#39;nirnalar&#39;, &#39;tetapkan&#39;: &#39;tetap&#39;, &#39;buntut&#39;: &#39;buntut&#39;, &#39;tunda&#39;: &#39;tunda&#39;, &#39;diundur&#39;: &#39;undur&#39;, &#39;putaran&#39;: &#39;putar&#39;, &#39;jenderal&#39;: &#39;jenderal&#39;, &#39;andika&#39;: &#39;andika&#39;, &#39;usut&#39;: &#39;usut&#39;, &#39;penendangan&#39;: &#39;tendang&#39;, &#39;suporter&#39;: &#39;suporter&#39;, &#39;oiya&#39;: &#39;oiya&#39;, &#39;kabar&#39;: &#39;kabar&#39;, &#39;ya&#39;: &#39;ya&#39;, &#39;hmmmm&#39;: &#39;hmmmm&#39;, &#39;nawak&#39;: &#39;nawak&#39;, &#39;kemanusiaan&#39;: &#39;manusia&#39;, &#39;butuh&#39;: &#39;butuh&#39;, &#39;dm&#39;: &#39;dm&#39;, &#39;whats&#39;: &#39;whats&#39;, &#39;app&#39;: &#39;app&#39;, &#39;tau&#39;: &#39;tau&#39;, &#39;kondisi&#39;: &#39;kondisi&#39;, &#39;bersinggungan&#39;: &#39;singgung&#39;, &#39;udah&#39;: &#39;udah&#39;, &#39;fotonya&#39;: &#39;foto&#39;, &#39;tangkap&#39;: &#39;tangkap&#39;, &#39;hehe&#39;: &#39;hehe&#39;, &#39;tambeng&#39;: &#39;tambeng&#39;, &#39;ketum&#39;: &#39;tum&#39;, &#39;kaga&#39;: &#39;kaga&#39;, &#39;ngebahas&#39;: &#39;ngebahas&#39;, &#39;lg&#39;: &#39;lg&#39;, &#39;yakalo&#39;: &#39;yakalo&#39;, &#39;emng&#39;: &#39;emng&#39;, &#39;lu&#39;: &#39;lu&#39;, &#39;mao&#39;: &#39;mao&#39;, &#39;salahin&#39;: &#39;salahin&#39;, &#39;minimal&#39;: &#39;minimal&#39;, &#39;rangkul&#39;: &#39;rangkul&#39;, &#39;kek&#39;: &#39;kek&#39;, &#39;keluarga&#39;: &#39;keluarga&#39;, &#39;keilangan&#39;: &#39;keilangan&#39;, &#39;anak&#39;: &#39;anak&#39;, &#39;saudara&#39;: &#39;saudara&#39;, &#39;orangtua&#39;: &#39;orangtua&#39;, &#39;nya&#39;: &#39;nya&#39;, &#39;mah&#39;: &#39;mah&#39;, &#39;lepas&#39;: &#39;lepas&#39;, &#39;tangan&#39;: &#39;tangan&#39;, &#39;gitu&#39;: &#39;gitu&#39;, &#39;aj&#39;: &#39;aj&#39;, &#39;ahy&#39;: &#39;ahy&#39;, &#39;insiden&#39;: &#39;insiden&#39;, &#39;memilukan&#39;: &#39;milu&#39;, &#39;memalukan&#39;: &#39;malu&#39;, &#39;pimpin&#39;: &#39;pimpin&#39;, &#39;perubahan&#39;: &#39;ubah&#39;, &#39;duka&#39;: &#39;duka&#39;, &#39;munafik&#39;: &#39;munafik&#39;, &#39;nasdem&#39;: &#39;nasdem&#39;, &#39;bobrok&#39;: &#39;bobrok&#39;, &#39;ajak&#39;: &#39;ajak&#39;, &#39;kawal&#39;: &#39;kawal&#39;, &#39;investigasi&#39;: &#39;investigasi&#39;, &#39;tuntas&#39;: &#39;tuntas&#39;, &#39;ajukan&#39;: &#39;aju&#39;, &#39;gugatan&#39;: &#39;gugat&#39;, &#39;restitusi&#39;: &#39;restitusi&#39;, &#39;rp&#39;: &#39;rp&#39;, &#39;miliar&#39;: &#39;miliar&#39;, &#39;pekan&#39;: &#39;pekan&#39;, &#39;pasal&#39;: &#39;pasal&#39;, &#39;kelalaian&#39;: &#39;lalai&#39;, &#39;kerumitan&#39;: &#39;kerumit&#39;, &#39;dunia&#39;: &#39;dunia&#39;, &#39;persepakbolaan&#39;: &#39;persepakbolaan&#39;, &#39;salah&#39;: &#39;salah&#39;, &#39;contohnya&#39;: &#39;contoh&#39;, &#39;dibutuhkan&#39;: &#39;butuh&#39;, &#39;sosok&#39;: &#39;sosok&#39;, &#39;menteri&#39;: &#39;menteri&#39;, &#39;erick&#39;: &#39;erick&#39;, &#39;thohir&#39;: &#39;thohir&#39;, &#39;mengelola&#39;: &#39;kelola&#39;, &#39;terukur&#39;: &#39;ukur&#39;, &#39;terarah&#39;: &#39;arah&#39;, &#39;et&#39;: &#39;et&#39;, &#39;reformasi&#39;: &#39;reformasi&#39;, &#39;asisten&#39;: &#39;asisten&#39;, &#39;kapolri&#39;: &#39;kapolri&#39;, &#39;bidang&#39;: &#39;bidang&#39;, &#39;operasi&#39;: &#39;operasi&#39;, &#39;asops&#39;: &#39;asops&#39;, &#39;irjen&#39;: &#39;irjen&#39;, &#39;agung&#39;: &#39;agung&#39;, &#39;setya&#39;: &#39;setya&#39;, &#39;imam&#39;: &#39;imam&#39;, &#39;effendy&#39;: &#39;effendy&#39;, &#39;rakor&#39;: &#39;rakor&#39;, &#39;membahas&#39;: &#39;bahas&#39;, &#39;pemenuhan&#39;: &#39;penuh&#39;, &#39;persyaratan&#39;: &#39;syarat&#39;, &#39;penyelenggaraan&#39;: &#39;selenggara&#39;, &#39;kompetisi&#39;: &#39;kompetisi&#39;, &#39;pendampingan&#39;: &#39;damping&#39;, &#39;psikologis&#39;: &#39;psikologis&#39;, &#39;kevia&#39;: &#39;via&#39;, &#39;naswa&#39;: &#39;naswa&#39;, &#39;penyintas&#39;: &#39;sintas&#39;, &#39;sembuh&#39;: &#39;sembuh&#39;, &#39;gugat&#39;: &#39;gugat&#39;, &#39;polda&#39;: &#39;polda&#39;, &#39;penambahan&#39;: &#39;tambah&#39;, &#39;bek&#39;: &#39;bek&#39;, &#39;persija&#39;: &#39;persija&#39;, &#39;jakarta&#39;: &#39;jakarta&#39;, &#39;hansamu&#39;: &#39;hansamu&#39;, &#39;yama&#39;: &#39;yama&#39;, &#39;mengaku&#39;: &#39;aku&#39;, &#39;menemui&#39;: &#39;temu&#39;, &#39;kendala&#39;: &#39;kendala&#39;, &#39;mengikuti&#39;: &#39;ikut&#39;, &#39;tc&#39;: &#39;tc&#39;, &#39;timnas&#39;: &#39;timnas&#39;, &#39;dihentikan&#39;: &#39;henti&#39;, &#39;imbas&#39;: &#39;imbas&#39;, &#39;kejaksaan&#39;: &#39;jaksa&#39;, &#39;selaras&#39;: &#39;selaras&#39;, &#39;tuntutan&#39;: &#39;tuntut&#39;, &#39;proses&#39;: &#39;proses&#39;, &#39;penyidikan&#39;: &#39;sidi&#39;, &#39;mandek&#39;: &#39;mandek&#39;, &#39;kunjung&#39;: &#39;kunjung&#39;, &#39;ribuan&#39;: &#39;ribu&#39;, &#39;aksi&#39;: &#39;aksi&#39;, &#39;turun&#39;: &#39;turun&#39;, &#39;jalan&#39;: &#39;jalan&#39;, &#39;titik&#39;: &#39;titik&#39;, &#39;berbeda&#39;: &#39;beda&#39;, &#39;menuntut&#39;: &#39;tuntut&#39;, &#39;pelaku&#39;: &#39;laku&#39;, &#39;diseret&#39;: &#39;seret&#39;, &#39;diproses&#39;: &#39;proses&#39;, &#39;perkasa&#39;: &#39;perkasa&#39;, &#39;selengkapnya&#39;: &#39;lengkap&#39;, &#39;klik&#39;: &#39;klik&#39;, &#39;tautan&#39;: &#39;taut&#39;, &#39;kayak&#39;: &#39;kayak&#39;, &#39;mengusut&#39;: &#39;usut&#39;, &#39;anggota&#39;: &#39;anggota&#39;, &#39;ayo&#39;: &#39;ayo&#39;, &#39;alhmdllah&#39;: &#39;alhmdllah&#39;, &#39;bentar&#39;: &#39;bentar&#39;, &#39;lupa&#39;: &#39;lupa&#39;, &#39;diusut&#39;: &#39;usut&#39;, &#39;muke&#39;: &#39;muke&#39;, &#39;tebel&#39;: &#39;tebel&#39;, &#39;iya&#39;: &#39;iya&#39;, &#39;pedes&#39;: &#39;pedes&#39;, &#39;pas&#39;: &#39;pas&#39;, &#39;komennya&#39;: &#39;komennya&#39;, &#39;bergerak&#39;: &#39;gerak&#39;, &#39;giliran&#39;: &#39;gilir&#39;, &#39;kidul&#39;: &#39;kidul&#39;, &#39;pasar&#39;: &#39;pasar&#39;, &#39;terhenti&#39;: &#39;henti&#39;, &#39;oktober&#39;: &#39;oktober&#39;, &#39;pt&#39;: &#39;pt&#39;, &#39;lib&#39;: &#39;lib&#39;, &#39;kembalimelanjutkan&#39;: &#39;kembalimelanjutkan&#39;, &#39;bri&#39;: &#39;bri&#39;, &#39;musim&#39;: &#39;musim&#39;, &#39;format&#39;: &#39;format&#39;, &#39;id&#39;: &#39;id&#39;, &#39;dilaporkan&#39;: &#39;lapor&#39;, &#39;demokrat&#39;: &#39;demokrat&#39;, &#39;salurkan&#39;: &#39;salur&#39;, &#39;menggelar&#39;: &#39;gelar&#39;, &#39;solidaritas&#39;: &#39;solidaritas&#39;, &#39;black&#39;: &#39;black&#39;, &#39;sunday&#39;: &#39;sunday&#39;, &#39;jsp&#39;: &#39;jsp&#39;, &#39;disarankan&#39;: &#39;saran&#39;, &#39;bayi&#39;: &#39;bayi&#39;, &#39;balita&#39;: &#39;balita&#39;, &#39;batita&#39;: &#39;batita&#39;, &#39;usia&#39;: &#39;usia&#39;, &#39;sekolah&#39;: &#39;sekolah&#39;, &#39;dipisahkan&#39;: &#39;pisah&#39;, &#39;keluarganya&#39;: &#39;keluarga&#39;, &#39;berlamalama&#39;: &#39;berlamalama&#39;, &#39;pengungsian&#39;: &#39;ungsi&#39;, &#39;memantau&#39;: &#39;pantau&#39;, &#39;stadion&#39;: &#39;stadion&#39;, &#39;melibatkan&#39;: &#39;libat&#39;, &#39;genap&#39;: &#39;genap&#39;, &#39;biji&#39;: &#39;biji&#39;, &#39;tubuh&#39;: &#39;tubuh&#39;, &#39;seriusseriusnya&#39;: &#39;seriusseriusnya&#39;, &#39;menangani&#39;: &#39;tangan&#39;, &#39;kucatat&#39;: &#39;catat&#39;, &#39;kuceritakan&#39;: &#39;cerita&#39;, &#39;cucu&#39;: &#39;cucu&#39;, &#39;kelak&#39;: &#39;kelak&#39;, &#39;negeri&#39;: &#39;negeri&#39;, &#39;hobi&#39;: &#39;hobi&#39;, &#39;sesanti&#39;: &#39;sesanti&#39;, &#39;kosong&#39;: &#39;kosong&#39;, &#39;nurani&#39;: &#39;nurani&#39;, &#39;membidik&#39;: &#39;bidik&#39;, &#39;bertanggung&#39;: &#39;tanggung&#39;, &#39;kesedihan&#39;: &#39;sedih&#39;, &#39;iwan&#39;: &#39;iwan&#39;, &#39;bule&#39;: &#39;bule&#39;, &#39;mengapresiasi&#39;: &#39;apresiasi&#39;, &#39;tercapainya&#39;: &#39;capa&#39;, &#39;kesepatan&#39;: &#39;sepat&#39;, &#39;pemerintah&#39;: &#39;perintah&#39;, &#39;ri&#39;: &#39;ri&#39;, &#39;lanjutan&#39;: &#39;lanjut&#39;, &#39;terima&#39;: &#39;terima&#39;, &#39;kasih&#39;: &#39;kasih&#39;, &#39;menpora&#39;: &#39;menpora&#39;, &#39;kemenkes&#39;: &#39;kemenkes&#39;, &#39;kementerian&#39;: &#39;menteri&#39;, &#39;pupr&#39;: &#39;pupr&#39;, &#39;merespons&#39;: &#39;respons&#39;, &#39;task&#39;: &#39;task&#39;, &#39;force&#39;: &#39;force&#39;, &#39;selesaikan&#39;: &#39;selesai&#39;, &#39;update&#39;: &#39;update&#39;, &#39;nasib&#39;: &#39;nasib&#39;, &#39;penembak&#39;: &#39;tembak&#39;, &#39;abiie&#39;: &#39;abiie&#39;, &#39;gw&#39;: &#39;gw&#39;, &#39;bilang&#39;: &#39;bilang&#39;, &#39;jam&#39;: &#39;jam&#39;, &#39;malam&#39;: &#39;malam&#39;, &#39;karna&#39;: &#39;karna&#39;, &#39;doang&#39;: &#39;doang&#39;, &#39;majuin&#39;: &#39;majuin&#39;, &#39;kickoff&#39;: &#39;kickoff&#39;, &#39;rangkaian&#39;: &#39;rangkai&#39;, &#39;alami&#39;: &#39;alami&#39;, &#39;pulang&#39;: &#39;pulang&#39;, &#39;nonton&#39;: &#39;nonton&#39;, &#39;hak&#39;: &#39;hak&#39;, &#39;bela&#39;: &#39;bela&#39;, &#39;kejadian&#39;: &#39;jadi&#39;, &#39;paham&#39;: &#39;paham&#39;, &#39;pertandingan&#39;: &#39;tanding&#39;, &#39;persib&#39;: &#39;persib&#39;, &#39;vs&#39;: &#39;vs&#39;, &#39;tertunda&#39;: &#39;tunda&#39;, &#39;sih&#39;: &#39;sih&#39;, &#39;perjelas&#39;: &#39;jelas&#39;, &#39;persidangan&#39;: &#39;sidang&#39;, &#39;pengumuman&#39;: &#39;umum&#39;, &#39;nama&#39;: &#39;nama&#39;, &#39;diperjelas&#39;: &#39;jelas&#39;, &#39;this&#39;: &#39;this&#39;, &#39;photo&#39;: &#39;photo&#39;, &#39;and&#39;: &#39;and&#39;, &#39;poster&#39;: &#39;poster&#39;, &#39;is&#39;: &#39;is&#39;, &#39;so&#39;: &#39;so&#39;, &#39;deep&#39;: &#39;deep&#39;}
+------------------------
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "2e509c00df2740799dc9f2a7e033ac31"}
+</script><div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0                  [suasana, duka, tragedi, kanjuruhan]
+1     [pita, hitam, umm, tragedi, kanjuruhan, pahlawan]
+2     [urus, si, anu, ribetpadahal, sangka, kelompok...
+3     [aremania, gugat, kejat, polisi, sangka, trage...
+4     [coba, peduli, amp, bodo, dg, liga, lokal, kem...
+                            ...                        
+71    [update, proses, hukum, tragedi, kanjuruhan, n...
+72    [abiie, gw, bilang, jam, malam, karna, tragedi...
+73    [pt, lib, tanding, persib, vs, persija, tunda,...
+74    [klo, sih, gak, liga, jelas, tragedi, kanjuruh...
+75             [this, photo, and, poster, is, so, deep]
+Name: tweet, Length: 76, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<p>##Menyimpan Hasil Tahap Preprocessing ke file .csv</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_abstrak</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;preprocessing.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="tf">
+<h1><strong>TF</strong><a class="headerlink" href="#tf" title="Permalink to this headline">#</a></h1>
+<p>TF(Term Frequency) : Istilah frekuensi kata dalam dokumen. Ada beberapa cara untuk menghitung frekuensi ini, dengan cara yang paling sederhana adalah dengan menghitung jumlah kata yang muncul dalam dokumen. Lalu, ada cara untuk menyesuaikan frekuensi, berdasarkan panjang dokumen, atau dengan frekuensi mentah kata yang paling sering muncul dalam dokumen.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfTransformer</span><span class="p">,</span> <span class="n">TfidfVectorizer</span><span class="p">,</span> <span class="n">CountVectorizer</span>
+<span class="c1">#Membuat Dataframe</span>
+<span class="n">dataTextPre</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;preprocessing.csv&#39;</span><span class="p">)</span>
+<span class="n">vectorizer</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">(</span><span class="n">min_df</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">bag</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">dataTextPre</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">])</span>
+<span class="n">dataTextPre</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-c05170e4-1737-4797-822b-b2fb8962f0a2">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>Unnamed: 0.1</th>
+      <th>tweet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>0</td>
+      <td>['suasana', 'duka', 'tragedi', 'kanjuruhan']</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>1</td>
+      <td>['pita', 'hitam', 'umm', 'tragedi', 'kanjuruha...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>2</td>
+      <td>['urus', 'si', 'anu', 'ribetpadahal', 'sangka'...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>3</td>
+      <td>['aremania', 'gugat', 'kejat', 'polisi', 'sang...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>4</td>
+      <td>['coba', 'peduli', 'amp', 'bodo', 'dg', 'liga'...</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>71</td>
+      <td>71</td>
+      <td>['update', 'proses', 'hukum', 'tragedi', 'kanj...</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>72</td>
+      <td>72</td>
+      <td>['abiie', 'gw', 'bilang', 'jam', 'malam', 'kar...</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>73</td>
+      <td>73</td>
+      <td>['pt', 'lib', 'tanding', 'persib', 'vs', 'pers...</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>74</td>
+      <td>74</td>
+      <td>['klo', 'sih', 'gak', 'liga', 'jelas', 'traged...</td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td>75</td>
+      <td>75</td>
+      <td>['this', 'photo', 'and', 'poster', 'is', 'so',...</td>
+    </tr>
+  </tbody>
+</table>
+<p>76 rows × 3 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-c05170e4-1737-4797-822b-b2fb8962f0a2')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-c05170e4-1737-4797-822b-b2fb8962f0a2 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-c05170e4-1737-4797-822b-b2fb8962f0a2');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">matrik_vsm</span><span class="o">=</span><span class="n">bag</span><span class="o">.</span><span class="n">toarray</span><span class="p">()</span>
+<span class="c1">#print(matrik_vsm)</span>
+<span class="n">matrik_vsm</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(76, 438)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">matrik_vsm</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="o">=</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">matrik_vsm</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]))</span>
+<span class="c1">#dfb =pd.DataFrame(data=matrik_vsm,index=df,columns=[a])</span>
+<span class="n">dataTF</span> <span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">matrik_vsm</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">matrik_vsm</span><span class="p">[:,</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="p">)),</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="n">a</span><span class="p">])</span>
+<span class="n">dataTF</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>76
+</pre></div>
+</div>
+<div class="output text_html">
+  <div id="df-85742b01-38e0-4845-baa4-45be6b5cc4b6">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead tr th {
+        text-align: left;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th>abiie</th>
+      <th>acara</th>
+      <th>achmadi</th>
+      <th>adil</th>
+      <th>advokasi</th>
+      <th>aff</th>
+      <th>agung</th>
+      <th>ahy</th>
+      <th>air</th>
+      <th>aj</th>
+      <th>...</th>
+      <th>usut</th>
+      <th>utama</th>
+      <th>via</th>
+      <th>vs</th>
+      <th>warga</th>
+      <th>whats</th>
+      <th>ya</th>
+      <th>yakalo</th>
+      <th>yama</th>
+      <th>yg</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>76 rows × 438 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-85742b01-38e0-4845-baa4-45be6b5cc4b6')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-85742b01-38e0-4845-baa4-45be6b5cc4b6 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-85742b01-38e0-4845-baa4-45be6b5cc4b6');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+</section>
+
+
+<script type="application/vnd.jupyter.widget-state+json">
+{"state": {"171eba4451464c08b3762660325fd530": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "4d391235debb4ff2bb639dd1c97d4926": {"model_name": "ProgressStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ProgressStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "bar_color": null, "description_width": ""}}, "92e327b8fe9342ebae47418d8264d552": {"model_name": "FloatProgressModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "FloatProgressModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ProgressView", "bar_style": "success", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_171eba4451464c08b3762660325fd530", "max": 76.0, "min": 0.0, "orientation": "horizontal", "style": "IPY_MODEL_4d391235debb4ff2bb639dd1c97d4926", "value": 76.0}}, "9816f309b5294d7e975d40acac02fe4a": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d760a34bfd9b46a4b3f433bac8571856": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "fbf48912ad434c9196bfa9679a175b07": {"model_name": "HTMLModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HTMLView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_9816f309b5294d7e975d40acac02fe4a", "placeholder": "\u200b", "style": "IPY_MODEL_d760a34bfd9b46a4b3f433bac8571856", "value": "Pandas Apply: 100%"}}, "0d86238d0d6d4500840cdd40f63ba78d": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "57eb4ea746b243f18dc6c5f8c189cd19": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "827b03b136514f32965ffacdc8e4f373": {"model_name": "HTMLModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HTMLView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_0d86238d0d6d4500840cdd40f63ba78d", "placeholder": "\u200b", "style": "IPY_MODEL_57eb4ea746b243f18dc6c5f8c189cd19", "value": " 76/76 [00:00&lt;00:00, 1970.34it/s]"}}, "b3c02d33112846db85488fd0b9d29d9f": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "2e509c00df2740799dc9f2a7e033ac31": {"model_name": "HBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_fbf48912ad434c9196bfa9679a175b07", "IPY_MODEL_92e327b8fe9342ebae47418d8264d552", "IPY_MODEL_827b03b136514f32965ffacdc8e4f373"], "layout": "IPY_MODEL_b3c02d33112846db85488fd0b9d29d9f"}}}, "version_major": 2, "version_minor": 0}
+</script>
+
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="text%20ranked.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">&lt;no title&gt;</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="notebooks.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Content with notebooks</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By The Jupyter Book Community<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
