@@ -10,7 +10,7 @@
 * - Dosen Pengampu
   - MULA'AB, S.Si., M.Kom
 * - Prodi
-  - Teknik Informatika - Universitas Trunojoyo Madura
+  - Teknik Informatika - Universitas Trunojoyo Madura```
 
 
 
